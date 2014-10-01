@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2014-10-02" view-index="0" gantt-divider-location="291" resource-divider-location="300" version="2.0" locale="fr_FR">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2014-09-20" view-index="0" gantt-divider-location="291" resource-divider-location="300" version="2.0" locale="fr_FR">
     <description/>
-    <view zooming-state="default:0" id="gantt-chart">
+    <view zooming-state="default:1" id="gantt-chart">
         <field id="tpd3" name="Nom" width="72" order="0"/>
         <field id="tpd4" name="Date de début" width="17" order="1"/>
         <field id="tpd5" name="Date de fin" width="10" order="2"/>
     </view>
     <view id="resource-table">
         <field id="0" name="Nom" width="50" order="0"/>
-        <field id="1" name="Rôle par défaut" width="49" order="1"/>
+        <field id="1" name="Rôle par défaut" width="50" order="1"/>
     </view>
     <!-- -->
     <calendars>
@@ -35,8 +35,8 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="7" name="création de l'équipe et attribution des roles" color="#8cb6ce" meeting="false" start="2014-09-29" duration="1" complete="0" expand="true"/>
-        <task id="0" name="modelisation de la bdd" color="#8cb6ce" meeting="false" start="2014-09-29" duration="2" complete="0" expand="true">
+        <task id="7" name="création de l'équipe et attribution des roles" color="#8cb6ce" meeting="false" start="2014-09-29" duration="1" complete="100" expand="true"/>
+        <task id="0" name="modelisation de la bdd" color="#8cb6ce" meeting="false" start="2014-09-29" duration="2" complete="100" expand="true">
             <depend id="6" type="2" difference="0" hardness="Strong"/>
         </task>
         <task id="6" name="serveur de requetage de bdd" meeting="false" start="2014-10-01" duration="2" complete="0" expand="true"/>
@@ -46,10 +46,10 @@
             <depend id="8" type="2" difference="0" hardness="Strong"/>
         </task>
         <task id="8" name="prototype android" meeting="false" start="2014-10-02" duration="1" complete="0" expand="true"/>
-        <task id="5" name="maquette monitoring" meeting="false" start="2014-09-29" duration="3" complete="0" expand="true">
+        <task id="5" name="maquette monitoring" meeting="false" start="2014-09-29" duration="3" complete="100" expand="true">
             <depend id="9" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="9" name="prototype moniteur" meeting="false" start="2014-10-02" duration="1" complete="0" expand="true"/>
+        <task id="9" name="prototype moniteur" meeting="false" start="2014-10-02" duration="1" complete="70" expand="true"/>
         <task id="13" name="intégration" meeting="false" start="2014-10-06" duration="3" complete="0" expand="true"/>
         <task id="14" name="préparation pour l'oral" meeting="false" start="2014-10-08" duration="1" complete="0" expand="true"/>
     </tasks>
