@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.example.pi3a_golfmap.MainActivity" >
+
+         <EditText android:id="@+id/enter_username"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:hint="@+string/enter_username" />
+
+	    <EditText
+	        android:id="@+id/posX"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/enter_username"
+	        android:hint="@+string/posX" />
+ 	
+ 	<EditText
+	     android:id="@+id/posY"
+	     android:layout_below="@id/enter_username"
+	     android:layout_toRightOf="@id/posX"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     
+	     android:hint="@+string/posY" />
+ 	
+ 	 <EditText android:id="@+id/posZ"
+	      android:layout_below="@id/enter_username"
+	      android:layout_toRightOf="@id/posY"
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:hint="@+string/posZ" />
+	 
+	 <Button
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:layout_alignParentRight="true"
+	     android:layout_below="@+id/posX"
+	     android:layout_marginTop="15dp"
+	     android:onClick="sendLogin"
+	     android:text="@+string/button_login" />
+	 
+	 <Button android:id="@+id/button_sendPosition"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:layout_below="@+id/posX"
+	     android:onClick="sendPosition"
+	     android:text="@string/send_button" />
+	 
+</RelativeLayout>
+
+
