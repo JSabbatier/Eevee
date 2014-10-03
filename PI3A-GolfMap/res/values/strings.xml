@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PI3A-GolfMap</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="enter_username">User Name</string>
+    <string name="button_login">Login</string>
+    <string name="send_button">Send pos</string>
+    <string name="title_activity_map_game">MapGame</string>
+    <string name="play_button">play</string>
+    <string name="posX">Pos X</string>
+    <string name="posY">Pos Y</string>
+    <string name="posZ">Poz Z</string>
+
+</resources>
