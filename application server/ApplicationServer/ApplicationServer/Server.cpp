@@ -32,25 +32,28 @@ Server::Server(const http::uri& url) : m_listener(http_listener(url))
 void Server::handle_get(http_request message)
 {
 	printf("Handling GET request...\n");
-	printf("PATH : %S \n", message.absolute_uri().path());
+	printf("PATH : %S \n", message.absolute_uri().path().c_str());
 	if (message.absolute_uri().path() == U("/supervisor"))
 	{
 		printf("Handling supervisor request\n");
+		//message.reply(status_codes::OK, U("Hello, Supervisor ! - From the AppServer "));
 		Database db = Database::Database();
-		web::json::value jsonStats = web::json::value::value();
-		jsonStats = db.GetStats();
-		printf("JSON : %S \n", jsonStats.serialize());
-		message.reply(status_codes::OK, jsonStats.serialize());
+		db.GetStats(message);
 	}
 	else if (message.absolute_uri().path() == U("/client"))
 	{
 		printf("Handling client request\n");
 		message.reply(status_codes::OK, U("Hello, Client ! - From the AppServer "));
 	}
+	else if (message.absolute_uri().path() == U("/favicon.ico"))
+	{
+		printf("Handling favison request\n");
+		message.reply(status_codes::NotFound, U("No favicon, please refer to the API documentation"));
+	}
 	else
 	{
 		printf("Unhandled path for the GET request\n");
-		message.reply(status_codes::OK, U("Unhandled GET request, please refer to the API documentation"));
+		message.reply(status_codes::BadRequest, U("Unhandled GET request, please refer to the API documentation"));
 	}
 };
 

@@ -16,7 +16,7 @@ public:
 	Database();
 	~Database();
 	int RegisterToken(Point);
-	web::json::value GetStats();
+	void GetStats(http_request);
 private:
 	std::string GenerateToken(Point);
 	int PutToken(std::string);

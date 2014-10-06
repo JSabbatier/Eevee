@@ -12,10 +12,127 @@ Database::Database()
 {	
 }
 
-web::json::value Database::GetStats()
+void Database::GetStats(http_request message)
 {
-	web::json::value jsondb = web::json::value::parse(U("{\"test\":\"126345\"}"));
-	return (jsondb);
+	printf(" - Entering in the GetStats function\n");
+
+	//auto jsondb = web::json::value::parse(U("{'test':'126345'}"));
+
+	json::value jsonToDB;
+	jsonToDB[L"coordinates"][L"lat"] = json::value::number(11);
+	jsonToDB[L"coordinates"][L"lon"] = json::value::number(4);
+	jsonToDB[L"options"][L"nb"] = json::value::number(1);
+
+
+	int a = 10;
+	// Open stream to output file.
+	//pplx::task<http_response> resp = client.request(methods::GET, U("/getstats.php"), U(""))
+		printf("Entering in the GetStats task\n");
+		// Create http_client to send the request.
+		http_client client(U("http://perso.imerir.com/mdacosta/projetEevee/"));
+		pplx::task<void> requestTask = client.request(methods::POST, U("/testgetpois.php"), jsonToDB)
+		// Handle response headers arriving.
+		.then([=](http_response response)->pplx::task<json::value>
+		{
+			printf("Status code : %d\n", response.status_code());
+			if (response.status_code() == status_codes::OK)
+			{
+				//printf("response.extract_string() : %S\n", response.extract_string().get().c_str()); // Raw response body from the db server
+				return response.extract_json();
+			}
+			return pplx::task_from_result(json::value());
+		})
+			.then([=](pplx::task<json::value> previousTask)
+		{
+			try
+			{
+				printf("Parsing JSON \n");
+				const json::value& jsonValue = previousTask.get();
+				// Perform actions here to process the JSON value...
+				if (jsonValue.has_field(U("pois")))
+				{
+					http_response serverresponse = http_response();
+					serverresponse.set_status_code(status_codes::OK);
+					serverresponse.headers().add(U("Access-Control-Allow-Origin"), U("*"));
+					serverresponse.headers().add(U("Content-Type"), U("application/json"));
+					utility::string_t contenType = U("application/json");
+					serverresponse.set_body(jsonValue);
+					//message.reply(status_codes::OK, jsonValue.serialize(), U("application/json"));
+					//message.headers().add(U("Access-Control-Allow-Origin"), U("*"));
+					message.reply(serverresponse);
+					//message.reply("respoooonse !");
+				}
+				else
+				{
+					message.reply(status_codes::ExpectationFailed, U("Incorrect JSON parameters, expected a \"pois\" array."));
+				}
+			}
+			catch (const http_exception& e)
+			{
+				// Print error.
+				printf("Error getting JSON : %s\n", e.what());
+			}
+		});
+	/*	int retCode;
+		printf("Received response status code:%u\n", response.status_code());
+		switch (response.status_code())
+		{
+		case 200:
+			printf("Receiving stats...\n");
+			retCode = 1;
+			serverresponse.set_status_code(status_codes::OK);
+			serverresponse.set_body(jsondb.serialize());*/
+			//serverresponse.set_body("Et la ?");
+			//serverresponse.set_body(jsondb);
+/*			response.extract_json()
+				.then([=](web::json::value jsonValue)
+			{
+				if (true)//jsonValue.has_field(U("users")))
+				{
+					http_response serverresponse = http_response();
+					serverresponse.headers().add(U("Access-Control-Allow-Origin"), U("*"));
+					serverresponse.headers().add(U("Content-Type"), U("application/json"));
+					utility::string_t contenType = U("application/json");
+					serverresponse.set_body(jsonValue);
+					//message.reply(status_codes::OK, jsonValue.serialize(), U("application/json"));
+					message.reply(serverresponse);
+				}
+
+			});
+			break;
+		case 404:
+			printf("Not found\n");
+			retCode = 0;
+			break;
+		case 405:
+			printf("The server expects GET method\n");
+			retCode = 0;
+			break;
+		default:
+			printf("Not handled response code : %u\n", response.status_code());
+			retCode = 0;
+
+		}*/
+		// Write response body into the fil
+		//return response.body().read_to_end(fileStream->streambuf());
+
+		// Close the file stream.
+		/*.then([=](size_t)
+	{
+		return fileStream->close();
+	});*/
+
+	// Wait for all the outstanding I/O to complete and handle any exceptions
+/*	try
+	{
+		requestTask.wait();
+	}
+	catch (const std::exception &e)
+	{
+		printf("Error exception:%s\n", e.what());
+	}*/
+
+	return;
 }
 
 // Generate an unique token using lat, lon and current timestamp
