@@ -57,10 +57,8 @@ void Database::GetStats(http_request message)
 					serverresponse.headers().add(U("Content-Type"), U("application/json"));
 					utility::string_t contenType = U("application/json");
 					serverresponse.set_body(jsonValue);
-					//message.reply(status_codes::OK, jsonValue.serialize(), U("application/json"));
-					//message.headers().add(U("Access-Control-Allow-Origin"), U("*"));
+					//message.reply(status_codes::OK, jsonValue.serialize(), U("application/json")); // Can't add many headers with this form
 					message.reply(serverresponse);
-					//message.reply("respoooonse !");
 				}
 				else
 				{
@@ -140,7 +138,7 @@ std::string Database::GenerateToken(Point coordinates)
 {
 	char buffer[50];
 	std::time_t t = std::time(0);
-	sprintf(buffer, "%f %f %u", coordinates.x(), coordinates.y(), t);
+	sprintf_s(buffer, "%f %f %u", coordinates.x(), coordinates.y(), t);
 	MD5 retour = MD5(buffer);
 	return(retour.hexdigest());
 }
