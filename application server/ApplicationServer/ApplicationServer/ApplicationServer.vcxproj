@@ -80,8 +80,8 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="user.h" />
-    <ClInclude Include="clients.h" />
+    <ClInclude Include="User.h" />
+    <ClInclude Include="Users.h" />
     <ClInclude Include="Database.h" />
     <ClInclude Include="md5.h" />
     <ClInclude Include="Point.h" />
@@ -91,7 +91,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ApplicationServer.cpp" />
-    <ClCompile Include="clients.cpp" />
+    <ClCompile Include="User.cpp" />
+    <ClCompile Include="Users.cpp" />
     <ClCompile Include="Database.cpp" />
     <ClCompile Include="md5.cpp" />
     <ClCompile Include="Point.cpp" />

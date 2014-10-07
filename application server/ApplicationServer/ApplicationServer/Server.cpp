@@ -1,14 +1,14 @@
 #include "Server.h"
 #include "Database.h"
-
+// protocol : // server [: port] / path ? query # fragment 
 Database POIsDb;
-clients clientsDb;
+Users clientsDb;
 int power;
 
 Server::Server(const http::uri& url) : m_listener(http_listener(url))
 {
 	POIsDb = Database::Database();
-	clientsDb = clients::clients();
+	clientsDb = Users::Users();
 	power = 2;
 	uri_builder uri(url);
 	uri.append_path(U("/"));
@@ -52,6 +52,43 @@ void Server::handle_get(http_request message)
 		serverresponse.set_body(clientsDb.getStats());
 		message.reply(serverresponse);
 	}
+	else if (message.absolute_uri().path() == U("/client/getpois"))
+	{
+		// Return the POIs near the client
+		printf("Handling client/getpois request\n");
+
+		http_response serverresponse = http_response();
+		json::value jsonToClient;
+		User* mobClient;
+		serverresponse.headers().add(U("Access-Control-Allow-Origin"), U("*")); // Necessary for cross-domain requests
+		serverresponse.headers().add(U("Content-Type"), U("application/json"));
+
+		// Getting the token parameter from the URI query
+		auto clientQuery = web::uri::split_query(message.absolute_uri().query());
+		if (!clientQuery.empty())
+		{
+			if (clientQuery.cbegin()->first == L"token")
+			{
+				utility::string_t clientToken = clientQuery.cbegin()->second;
+
+			}
+			else
+			{
+				jsonToClient[L"error"][L"code"] = json::value::number(status_codes::BadRequest);
+				jsonToClient[L"error"][L"reason"] = json::value::string(L"Incorrect query parameter. Please refer to the API documentation.");
+				serverresponse.set_status_code(status_codes::BadRequest);
+			}
+		}
+		else
+		{
+			jsonToClient[L"error"][L"code"] = json::value::number(status_codes::BadRequest);
+			jsonToClient[L"error"][L"reason"] = json::value::string(L"No query parameter. Please refer to the API documentation.");
+			serverresponse.set_status_code(status_codes::BadRequest);
+		}
+		serverresponse.set_body(jsonToClient);
+		message.reply(serverresponse);
+		
+	}
 	else if (message.absolute_uri().path() == U("/client"))
 	{
 		printf("Handling default client request\n");
@@ -83,27 +120,39 @@ void Server::handle_post(http_request message)
 
 			http_response serverresponse = http_response();
 			json::value jsonToClient;
-			user* mobClient;
+			User* mobClient;
 			serverresponse.headers().add(U("Access-Control-Allow-Origin"), U("*")); // Necessary for cross-domain requests
 			serverresponse.headers().add(U("Content-Type"), U("application/json"));
 			try
 			{
 				const json::value& jsonValue = jsonFromClient.get();
 				// Perform actions here to process the JSON value...
-				printf("Received JSON from the client BallLat : %f, BallLng : %f\n", jsonValue.at(U("BallLat")).as_double(), jsonValue.at(U("BallLng")).as_double());
-				Point clientBallPosition = Point::Point(jsonValue.at(U("BallLat")).as_double(), jsonValue.at(U("BallLng")).as_double(), 0);
-				mobClient = clientsDb.createClient(clientBallPosition);
-				jsonToClient[L"token"] = json::value::string(mobClient->getToken());
-				serverresponse.set_status_code(status_codes::Created);
-				serverresponse.set_body(jsonToClient);
-				message.reply(serverresponse);
+				if (jsonValue.has_field(L"BallLat") && jsonValue.has_field(L"BallLng"))
+				{
+					printf("Received JSON from the client BallLat : %f, BallLng : %f\n", jsonValue.at(U("BallLat")).as_double(), jsonValue.at(U("BallLng")).as_double());
+					Point clientBallPosition = Point::Point(jsonValue.at(U("BallLat")).as_double(), jsonValue.at(U("BallLng")).as_double(), 0);
+					mobClient = clientsDb.createClient(clientBallPosition);
+					jsonToClient[L"token"] = json::value::string(mobClient->getToken());
+					serverresponse.set_status_code(status_codes::Created);
+				}
+				else
+				{
+					jsonToClient[L"error"][L"code"] = json::value::number(status_codes::BadRequest);
+					jsonToClient[L"error"][L"reason"] = json::value::string(L"Incorrect JSON parameters");
+					serverresponse.set_status_code(status_codes::BadRequest);
+				}
 
 			}
 			catch (const http_exception& e)
 			{
 				// Print error.
 				printf("Error parsing JSON in client/shot POST handler : %s", e.what());
+				jsonToClient[L"error"][L"code"] = json::value::number(status_codes::BadRequest);
+				jsonToClient[L"error"][L"reason"] = json::value::string(L"Incorrect JSON parameters (exeption)");
+				serverresponse.set_status_code(status_codes::BadRequest);
 			}
+			serverresponse.set_body(jsonToClient);
+			message.reply(serverresponse);
 		});
 	}
 	else if (message.absolute_uri().path() == U("/client/shot"))
@@ -117,7 +166,7 @@ void Server::handle_post(http_request message)
 			http_response serverresponse = http_response();
 			json::value jsonToClient; 
 
-			user* mobClient;
+			User* mobClient;
 			// Default response formating, if none of the following functions are processed
 			serverresponse.headers().add(U("Access-Control-Allow-Origin"), U("*"));
 			serverresponse.headers().add(U("Content-Type"), U("application/json"));
@@ -125,36 +174,45 @@ void Server::handle_post(http_request message)
 			try
 			{
 				const json::value& jsonValue = jsonFromClient.get();
-				// Perform actions here to process the JSON value...
-				printf("Received JSON from the client ClubLat : %f, ClubLon : %f\n", jsonValue.at(U("ClubLat")).as_double(), jsonValue.at(U("ClubLng")).as_double());
-				Point clientShotPosition = Point::Point(jsonValue.at(U("ClubLat")).as_double(), jsonValue.at(U("ClubLng")).as_double(), 0);
-				Point clientBallPosition = Point::Point(jsonValue.at(U("BallLat")).as_double(), jsonValue.at(U("BallLng")).as_double(), 0);
-				mobClient = clientsDb.getClient(jsonValue.at(U("Token")).as_string());
-				if (mobClient != nullptr)
+				if (jsonValue.has_field(L"BallLat") && jsonValue.has_field(L"BallLng") && jsonValue.has_field(L"ClubLat") && jsonValue.has_field(L"ClubLng") && jsonValue.has_field(L"Token"))
 				{
-					// Checking if the ball position sent by the client is the same as the token position in the server DB
-					if (!mobClient->isAt(clientBallPosition))
+					// Perform actions here to process the JSON value...
+					printf("Received JSON from the client ClubLat : %f, ClubLon : %f\n", jsonValue.at(U("ClubLat")).as_double(), jsonValue.at(U("ClubLng")).as_double());
+					Point clientShotPosition = Point::Point(jsonValue.at(U("ClubLat")).as_double(), jsonValue.at(U("ClubLng")).as_double(), 0);
+					Point clientBallPosition = Point::Point(jsonValue.at(U("BallLat")).as_double(), jsonValue.at(U("BallLng")).as_double(), 0);
+					mobClient = clientsDb.getClient(jsonValue.at(U("Token")).as_string());
+					if (mobClient != nullptr)
 					{
-						jsonToClient[L"error"][L"code"] = json::value::number(status_codes::Conflict);
-						jsonToClient[L"error"][L"reason"] = json::value::string(L"Incorrect ball position, please reset your position. (Don't cheat please)");
-						serverresponse.set_status_code(status_codes::Conflict);
+						// Checking if the ball position sent by the client is the same as the token position in the server DB
+						if (!mobClient->isAt(clientBallPosition))
+						{
+							jsonToClient[L"error"][L"code"] = json::value::number(status_codes::Conflict);
+							jsonToClient[L"error"][L"reason"] = json::value::string(L"Incorrect ball position, please reset your position. (Don't cheat please)");
+							serverresponse.set_status_code(status_codes::Conflict);
+						}
+						else
+						{
+							Point tokenPosition = mobClient->getLstPositionKnown();
+							// Calculating the new position of the ball
+							Point newPosition = Point::Point(power * (tokenPosition.x() + (tokenPosition.x() - clientShotPosition.x())), power * (tokenPosition.y() + (tokenPosition.x() - clientShotPosition.x())), 0);
+
+							jsonToClient[L"coordinates"][L"lat"] = json::value::number(newPosition.x());
+							jsonToClient[L"coordinates"][L"lon"] = json::value::number(newPosition.y());
+							jsonToClient[L"distance"] = json::value::number(mobClient->getDistance());
+							serverresponse.set_status_code(status_codes::OK);
+						}
 					}
 					else
 					{
-						Point tokenPosition = mobClient->getLstPositionKnown();
-						// Calculating the new position of the ball
-						Point newPosition = Point::Point(power * (tokenPosition.x() + (tokenPosition.x() - clientShotPosition.x())), power * (tokenPosition.y() + (tokenPosition.x() - clientShotPosition.x())), 0);
-
-						jsonToClient[L"coordinates"][L"lat"] = json::value::number(newPosition.x());
-						jsonToClient[L"coordinates"][L"lon"] = json::value::number(newPosition.y());
-						jsonToClient[L"distance"] = json::value::number(mobClient->getDistance());
-						serverresponse.set_status_code(status_codes::OK);
+						jsonToClient[L"error"][L"code"] = json::value::number(status_codes::NoContent);
+						jsonToClient[L"error"][L"reason"] = json::value::string(L"This token is not registred, please reset your position.");
 					}
 				}
 				else
 				{
-					jsonToClient[L"error"][L"code"] = json::value::number(status_codes::NoContent);
-					jsonToClient[L"error"][L"reason"] = json::value::string(L"This token is not registred, please reset your position.");
+					jsonToClient[L"error"][L"code"] = json::value::number(status_codes::BadRequest);
+					jsonToClient[L"error"][L"reason"] = json::value::string(L"Incorrect JSON parameters");
+					serverresponse.set_status_code(status_codes::BadRequest);
 				}
 
 			}
@@ -162,6 +220,9 @@ void Server::handle_post(http_request message)
 			{
 				// Print error.
 				printf("Error parsing JSON in client/shot POST handler : %s", e.what());
+				jsonToClient[L"error"][L"code"] = json::value::number(status_codes::BadRequest);
+				jsonToClient[L"error"][L"reason"] = json::value::string(L"Incorrect JSON parameters (exeption)");
+				serverresponse.set_status_code(status_codes::BadRequest);
 			}
 			serverresponse.set_body(jsonToClient);
 			message.reply(serverresponse);

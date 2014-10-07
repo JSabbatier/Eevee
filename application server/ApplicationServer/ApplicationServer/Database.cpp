@@ -92,7 +92,7 @@ void Database::SendPois(http_request message)
 		printf("Entering in the GetStats task\n");
 		// Create http_client to send the request.
 		http_client client(U("http://perso.imerir.com/mdacosta/projetEevee/"));
-		pplx::task<void> requestTask = client.request(methods::POST, U("/testgetpois.php"), jsonToDB)
+		pplx::task<void> requestTask = client.request(methods::POST, U("/getpois.php"), jsonToDB)
 		// Handle response headers arriving.
 		.then([=](http_response response)->pplx::task<json::value>
 		{

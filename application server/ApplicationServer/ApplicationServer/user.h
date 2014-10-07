@@ -3,11 +3,11 @@
 #include <ctime>
 #include "Point.h"
 #include <cpprest/http_client.h>
-class user
+class User
 {
 public:
-	user();
-	~user();
+	User();
+	~User();
 	void setToken(std::string);
 	utility::string_t getToken() const{ return(U("slfdghjfe")); };
 	void setLstConnection(std::time_t);
