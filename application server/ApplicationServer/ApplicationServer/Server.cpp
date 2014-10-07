@@ -77,6 +77,7 @@ void Server::handle_post(http_request message)
 			{
 				const json::value& jsonValue = jsonFromClient.get();
 				// Perform actions here to process the JSON value...
+				printf("Received JSON from the client ClubLat : %f, ClubLon : %f", jsonValue.at(U("ClubLat")), jsonValue.at(U("ClubLng")));
 				Point shotPosition = Point::Point(jsonValue.at(U("ClubLat")).as_double(), jsonValue.at(U("ClubLng")).as_double(), 0);
 				Point tokenPosition = Point::Point(41.12345, 1.65432, 0);
 				//Point newPosition = tokenPosition.newPosition();
@@ -90,7 +91,6 @@ void Server::handle_post(http_request message)
 				serverresponse.set_status_code(status_codes::OK);
 				serverresponse.headers().add(U("Access-Control-Allow-Origin"), U("*"));
 				serverresponse.headers().add(U("Content-Type"), U("application/json"));
-				utility::string_t contenType = U("application/json");
 				serverresponse.set_body(jsonToClient);
 				message.reply(serverresponse);
 
