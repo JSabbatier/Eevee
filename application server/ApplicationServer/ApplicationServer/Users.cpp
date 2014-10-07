@@ -1,10 +1,10 @@
 #include "Users.h"
 
-typedef map<string, User*> ListOfClients;
+typedef map<utility::string_t, User*> ListOfClients;
 
 Users::Users()
 {
-	ListOfClients list;
+	list.clear();
 }
 
 
@@ -14,26 +14,37 @@ Users::~Users()
 
 User * Users::createClient(Point coordinates)
 {
-	/*user * cl = new user;
+	User * cl = new User;
+	//generate a new token if there is an already existing one it generate an another one
+	do { utility::string_t token = GenerateToken(coordinates) } while (list[token].count(token)!=0);
 
-	cl->setToken(GenerateToken(coordinates));
-	//List
-	return cl;*/
-	return nullptr;
+	cl->setToken(token);
+	cl->setDistance = 0;
+	cl->setLstConnection(std::time(0));
+	cl->setLstPositionKnown(coordinates);
+	cl->setStates = 1;
+
+	list[token]= cl;
+	return cl;
 }
-User * Users::getClient(utility::string_t)
+User * Users::getClient(utility::string_t token)
 {
-	return nullptr;
+	return list.at(token);
 }
-User * Users::moveClient(string, Point)
+void Users::moveClient(utility::string_t token, Point coordinates)
 {
-	return nullptr;
+	User * cl = list.at(token);
+	cl->setDistance(cl->getDistance + (this->distanceBetweenTwoPointsInMeter(cl->setLstPositionKnown, coordinates)));
+	cl->setLstPositionKnown(coordinates);
 }
 
-bool Users::clientIsAt(Point)
+bool Users::clientIsAt(utility::string_t token, Point coordonates)
 {
-	return true;
+	User * cl = list.at(token);
+	return(cl->getLstPositionKnown == coordonates ? true :  false);
 }
+
+
 string Users::GenerateToken(Point coordinates)
 {
 	char buffer[50];
@@ -41,6 +52,12 @@ string Users::GenerateToken(Point coordinates)
 	sprintf_s(buffer, "%f %f %u", coordinates.x(), coordinates.y(), t);
 	MD5 retour = MD5(buffer);
 	return(retour.hexdigest());
+}
+int Users::distanceBetweenTwoPointsInMeter(Point coordinate1, Point coordinate2)
+{
+	int distance;
+	distance = round((acos(sin(coordinate1.x * M_PI / 180) * sin(coordinate2.x * M_PI / 180) + cos(coordinate1.x * M_PI / 180) * cos(coordinate2.x * M_PI / 180) * cos((coordinate1.y - coordinate2.y) * M_PI / 180)) * 180 / M_PI) * 60 * 1852);
+	return distance;
 }
 
 string Users::getStats()
