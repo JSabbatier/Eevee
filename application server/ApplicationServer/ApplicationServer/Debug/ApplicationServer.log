@@ -1,29 +1,32 @@
-﻿Build started 07/10/2014 09:12:02.
-     1>Project "C:\Users\Imerir\Documents\Eevee\application server\ApplicationServer\ApplicationServer\ApplicationServer.vcxproj" on node 2 (Build target(s)).
+﻿Build started 07/10/2014 16:53:18.
+     1>Project "C:\Users\Imerir\Documents\Visual Studio 2013\Projects\ApplicationServer\ApplicationServer\ApplicationServer.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Users\Imerir\Documents\Eevee\application server\ApplicationServer\packages\cpprestsdk.2.2.0\build\native\include\\" /ZI /nologo /W3 /WX- /Od /Oy- /D HAS_CPPRESTSDK /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ApplicationServer.cpp Database.cpp md5.cpp Point.cpp Server.cpp stdafx.cpp
-         stdafx.cpp
-         Server.cpp
-     1>c:\users\imerir\documents\eevee\application server\applicationserver\applicationserver\server.cpp(81): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\imerir\documents\eevee\application server\applicationserver\applicationserver\server.cpp(82): warning C4305: 'argument' : truncation from 'double' to 'float'
-         Point.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Users\Imerir\Documents\Visual Studio 2013\Projects\ApplicationServer\packages\cpprestsdk.2.2.0\build\native\include\\" /ZI /nologo /W3 /WX- /Od /Oy- /D HAS_CPPRESTSDK /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ApplicationServer.cpp Server.cpp clients.cpp md5.cpp
          md5.cpp
-     1>c:\users\imerir\documents\eevee\application server\applicationserver\applicationserver\md5.cpp(342): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>c:\users\imerir\documents\visual studio 2013\projects\applicationserver\applicationserver\md5.cpp(342): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(356) : see declaration of 'sprintf'
-         Database.cpp
-         ApplicationServer.cpp
+         clients.cpp
          Generating Code...
-     1>c:\users\imerir\documents\eevee\application server\applicationserver\applicationserver\md5.cpp(353): warning C4717: 'operator<<' : recursive on all control paths, function will cause runtime stack overflow
+     1>c:\users\imerir\documents\visual studio 2013\projects\applicationserver\applicationserver\md5.cpp(353): warning C4717: 'operator<<' : recursive on all control paths, function will cause runtime stack overflow
+         Compiling...
+         Server.cpp
+     1>c:\users\imerir\documents\visual studio 2013\projects\applicationserver\applicationserver\server.cpp(94): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\imerir\documents\visual studio 2013\projects\applicationserver\applicationserver\server.cpp(130): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\imerir\documents\visual studio 2013\projects\applicationserver\applicationserver\server.cpp(131): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+         Generating Code...
+         Skipping... (no relevant changes detected)
+         ApplicationServer.cpp
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Imerir\Documents\Eevee\application server\ApplicationServer\Debug\ApplicationServer.exe" /INCREMENTAL /NOLOGO "C:\Users\Imerir\Documents\Eevee\application server\ApplicationServer\packages\cpprestsdk.2.2.0\build\native\lib\Win32\v120\Debug\Desktop\cpprest120d_2_2.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Imerir\Documents\Eevee\application server\ApplicationServer\Debug\ApplicationServer.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Imerir\Documents\Eevee\application server\ApplicationServer\Debug\ApplicationServer.lib" /MACHINE:X86 Debug\ApplicationServer.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Imerir\Documents\Visual Studio 2013\Projects\ApplicationServer\Debug\ApplicationServer.exe" /INCREMENTAL /NOLOGO "C:\Users\Imerir\Documents\Visual Studio 2013\Projects\ApplicationServer\packages\cpprestsdk.2.2.0\build\native\lib\Win32\v120\Debug\Desktop\cpprest120d_2_2.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Imerir\Documents\Visual Studio 2013\Projects\ApplicationServer\Debug\ApplicationServer.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Imerir\Documents\Visual Studio 2013\Projects\ApplicationServer\Debug\ApplicationServer.lib" /MACHINE:X86 Debug\ApplicationServer.obj
+         Debug\clients.obj
          Debug\Database.obj
          Debug\md5.obj
          Debug\Point.obj
          Debug\Server.obj
          Debug\stdafx.obj
-         ApplicationServer.vcxproj -> C:\Users\Imerir\Documents\Eevee\application server\ApplicationServer\Debug\ApplicationServer.exe
-     1>Done Building Project "C:\Users\Imerir\Documents\Eevee\application server\ApplicationServer\ApplicationServer\ApplicationServer.vcxproj" (Build target(s)).
+         ApplicationServer.vcxproj -> C:\Users\Imerir\Documents\Visual Studio 2013\Projects\ApplicationServer\Debug\ApplicationServer.exe
+     1>Done Building Project "C:\Users\Imerir\Documents\Visual Studio 2013\Projects\ApplicationServer\ApplicationServer\ApplicationServer.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:38.19
+Time Elapsed 00:00:15.44

@@ -1,6 +1,6 @@
 #include "clients.h"
 
-typedef map<string, client*> ListOfClients;
+typedef map<string, user*> ListOfClients;
 
 clients::clients()
 {
@@ -12,26 +12,27 @@ clients::~clients()
 {
 }
 
-client * clients::createClient(Point coordinates)
+user * clients::createClient(Point coordinates)
 {
-	client * cl = new client ;
+	/*user * cl = new user;
 
 	cl->setToken(GenerateToken(coordinates));
-	List
-	return cl;
+	//List
+	return cl;*/
+	return nullptr;
 }
-client * clients::getClient(string)
+user * clients::getClient(utility::string_t)
 {
-
+	return nullptr;
 }
-client * clients::moveClient(string, Point)
+user * clients::moveClient(string, Point)
 {
-
+	return nullptr;
 }
 
 bool clients::clientIsAt(Point)
 {
-
+	return true;
 }
 string clients::GenerateToken(Point coordinates)
 {
@@ -40,5 +41,10 @@ string clients::GenerateToken(Point coordinates)
 	sprintf_s(buffer, "%f %f %u", coordinates.x(), coordinates.y(), t);
 	MD5 retour = MD5(buffer);
 	return(retour.hexdigest());
+}
+
+string clients::getStats()
+{
+	return "{ \"users\": { \"u1\": {  \"token\": \"0001\",\"statistics\": {\"lastKnownLocation\": {   \"latitude\": 42.25351,\"longitude\": -12.55567  },\"travelledDistance\": \"0250\",\"rank\": 5  }},  \"u2\": {   \"token\": \"0002\",  \"statistics\": {\"lastKnownLocation\": {\"latitude\": 2.25351,  \"longitude\": 39.55567 },\"travelledDistance\": \"0000\",   \"rank\": 6}}}}";
 }
 

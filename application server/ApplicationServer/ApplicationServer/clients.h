@@ -1,28 +1,27 @@
 #include <map>
 #include <string>
-#include "client.h"
+#include "user.h"
 #include "md5.h"
 using namespace std;
+
 #pragma once
 class clients
 {
 public:
 	clients();
 	~clients();
-	client * createClient();
-	client * createClient(Point);
+	//user * createClient();
+	user * createClient(Point);
 
-	client * getClient(string);
-	client * moveClient(string, Point);
+	user * getClient(utility::string_t);
+	user * moveClient(string, Point);
 
 	bool clientIsAt(Point);
 
+	string getStats();
 
 private:
 	
 	string GenerateToken(Point);
-
-
-
 };
 
