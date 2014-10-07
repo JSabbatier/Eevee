@@ -1,0 +1,3 @@
+*.suo
+application server/ApplicationServer/ApplicationServer/ApplicationServer.vcxproj
+application server/ApplicationServer/ApplicationServer/ApplicationServer.vcxproj.filters
