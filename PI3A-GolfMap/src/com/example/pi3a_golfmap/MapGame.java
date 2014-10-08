@@ -163,15 +163,13 @@ public class MapGame extends Activity implements GooglePlayServicesClient.Connec
 					posBall = new LatLng(arg0.getLatitude(), arg0.getLongitude());
 					mapGame.addMarkerPoint(posBall,ressource_ball,"BALL",false);
 
-					cameraPosition = new CameraPosition.Builder().target(posBall).zoom(10).build();
+					cameraPosition = new CameraPosition.Builder().target(posBall).zoom(zoom).build();
 					mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));	
 					
 					mMap.setOnMyLocationChangeListener(null);
 					mMap.setMyLocationEnabled(false);
 					
 					Log.d("Location Listener","Try to get the token");
-					fetchTokenId();
-					
 				}
 	        };  
 		return listener;
@@ -223,6 +221,7 @@ public class MapGame extends Activity implements GooglePlayServicesClient.Connec
 		{
 			public JSONObject processJSON(JSONObject rawJson) 
 			{
+				Log.d ("Step0-0","before");
 				try {
 					tokenId =rawJson.getString("token");
 				} catch (JSONException e) {
@@ -230,7 +229,7 @@ public class MapGame extends Activity implements GooglePlayServicesClient.Connec
 					e.printStackTrace();
 				}
 				
-				Log.d ("Step0",tokenId);
+				Log.d ("Step0-1",tokenId);
 				return rawJson;
 			}
 		}).execute(urltoken, jsonData.toString());
@@ -271,7 +270,11 @@ public class MapGame extends Activity implements GooglePlayServicesClient.Connec
 						lat= rawJson.getJSONObject("coordinates").getDouble("lat");
 						lon =rawJson.getJSONObject("coordinates").getDouble("lon");					
 						posBall = new LatLng(lat,lon);
-						mMarkers.get("BALL").setPosition(posBall);
+						
+						MarkerAnimation.animateMarkerToGB(mMarkers.get("BALL"), posBall, new Linear());
+						cameraPosition = new CameraPosition.Builder().target(posBall).zoom(zoom).build();
+						mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
+						
 					}
 				} catch (JSONException e) {
 					// TODO Auto-generated catch block
@@ -377,7 +380,7 @@ public class MapGame extends Activity implements GooglePlayServicesClient.Connec
 	public boolean onMarkerClick(Marker arg0) {
 		 
 		mMap.getUiSettings().setAllGesturesEnabled(false);
-		
+		fetchTokenId();
 		if(mMarkers.get("BALL") != null){
 			if(mMarkers.get("CLUB") == null)
 				this.addMarkerPoint(posBall,ressource_club,"CLUB",true);	
@@ -414,7 +417,7 @@ public class MapGame extends Activity implements GooglePlayServicesClient.Connec
 		protected void onPostExecute(JSONObject result) 
 		{
 			Log.d("onPostExecute",result.toString());
-			JSONObject response =strategy.processJSON(result);
+			strategy.processJSON(result);
 			Log.d("onPostExecute",response.toString());
         }
     }

@@ -96,6 +96,8 @@ int drawable ic_plusone_tall_off_client 0x7f020021
 int drawable imerir 0x7f020022
 int drawable powered_by_google_dark 0x7f020023
 int drawable powered_by_google_light 0x7f020024
+int drawable tw 0x7f020025
+int drawable unnamed 0x7f020026
 int id action_settings 0x7f07001a
 int id book_now 0x7f070010
 int id button1 0x7f070014
