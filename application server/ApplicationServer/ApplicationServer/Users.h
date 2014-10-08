@@ -2,9 +2,11 @@
 #include <string>
 #include "User.h"
 #include "md5.h"
+#define _USE_MATH_DEFINES
+#include <math.h>
 using namespace std;
-typedef map<utility::string_t, User*> ListOfClients;
 
+typedef map<utility::string_t, User*> ListOfClients;
 #pragma once
 class Users
 {
@@ -15,14 +17,15 @@ public:
 	User * createClient(Point);
 
 	User * getClient(utility::string_t);
-	User * moveClient(string, Point);
+	void moveClient(utility::string_t, Point);
 
-	bool clientIsAt(Point);
+	bool clientIsAt(utility::string_t,Point);
 
-	web::json::value getStats();
+	json::value  getStats();
 
 private:
+	int distanceBetweenTwoPointsInMeter(Point, Point);
 	ListOfClients list;
-	string GenerateToken(Point);
+	utility::string_t GenerateToken(Point);
 };
 

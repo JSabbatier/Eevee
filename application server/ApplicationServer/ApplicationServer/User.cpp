@@ -35,8 +35,8 @@ void User::setLstPositionKnown(Point coordinates)
 }
 Point User::getLstPositionKnown() const
 { 
-	return Point::Point(12.2f, 3.5f, 0.f); // For tests purpose only
-	//return this->lastPositionKnown;
+	//return Point::Point(12.2f, 3.5f, 0.f); // For tests purpose only
+	return this->lastPositionKnown;
 }
 
 User::~User()
