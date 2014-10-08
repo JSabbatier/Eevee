@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="_point_8cpp" kind="file">
+    <compoundname>Point.cpp</compoundname>
+    <includes refid="_point_8h" local="yes">Point.h</includes>
+    <incdepgraph>
+      <node id="69">
+        <label>Point.h</label>
+        <link refid="_point_8h"/>
+      </node>
+      <node id="68">
+        <label>J:/Eevee/application server/ApplicationServer/ApplicationServer/Point.cpp</label>
+        <link refid="Point.cpp"/>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_point_8h" kindref="compound">Point.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_point_1ad92f2337b839a94ce97dcdb439b4325a" refkind="member"><highlight class="normal"><ref refid="class_point_1ad92f2337b839a94ce97dcdb439b4325a" kindref="member">Point::Point</ref>()</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">bool<sp/>Point::operator==(const<sp/>Point&amp;<sp/>left,<sp/>const<sp/>Point&amp;<sp/>right)</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">{</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/>return<sp/>((right.x()<sp/>==<sp/>left.x())<sp/>&amp;&amp;<sp/>(right.y()<sp/>==<sp/>left.y())<sp/>&amp;&amp;<sp/>(right.z()<sp/>==<sp/>left.z()));</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">}*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="class_point_1a326edb72707d198c949cde90dcd3557a" refkind="member"><highlight class="normal"><ref refid="class_point_1ad92f2337b839a94ce97dcdb439b4325a" kindref="member">Point::Point</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x<sp/>=<sp/>0,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y<sp/>=<sp/>0,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>z<sp/>=<sp/>0)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>a<sp/>=<sp/><ref refid="class_point_1aa4bd02640706ad6f00d7a1bca9768d4d" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>b<sp/>=<sp/><ref refid="class_point_1aae549f6b778ea2fe166387627fddecec" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>c<sp/>=<sp/><ref refid="class_point_1aebbff516d9b84bccee19f24a8800ee8e" kindref="member">z</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="class_point_1a395fa04b4ec126b66fc053f829a30cc1" refkind="member"><highlight class="normal"><ref refid="class_point_1a395fa04b4ec126b66fc053f829a30cc1" kindref="member">Point::~Point</ref>()</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="class_point_1aa4bd02640706ad6f00d7a1bca9768d4d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_point_1aa4bd02640706ad6f00d7a1bca9768d4d" kindref="member">Point::x</ref>()</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="class_point_1aae549f6b778ea2fe166387627fddecec" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_point_1aae549f6b778ea2fe166387627fddecec" kindref="member">Point::y</ref>()</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>b;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="class_point_1aebbff516d9b84bccee19f24a8800ee8e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_point_1aebbff516d9b84bccee19f24a8800ee8e" kindref="member">Point::z</ref>()</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>c;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="class_point_1a49b604094f8678d43964a15f12ec6b30" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_point_1aa4bd02640706ad6f00d7a1bca9768d4d" kindref="member">Point::x</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>a<sp/>=<sp/><ref refid="class_point_1aa4bd02640706ad6f00d7a1bca9768d4d" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="class_point_1a25ca3c6efec7917e8428da0f9e87b4c4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_point_1aae549f6b778ea2fe166387627fddecec" kindref="member">Point::y</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>b<sp/>=<sp/><ref refid="class_point_1aae549f6b778ea2fe166387627fddecec" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="class_point_1ae6e07d92f54e52d1e8ee6c9d4fa93fa7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_point_1aebbff516d9b84bccee19f24a8800ee8e" kindref="member">Point::z</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>z)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>c<sp/>=<sp/><ref refid="class_point_1aebbff516d9b84bccee19f24a8800ee8e" kindref="member">z</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Point.cpp"/>
+  </compounddef>
+</doxygen>

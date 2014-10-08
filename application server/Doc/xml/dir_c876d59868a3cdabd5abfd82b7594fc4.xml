@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="dir_c876d59868a3cdabd5abfd82b7594fc4" kind="dir">
+    <compoundname>J:/Eevee/application server</compoundname>
+    <innerdir refid="dir_1d4c0fc8a972664f520b5d68b8de02dc">J:/Eevee/application server/ApplicationServer</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="J:/Eevee/application server/"/>
+  </compounddef>
+</doxygen>

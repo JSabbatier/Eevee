@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="class_users" kind="class" prot="public">
+    <compoundname>Users</compoundname>
+    <includes refid="_users_8h" local="no">Users.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_users_1ab4fc612fcc5eb355f9848d659b7a7a26" prot="private" static="no" mutable="no">
+        <type><ref refid="_users_8h_1ac162b24343701ed516790c89796c8996" kindref="member">ListOfClients</ref></type>
+        <definition>ListOfClients Users::list</definition>
+        <argsstring></argsstring>
+        <name>list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Users.h" line="30" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/Users.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_users_1af1f5c371c3f1e7f9b14210ed0d3718bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Users::Users</definition>
+        <argsstring>()</argsstring>
+        <name>Users</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Users.h" line="14" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/Users.cpp" bodystart="9" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_users_1a33ff9aadcaef989bf3c8570358f791f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Users::~Users</definition>
+        <argsstring>()</argsstring>
+        <name>~Users</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Users.h" line="15" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/Users.cpp" bodystart="25" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_users_1aa1d559cc1dec13d004f7e18d1e9a4326" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_user" kindref="compound">User</ref> *</type>
+        <definition>User * Users::createClient</definition>
+        <argsstring>(Point)</argsstring>
+        <name>createClient</name>
+        <param>
+          <type><ref refid="class_point" kindref="compound">Point</ref></type>
+          <defname>coordinates</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Users.h" line="17" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/Users.cpp" bodystart="29" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_users_1a394ba0ff537cbd267106f702d6e17c83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_user" kindref="compound">User</ref> *</type>
+        <definition>User * Users::getClient</definition>
+        <argsstring>(utility::string_t)</argsstring>
+        <name>getClient</name>
+        <param>
+          <type>utility::string_t</type>
+          <defname>token</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Users.h" line="19" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/Users.cpp" bodystart="49" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_users_1a9539a5ad196643c109b808acfadcd44d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Users::moveClient</definition>
+        <argsstring>(utility::string_t, Point)</argsstring>
+        <name>moveClient</name>
+        <param>
+          <type>utility::string_t</type>
+          <defname>token</defname>
+        </param>
+        <param>
+          <type><ref refid="class_point" kindref="compound">Point</ref></type>
+          <defname>coordinates</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Users.h" line="20" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/Users.cpp" bodystart="53" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="class_users_1a33884f39dc6a767e923410a78815b001" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Users::clientIsAt</definition>
+        <argsstring>(utility::string_t, Point)</argsstring>
+        <name>clientIsAt</name>
+        <param>
+          <type>utility::string_t</type>
+          <defname>token</defname>
+        </param>
+        <param>
+          <type><ref refid="class_point" kindref="compound">Point</ref></type>
+          <defname>coordonates</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Users.h" line="22" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/Users.cpp" bodystart="60" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_users_1a43af31ac034008281aeed0210bf2a0dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Users::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Users.h" line="23" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/Users.cpp" bodystart="14" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_users_1a1be44c97e71f822f29ca61451c7e472a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Users::size</definition>
+        <argsstring>()</argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Users.h" line="24" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/Users.cpp" bodystart="19" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_users_1a7825d70306c9dc993cee3b46ad8e1d9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>web::json::value</type>
+        <definition>json::value Users::getStats</definition>
+        <argsstring>()</argsstring>
+        <name>getStats</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Users.h" line="26" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/Users.cpp" bodystart="82" bodyend="99"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_users_1a7897b389ce6a97039c19708ec3b970a0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Users::distanceBetweenTwoPointsInMeter</definition>
+        <argsstring>(Point, Point)</argsstring>
+        <name>distanceBetweenTwoPointsInMeter</name>
+        <param>
+          <type><ref refid="class_point" kindref="compound">Point</ref></type>
+          <defname>coordinate1</defname>
+        </param>
+        <param>
+          <type><ref refid="class_point" kindref="compound">Point</ref></type>
+          <defname>coordinate2</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Users.h" line="29" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/Users.cpp" bodystart="75" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_users_1ad764eeb58c18e9aead5d6964ea050a6a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>utility::string_t</type>
+        <definition>utility::string_t Users::GenerateToken</definition>
+        <argsstring>(Point)</argsstring>
+        <name>GenerateToken</name>
+        <param>
+          <type><ref refid="class_point" kindref="compound">Point</ref></type>
+          <defname>coordinates</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Users.h" line="31" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/Users.cpp" bodystart="67" bodyend="74"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Users.h" line="12" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/Users.h" bodystart="11" bodyend="32"/>
+    <listofallmembers>
+      <member refid="class_users_1a43af31ac034008281aeed0210bf2a0dd" prot="public" virt="non-virtual"><scope>Users</scope><name>clear</name></member>
+      <member refid="class_users_1a33884f39dc6a767e923410a78815b001" prot="public" virt="non-virtual"><scope>Users</scope><name>clientIsAt</name></member>
+      <member refid="class_users_1aa1d559cc1dec13d004f7e18d1e9a4326" prot="public" virt="non-virtual"><scope>Users</scope><name>createClient</name></member>
+      <member refid="class_users_1a7897b389ce6a97039c19708ec3b970a0" prot="private" virt="non-virtual"><scope>Users</scope><name>distanceBetweenTwoPointsInMeter</name></member>
+      <member refid="class_users_1ad764eeb58c18e9aead5d6964ea050a6a" prot="private" virt="non-virtual"><scope>Users</scope><name>GenerateToken</name></member>
+      <member refid="class_users_1a394ba0ff537cbd267106f702d6e17c83" prot="public" virt="non-virtual"><scope>Users</scope><name>getClient</name></member>
+      <member refid="class_users_1a7825d70306c9dc993cee3b46ad8e1d9e" prot="public" virt="non-virtual"><scope>Users</scope><name>getStats</name></member>
+      <member refid="class_users_1ab4fc612fcc5eb355f9848d659b7a7a26" prot="private" virt="non-virtual"><scope>Users</scope><name>list</name></member>
+      <member refid="class_users_1a9539a5ad196643c109b808acfadcd44d" prot="public" virt="non-virtual"><scope>Users</scope><name>moveClient</name></member>
+      <member refid="class_users_1a1be44c97e71f822f29ca61451c7e472a" prot="public" virt="non-virtual"><scope>Users</scope><name>size</name></member>
+      <member refid="class_users_1af1f5c371c3f1e7f9b14210ed0d3718bc" prot="public" virt="non-virtual"><scope>Users</scope><name>Users</name></member>
+      <member refid="class_users_1a33ff9aadcaef989bf3c8570358f791f6" prot="public" virt="non-virtual"><scope>Users</scope><name>~Users</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

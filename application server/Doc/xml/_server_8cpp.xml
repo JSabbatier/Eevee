@@ -1,0 +1,483 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="_server_8cpp" kind="file">
+    <compoundname>Server.cpp</compoundname>
+    <includes refid="_server_8h" local="yes">Server.h</includes>
+    <includes refid="_database_8h" local="yes">Database.h</includes>
+    <includes local="no">random</includes>
+    <incdepgraph>
+      <node id="83">
+        <label>J:/Eevee/application server/ApplicationServer/ApplicationServer/Server.cpp</label>
+        <link refid="Server.cpp"/>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+      </node>
+      <node id="97">
+        <label>Database.h</label>
+        <link refid="_database_8h"/>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>string</label>
+      </node>
+      <node id="98">
+        <label>cpprest/filestream.h</label>
+      </node>
+      <node id="85">
+        <label>cpprest\http_listener.h</label>
+      </node>
+      <node id="87">
+        <label>map</label>
+      </node>
+      <node id="93">
+        <label>md5.h</label>
+        <link refid="md5_8h"/>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>Server.h</label>
+        <link refid="_server_8h"/>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+      </node>
+      <node id="99">
+        <label>random</label>
+      </node>
+      <node id="86">
+        <label>Users.h</label>
+        <link refid="_users_8h"/>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+      </node>
+      <node id="92">
+        <label>cpprest/http_client.h</label>
+      </node>
+      <node id="90">
+        <label>ctime</label>
+      </node>
+      <node id="89">
+        <label>User.h</label>
+        <link refid="user_8h"/>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+      </node>
+      <node id="96">
+        <label>math.h</label>
+      </node>
+      <node id="95">
+        <label>iostream</label>
+      </node>
+      <node id="91">
+        <label>Point.h</label>
+        <link refid="_point_8h"/>
+      </node>
+      <node id="94">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_server_8cpp_1ae10f44192e8c78c15a69d885d0ca699d" prot="public" static="no" mutable="no">
+        <type><ref refid="class_database" kindref="compound">Database</ref></type>
+        <definition>Database POIsDb</definition>
+        <argsstring></argsstring>
+        <name>POIsDb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Server.cpp" line="6" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/Server.cpp" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_server_8cpp_1a0a401c3c12cccdde12b3ccdaf0781fd4" prot="public" static="no" mutable="no">
+        <type><ref refid="class_users" kindref="compound">Users</ref></type>
+        <definition>Users clientsDb</definition>
+        <argsstring></argsstring>
+        <name>clientsDb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Server.cpp" line="7" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/Server.cpp" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_server_8cpp_1a0a923163c4d4ac8a2ecbf16f95d21fe2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int power</definition>
+        <argsstring></argsstring>
+        <name>power</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Server.cpp" line="8" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/Server.cpp" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_server_8h" kindref="compound">Server.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_database_8h" kindref="compound">Database.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;random&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>protocol<sp/>:<sp/>//<sp/>server<sp/>[:<sp/>port]<sp/>/<sp/>path<sp/>?<sp/>query<sp/>#<sp/>fragment<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="_server_8cpp_1ae10f44192e8c78c15a69d885d0ca699d" refkind="member"><highlight class="normal"><ref refid="class_database" kindref="compound">Database</ref><sp/><ref refid="_server_8cpp_1ae10f44192e8c78c15a69d885d0ca699d" kindref="member">POIsDb</ref>;</highlight></codeline>
+<codeline lineno="7" refid="_server_8cpp_1a0a401c3c12cccdde12b3ccdaf0781fd4" refkind="member"><highlight class="normal"><ref refid="class_users" kindref="compound">Users</ref><sp/><ref refid="_server_8cpp_1a0a401c3c12cccdde12b3ccdaf0781fd4" kindref="member">clientsDb</ref>;</highlight></codeline>
+<codeline lineno="8" refid="_server_8cpp_1a0a923163c4d4ac8a2ecbf16f95d21fe2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_server_8cpp_1a0a923163c4d4ac8a2ecbf16f95d21fe2" kindref="member">power</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="class_server_1a0dec78c0c8d028662e64e5d2cd44e68d" refkind="member"><highlight class="normal"><ref refid="class_server_1a0dec78c0c8d028662e64e5d2cd44e68d" kindref="member">Server::Server</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>http::uri&amp;<sp/>url)<sp/>:<sp/>m_listener(http_listener(url))</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>POIsDb<sp/>=<sp/><ref refid="class_database_1a4703c80e6969d33565ea340f768fdadf" kindref="member">Database::Database</ref>();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>clientsDb<sp/>=<sp/><ref refid="class_users_1af1f5c371c3f1e7f9b14210ed0d3718bc" kindref="member">Users::Users</ref>();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_server_8cpp_1a0a923163c4d4ac8a2ecbf16f95d21fe2" kindref="member">power</ref><sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>uri_builder<sp/>uri(url);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>uri.append_path(U(</highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>m_listener.support(methods::OPTIONS,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::tr1::bind(&amp;Server::handle_options,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::tr1::placeholders::_1));</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>m_listener.support(methods::GET,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::tr1::bind(&amp;Server::handle_get,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::tr1::placeholders::_1));</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>m_listener.support(methods::POST,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::tr1::bind(&amp;Server::handle_post,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::tr1::placeholders::_1));</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>m_listener.support(methods::DEL,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::tr1::bind(&amp;Server::handle_delete,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::tr1::placeholders::_1));</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>m_listener.support(methods::PUT,</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::tr1::bind(&amp;Server::handle_put,</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this,</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::tr1::placeholders::_1));*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Handle<sp/>all<sp/>the<sp/>GET<sp/>requests</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Server::handle_get(http_request<sp/>message)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Handling<sp/>GET<sp/>request...<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;PATH<sp/>:<sp/>%S<sp/>\n&quot;</highlight><highlight class="normal">,<sp/>message.absolute_uri().path().c_str());</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(message.absolute_uri().path()<sp/>==<sp/>U(</highlight><highlight class="stringliteral">&quot;/supervisor/getstats&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/>Handling<sp/>supervisor<sp/>request\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//message.reply(status_codes::OK,<sp/>U(&quot;Hello,<sp/>Supervisor<sp/>!<sp/>-<sp/>From<sp/>the<sp/>AppServer<sp/>&quot;));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>http_response<sp/>serverresponse<sp/>=<sp/>http_response();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>json::value<sp/>jsonToClient;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>serverresponse.headers().add(U(</highlight><highlight class="stringliteral">&quot;Access-Control-Allow-Origin&quot;</highlight><highlight class="normal">),<sp/>U(</highlight><highlight class="stringliteral">&quot;*&quot;</highlight><highlight class="normal">));<sp/></highlight><highlight class="comment">//<sp/>Necessary<sp/>for<sp/>cross-domain<sp/>requests</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>serverresponse.headers().add(U(</highlight><highlight class="stringliteral">&quot;Content-Type&quot;</highlight><highlight class="normal">),<sp/>U(</highlight><highlight class="stringliteral">&quot;application/json&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>serverresponse.set_status_code(status_codes::Created);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>serverresponse.set_body(clientsDb.<ref refid="class_users_1a7825d70306c9dc993cee3b46ad8e1d9e" kindref="member">getStats</ref>());</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>message.reply(serverresponse);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(message.absolute_uri().path()<sp/>==<sp/>U(</highlight><highlight class="stringliteral">&quot;/client/getpois&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>error<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Return<sp/>the<sp/>POIs<sp/>near<sp/>the<sp/>client</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/>Handling<sp/>client/getpois<sp/>request\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>http_response<sp/>serverresponse<sp/>=<sp/>http_response();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>json::value<sp/>jsonToClient;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>serverresponse.headers().add(U(</highlight><highlight class="stringliteral">&quot;Access-Control-Allow-Origin&quot;</highlight><highlight class="normal">),<sp/>U(</highlight><highlight class="stringliteral">&quot;*&quot;</highlight><highlight class="normal">));<sp/></highlight><highlight class="comment">//<sp/>Necessary<sp/>for<sp/>cross-domain<sp/>requests</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>serverresponse.headers().add(U(</highlight><highlight class="stringliteral">&quot;Content-Type&quot;</highlight><highlight class="normal">),<sp/>U(</highlight><highlight class="stringliteral">&quot;application/json&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Getting<sp/>the<sp/>token<sp/>parameter<sp/>from<sp/>the<sp/>URI<sp/>query</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>clientQuery<sp/>=<sp/>web::uri::split_query(message.absolute_uri().query());</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!clientQuery.empty())</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(clientQuery.cbegin()-&gt;first<sp/>==<sp/>L</highlight><highlight class="stringliteral">&quot;token&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>utility::string_t<sp/>clientToken<sp/>=<sp/>clientQuery.cbegin()-&gt;second;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_user" kindref="compound">User</ref>*<sp/>mobClient;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mobClient<sp/>=<sp/>clientsDb.<ref refid="class_users_1a394ba0ff537cbd267106f702d6e17c83" kindref="member">getClient</ref>(clientToken);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mobClient<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x<sp/>=<sp/>mobClient-&gt;<ref refid="class_user_1ac3f4b47d1262a3bda6ff380dbd10a58d" kindref="member">getLstPositionKnown</ref>().<ref refid="class_point_1aa4bd02640706ad6f00d7a1bca9768d4d" kindref="member">x</ref>();</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_point" kindref="compound">Point</ref><sp/>location<sp/>=<sp/>(mobClient-&gt;<ref refid="class_user_1ac3f4b47d1262a3bda6ff380dbd10a58d" kindref="member">getLstPositionKnown</ref>());</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Point<sp/>location<sp/>=<sp/>Point::Point(42.32568,<sp/>2.46598,<sp/>0);<sp/>//<sp/>Test</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>POIsDb.<ref refid="class_database_1a9d6ec1d2def7e13731eae70d6f497e6f" kindref="member">SendPois</ref>(message,<sp/>location);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jsonToClient[L</highlight><highlight class="stringliteral">&quot;error&quot;</highlight><highlight class="normal">][L</highlight><highlight class="stringliteral">&quot;code&quot;</highlight><highlight class="normal">]<sp/>=<sp/>json::value::number(status_codes::BadRequest);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jsonToClient[L</highlight><highlight class="stringliteral">&quot;error&quot;</highlight><highlight class="normal">][L</highlight><highlight class="stringliteral">&quot;reason&quot;</highlight><highlight class="normal">]<sp/>=<sp/>json::value::string(L</highlight><highlight class="stringliteral">&quot;The<sp/>token<sp/>does<sp/>not<sp/>exist.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>serverresponse.set_status_code(status_codes::BadRequest);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jsonToClient[L</highlight><highlight class="stringliteral">&quot;error&quot;</highlight><highlight class="normal">][L</highlight><highlight class="stringliteral">&quot;code&quot;</highlight><highlight class="normal">]<sp/>=<sp/>json::value::number(status_codes::BadRequest);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jsonToClient[L</highlight><highlight class="stringliteral">&quot;error&quot;</highlight><highlight class="normal">][L</highlight><highlight class="stringliteral">&quot;reason&quot;</highlight><highlight class="normal">]<sp/>=<sp/>json::value::string(L</highlight><highlight class="stringliteral">&quot;Incorrect<sp/>query<sp/>parameter.<sp/>Please<sp/>refer<sp/>to<sp/>the<sp/>API<sp/>documentation.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>serverresponse.set_status_code(status_codes::BadRequest);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jsonToClient[L</highlight><highlight class="stringliteral">&quot;error&quot;</highlight><highlight class="normal">][L</highlight><highlight class="stringliteral">&quot;code&quot;</highlight><highlight class="normal">]<sp/>=<sp/>json::value::number(status_codes::BadRequest);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jsonToClient[L</highlight><highlight class="stringliteral">&quot;error&quot;</highlight><highlight class="normal">][L</highlight><highlight class="stringliteral">&quot;reason&quot;</highlight><highlight class="normal">]<sp/>=<sp/>json::value::string(L</highlight><highlight class="stringliteral">&quot;No<sp/>query<sp/>parameter.<sp/>Please<sp/>refer<sp/>to<sp/>the<sp/>API<sp/>documentation.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>serverresponse.set_status_code(status_codes::BadRequest);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(error)</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>serverresponse.set_body(jsonToClient);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>message.reply(serverresponse);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Debuging<sp/>and<sp/>demo<sp/>GET<sp/>requests</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(message.absolute_uri().path()<sp/>==<sp/>U(</highlight><highlight class="stringliteral">&quot;/debug/newrandomuser&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>a<sp/>new<sp/>user<sp/>with<sp/>random<sp/>location</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/>Handling<sp/>/debug/newrandomuser<sp/>request\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::random_device<sp/>rd;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::mt19937<sp/>e2(rd());</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::uniform_real_distribution&lt;&gt;<sp/>dist(-80,<sp/>80);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_user" kindref="compound">User</ref>*<sp/>mobClient<sp/>=<sp/>clientsDb.<ref refid="class_users_1aa1d559cc1dec13d004f7e18d1e9a4326" kindref="member">createClient</ref>(<ref refid="class_point_1ad92f2337b839a94ce97dcdb439b4325a" kindref="member">Point::Point</ref>(std::floor(dist(e2)),<sp/>std::floor(dist(e2)),<sp/>0));</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/>Random<sp/>user<sp/>created<sp/>:<sp/>%S<sp/>(%f/%f)\n<sp/>&quot;</highlight><highlight class="normal">,<sp/>mobClient-&gt;<ref refid="class_user_1adedf47b8676b704356195cf67ed03be4" kindref="member">getToken</ref>().c_str(),<sp/>mobClient-&gt;<ref refid="class_user_1ac3f4b47d1262a3bda6ff380dbd10a58d" kindref="member">getLstPositionKnown</ref>().<ref refid="class_point_1aa4bd02640706ad6f00d7a1bca9768d4d" kindref="member">x</ref>(),<sp/>mobClient-&gt;<ref refid="class_user_1ac3f4b47d1262a3bda6ff380dbd10a58d" kindref="member">getLstPositionKnown</ref>().<ref refid="class_point_1aae549f6b778ea2fe166387627fddecec" kindref="member">y</ref>());</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>message.reply(status_codes::Created<sp/>,<sp/>U(</highlight><highlight class="stringliteral">&quot;Random<sp/>user<sp/>created&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(message.absolute_uri().path()<sp/>==<sp/>U(</highlight><highlight class="stringliteral">&quot;/debug/flushusers&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Delete<sp/>all<sp/>users<sp/>from<sp/>the<sp/>users<sp/>map</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/>Handling<sp/>/debug/flushusers<sp/>request\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>clientsDb.<ref refid="class_users_1a43af31ac034008281aeed0210bf2a0dd" kindref="member">clear</ref>();</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/>Users<sp/>map<sp/>flushed<sp/>:<sp/>%d<sp/>users.\n<sp/>&quot;</highlight><highlight class="normal">,<sp/>clientsDb.<ref refid="class_users_1a1be44c97e71f822f29ca61451c7e472a" kindref="member">size</ref>());</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>message.reply(status_codes::OK,<sp/>U(</highlight><highlight class="stringliteral">&quot;Users<sp/>map<sp/>flushed&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(message.absolute_uri().path()<sp/>==<sp/>U(</highlight><highlight class="stringliteral">&quot;/client&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/>Handling<sp/>default<sp/>client<sp/>request\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>message.reply(status_codes::OK,<sp/>U(</highlight><highlight class="stringliteral">&quot;Hello,<sp/>Client<sp/>!<sp/>-<sp/>From<sp/>the<sp/>AppServer<sp/>&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(message.absolute_uri().path()<sp/>==<sp/>U(</highlight><highlight class="stringliteral">&quot;/favicon.ico&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/>Handling<sp/>favicon<sp/>request\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>message.reply(status_codes::NotFound,<sp/>U(</highlight><highlight class="stringliteral">&quot;No<sp/>favicon,<sp/>please<sp/>refer<sp/>to<sp/>the<sp/>API<sp/>documentation.&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/>Unhandled<sp/>path<sp/>for<sp/>the<sp/>GET<sp/>request\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>message.reply(status_codes::BadRequest,<sp/>U(</highlight><highlight class="stringliteral">&quot;Unhandled<sp/>GET<sp/>request,<sp/>please<sp/>refer<sp/>to<sp/>the<sp/>API<sp/>documentation.&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Handle<sp/>all<sp/>the<sp/>POST<sp/>requests</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Server::handle_post(http_request<sp/>message)</highlight></codeline>
+<codeline lineno="152"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Handling<sp/>POST<sp/>request...<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;PATH<sp/>:<sp/>%S<sp/>\n&quot;</highlight><highlight class="normal">,<sp/>message.absolute_uri().path().c_str());</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(message.absolute_uri().path()<sp/>==<sp/>U(</highlight><highlight class="stringliteral">&quot;/client/init&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>a<sp/>new<sp/>client<sp/>un<sp/>the<sp/>clients<sp/>map<sp/>by<sp/>generating<sp/>a<sp/>new<sp/>token<sp/>with<sp/>the<sp/>GPS<sp/>coordinates<sp/>sent<sp/>by<sp/>the<sp/>client,<sp/>sending<sp/>the<sp/>new<sp/>token<sp/>to<sp/>the<sp/>client.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/>Handling<sp/>client/init<sp/>request\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>message.extract_json().then([=](pplx::task&lt;json::value&gt;<sp/>jsonFromClient)</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>http_response<sp/>serverresponse<sp/>=<sp/>http_response();</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>json::value<sp/>jsonToClient;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_user" kindref="compound">User</ref>*<sp/>mobClient;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>serverresponse.headers().add(U(</highlight><highlight class="stringliteral">&quot;Access-Control-Allow-Origin&quot;</highlight><highlight class="normal">),<sp/>U(</highlight><highlight class="stringliteral">&quot;*&quot;</highlight><highlight class="normal">));<sp/></highlight><highlight class="comment">//<sp/>Necessary<sp/>for<sp/>cross-domain<sp/>requests</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>serverresponse.headers().add(U(</highlight><highlight class="stringliteral">&quot;Content-Type&quot;</highlight><highlight class="normal">),<sp/>U(</highlight><highlight class="stringliteral">&quot;application/json&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>json::value&amp;<sp/>jsonValue<sp/>=<sp/>jsonFromClient.get();</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Perform<sp/>actions<sp/>here<sp/>to<sp/>process<sp/>the<sp/>JSON<sp/>value...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(jsonValue.has_field(L</highlight><highlight class="stringliteral">&quot;BallLat&quot;</highlight><highlight class="normal">)<sp/>&amp;&amp;<sp/>jsonValue.has_field(L</highlight><highlight class="stringliteral">&quot;BallLng&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/>Received<sp/>JSON<sp/>from<sp/>the<sp/>clientto<sp/>init<sp/>-<sp/>BallLat<sp/>:<sp/>%f,<sp/>BallLng<sp/>:<sp/>%f\n&quot;</highlight><highlight class="normal">,<sp/>jsonValue.at(U(</highlight><highlight class="stringliteral">&quot;BallLat&quot;</highlight><highlight class="normal">)).as_double(),<sp/>jsonValue.at(U(</highlight><highlight class="stringliteral">&quot;BallLng&quot;</highlight><highlight class="normal">)).as_double());</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_point" kindref="compound">Point</ref><sp/>clientBallPosition<sp/>=<sp/><ref refid="class_point_1ad92f2337b839a94ce97dcdb439b4325a" kindref="member">Point::Point</ref>(jsonValue.at(U(</highlight><highlight class="stringliteral">&quot;BallLat&quot;</highlight><highlight class="normal">)).as_double(),<sp/>jsonValue.at(U(</highlight><highlight class="stringliteral">&quot;BallLng&quot;</highlight><highlight class="normal">)).as_double(),<sp/>0);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mobClient<sp/>=<sp/>clientsDb.<ref refid="class_users_1aa1d559cc1dec13d004f7e18d1e9a4326" kindref="member">createClient</ref>(clientBallPosition);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jsonToClient[L</highlight><highlight class="stringliteral">&quot;token&quot;</highlight><highlight class="normal">]<sp/>=<sp/>json::value::string(mobClient-&gt;getToken());</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/>*<sp/>New<sp/>token<sp/>created<sp/>:<sp/>%S\n&quot;</highlight><highlight class="normal">,<sp/>mobClient-&gt;getToken().c_str());</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>serverresponse.set_status_code(status_codes::Created);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jsonToClient[L</highlight><highlight class="stringliteral">&quot;error&quot;</highlight><highlight class="normal">][L</highlight><highlight class="stringliteral">&quot;code&quot;</highlight><highlight class="normal">]<sp/>=<sp/>json::value::number(status_codes::BadRequest);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jsonToClient[L</highlight><highlight class="stringliteral">&quot;error&quot;</highlight><highlight class="normal">][L</highlight><highlight class="stringliteral">&quot;reason&quot;</highlight><highlight class="normal">]<sp/>=<sp/>json::value::string(L</highlight><highlight class="stringliteral">&quot;Incorrect<sp/>JSON<sp/>parameters&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>serverresponse.set_status_code(status_codes::BadRequest);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>http_exception&amp;<sp/>e)</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Print<sp/>error.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/>Error<sp/>parsing<sp/>JSON<sp/>in<sp/>client/shot<sp/>POST<sp/>handler<sp/>:<sp/>%s&quot;</highlight><highlight class="normal">,<sp/>e.what());</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jsonToClient[L</highlight><highlight class="stringliteral">&quot;error&quot;</highlight><highlight class="normal">][L</highlight><highlight class="stringliteral">&quot;code&quot;</highlight><highlight class="normal">]<sp/>=<sp/>json::value::number(status_codes::BadRequest);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jsonToClient[L</highlight><highlight class="stringliteral">&quot;error&quot;</highlight><highlight class="normal">][L</highlight><highlight class="stringliteral">&quot;reason&quot;</highlight><highlight class="normal">]<sp/>=<sp/>json::value::string(L</highlight><highlight class="stringliteral">&quot;Incorrect<sp/>JSON<sp/>parameters<sp/>(exeption)&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>serverresponse.set_status_code(status_codes::BadRequest);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>serverresponse.set_body(jsonToClient);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>message.reply(serverresponse);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(message.absolute_uri().path()<sp/>==<sp/>U(</highlight><highlight class="stringliteral">&quot;/client/shot&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Moving<sp/>the<sp/>client<sp/>ball<sp/>depending<sp/>on<sp/>the<sp/>&quot;shot&quot;<sp/>he<sp/>did<sp/>on<sp/>the<sp/>map<sp/>+<sp/>verification<sp/>of<sp/>the<sp/>initial<sp/>ball<sp/>coordinates<sp/>(anti-cheat)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/>Handling<sp/>client/shot<sp/>request\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//message.reply(status_codes::OK,<sp/>U(&quot;Hello,<sp/>Supervisor<sp/>!<sp/>-<sp/>From<sp/>the<sp/>AppServer<sp/>&quot;));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>message.extract_json().then([=](pplx::task&lt;json::value&gt;<sp/>jsonFromClient)</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>http_response<sp/>serverresponse<sp/>=<sp/>http_response();</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>json::value<sp/>jsonToClient;<sp/></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_user" kindref="compound">User</ref>*<sp/>mobClient;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Default<sp/>response<sp/>formating,<sp/>if<sp/>none<sp/>of<sp/>the<sp/>following<sp/>functions<sp/>are<sp/>processed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>serverresponse.headers().add(U(</highlight><highlight class="stringliteral">&quot;Access-Control-Allow-Origin&quot;</highlight><highlight class="normal">),<sp/>U(</highlight><highlight class="stringliteral">&quot;*&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>serverresponse.headers().add(U(</highlight><highlight class="stringliteral">&quot;Content-Type&quot;</highlight><highlight class="normal">),<sp/>U(</highlight><highlight class="stringliteral">&quot;application/json&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>serverresponse.set_status_code(status_codes::NotModified);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>json::value&amp;<sp/>jsonValue<sp/>=<sp/>jsonFromClient.get();</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(jsonValue.has_field(L</highlight><highlight class="stringliteral">&quot;BallLat&quot;</highlight><highlight class="normal">)<sp/>&amp;&amp;<sp/>jsonValue.has_field(L</highlight><highlight class="stringliteral">&quot;BallLng&quot;</highlight><highlight class="normal">)<sp/>&amp;&amp;<sp/>jsonValue.has_field(L</highlight><highlight class="stringliteral">&quot;ClubLat&quot;</highlight><highlight class="normal">)<sp/>&amp;&amp;<sp/>jsonValue.has_field(L</highlight><highlight class="stringliteral">&quot;ClubLng&quot;</highlight><highlight class="normal">)<sp/>&amp;&amp;<sp/>jsonValue.has_field(L</highlight><highlight class="stringliteral">&quot;Token&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Perform<sp/>actions<sp/>here<sp/>to<sp/>process<sp/>the<sp/>JSON<sp/>value...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/>Received<sp/>JSON<sp/>from<sp/>ClubLat<sp/>:<sp/>%f,<sp/>ClubLon<sp/>:<sp/>%f\n&quot;</highlight><highlight class="normal">,<sp/>jsonValue.at(U(</highlight><highlight class="stringliteral">&quot;ClubLat&quot;</highlight><highlight class="normal">)).as_double(),<sp/>jsonValue.at(U(</highlight><highlight class="stringliteral">&quot;ClubLng&quot;</highlight><highlight class="normal">)).as_double());</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_point" kindref="compound">Point</ref><sp/>clientShotPosition<sp/>=<sp/><ref refid="class_point_1ad92f2337b839a94ce97dcdb439b4325a" kindref="member">Point::Point</ref>(jsonValue.at(U(</highlight><highlight class="stringliteral">&quot;ClubLat&quot;</highlight><highlight class="normal">)).as_double(),<sp/>jsonValue.at(U(</highlight><highlight class="stringliteral">&quot;ClubLng&quot;</highlight><highlight class="normal">)).as_double(),<sp/>0);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_point" kindref="compound">Point</ref><sp/>clientBallPosition<sp/>=<sp/><ref refid="class_point_1ad92f2337b839a94ce97dcdb439b4325a" kindref="member">Point::Point</ref>(jsonValue.at(U(</highlight><highlight class="stringliteral">&quot;BallLat&quot;</highlight><highlight class="normal">)).as_double(),<sp/>jsonValue.at(U(</highlight><highlight class="stringliteral">&quot;BallLng&quot;</highlight><highlight class="normal">)).as_double(),<sp/>0);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mobClient<sp/>=<sp/>clientsDb.<ref refid="class_users_1a394ba0ff537cbd267106f702d6e17c83" kindref="member">getClient</ref>(jsonValue.at(U(</highlight><highlight class="stringliteral">&quot;Token&quot;</highlight><highlight class="normal">)).as_string());</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mobClient<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Checking<sp/>if<sp/>the<sp/>ball<sp/>position<sp/>sent<sp/>by<sp/>the<sp/>client<sp/>is<sp/>the<sp/>same<sp/>as<sp/>the<sp/>token<sp/>position<sp/>in<sp/>the<sp/>server<sp/>DB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!clientsDb.<ref refid="class_users_1a33884f39dc6a767e923410a78815b001" kindref="member">clientIsAt</ref>(mobClient-&gt;getToken(),<sp/>clientBallPosition))</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jsonToClient[L</highlight><highlight class="stringliteral">&quot;error&quot;</highlight><highlight class="normal">][L</highlight><highlight class="stringliteral">&quot;code&quot;</highlight><highlight class="normal">]<sp/>=<sp/>json::value::number(status_codes::Conflict);</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jsonToClient[L</highlight><highlight class="stringliteral">&quot;error&quot;</highlight><highlight class="normal">][L</highlight><highlight class="stringliteral">&quot;reason&quot;</highlight><highlight class="normal">]<sp/>=<sp/>json::value::string(L</highlight><highlight class="stringliteral">&quot;Incorrect<sp/>ball<sp/>position,<sp/>please<sp/>reset<sp/>your<sp/>position.<sp/>(Don&apos;t<sp/>cheat<sp/>please)&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/>/!\<sp/>Incorrect<sp/>ball<sp/>position,<sp/>please<sp/>reset<sp/>your<sp/>position.<sp/>(Don&apos;t<sp/>cheat<sp/>please)\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>serverresponse.set_status_code(status_codes::Conflict);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_point" kindref="compound">Point</ref><sp/>tokenPosition<sp/>=<sp/>mobClient-&gt;getLstPositionKnown();</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Calculating<sp/>the<sp/>new<sp/>position<sp/>of<sp/>the<sp/>ball</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>newlat,<sp/>newlon;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newlat<sp/>=<sp/><ref refid="_server_8cpp_1a0a923163c4d4ac8a2ecbf16f95d21fe2" kindref="member">power</ref><sp/>*<sp/>(tokenPosition.<ref refid="class_point_1aa4bd02640706ad6f00d7a1bca9768d4d" kindref="member">x</ref>()<sp/>-<sp/>clientShotPosition.x())<sp/>+<sp/>tokenPosition.<ref refid="class_point_1aa4bd02640706ad6f00d7a1bca9768d4d" kindref="member">x</ref>();</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newlon<sp/>=<sp/><ref refid="_server_8cpp_1a0a923163c4d4ac8a2ecbf16f95d21fe2" kindref="member">power</ref><sp/>*<sp/>(tokenPosition.<ref refid="class_point_1aae549f6b778ea2fe166387627fddecec" kindref="member">y</ref>()<sp/>-<sp/>clientShotPosition.y())<sp/>+<sp/>tokenPosition.<ref refid="class_point_1aae549f6b778ea2fe166387627fddecec" kindref="member">y</ref>();</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(newlat<sp/>&gt;<sp/>85<sp/>||<sp/>newlat<sp/>&lt;<sp/>-85)</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newlat<sp/>=<sp/>newlat*M_PI<sp/>/<sp/>180;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newlat<sp/>=<sp/>sin(newlat);</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newlat<sp/>=<sp/>newlat*85.0;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(newlat<sp/>&gt;<sp/>85<sp/>||<sp/>newlat<sp/>&lt;<sp/>-270)</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newlon<sp/>-=<sp/>180;</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(newlat<sp/>&gt;<sp/>270<sp/>||<sp/>newlat<sp/>&lt;<sp/>-85)</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newlon<sp/>+=<sp/>360;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_point" kindref="compound">Point</ref><sp/>newPosition<sp/>=<sp/><ref refid="class_point_1ad92f2337b839a94ce97dcdb439b4325a" kindref="member">Point::Point</ref>(newlat,<sp/>newlon,<sp/>0);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>clientsDb.<ref refid="class_users_1a9539a5ad196643c109b808acfadcd44d" kindref="member">moveClient</ref>(mobClient-&gt;getToken(),<sp/>newPosition);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jsonToClient[L</highlight><highlight class="stringliteral">&quot;coordinates&quot;</highlight><highlight class="normal">][L</highlight><highlight class="stringliteral">&quot;lat&quot;</highlight><highlight class="normal">]<sp/>=<sp/>json::value::number(newPosition.<ref refid="class_point_1aa4bd02640706ad6f00d7a1bca9768d4d" kindref="member">x</ref>());</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jsonToClient[L</highlight><highlight class="stringliteral">&quot;coordinates&quot;</highlight><highlight class="normal">][L</highlight><highlight class="stringliteral">&quot;lon&quot;</highlight><highlight class="normal">]<sp/>=<sp/>json::value::number(newPosition.<ref refid="class_point_1aae549f6b778ea2fe166387627fddecec" kindref="member">y</ref>());</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jsonToClient[L</highlight><highlight class="stringliteral">&quot;distance&quot;</highlight><highlight class="normal">]<sp/>=<sp/>json::value::number(mobClient-&gt;getDistance());</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/>Client<sp/>shot<sp/>from<sp/>%f/%f<sp/>to<sp/>%f/%f,<sp/>traveled<sp/>%d<sp/>m\n&quot;</highlight><highlight class="normal">,<sp/>tokenPosition.<ref refid="class_point_1aa4bd02640706ad6f00d7a1bca9768d4d" kindref="member">x</ref>(),<sp/>tokenPosition.<ref refid="class_point_1aae549f6b778ea2fe166387627fddecec" kindref="member">y</ref>(),<sp/>newPosition.<ref refid="class_point_1aa4bd02640706ad6f00d7a1bca9768d4d" kindref="member">x</ref>(),<sp/>newPosition.<ref refid="class_point_1aae549f6b778ea2fe166387627fddecec" kindref="member">y</ref>(),<sp/>mobClient-&gt;getDistance());</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>serverresponse.set_status_code(status_codes::OK);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jsonToClient[L</highlight><highlight class="stringliteral">&quot;error&quot;</highlight><highlight class="normal">][L</highlight><highlight class="stringliteral">&quot;code&quot;</highlight><highlight class="normal">]<sp/>=<sp/>json::value::number(status_codes::NoContent);</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jsonToClient[L</highlight><highlight class="stringliteral">&quot;error&quot;</highlight><highlight class="normal">][L</highlight><highlight class="stringliteral">&quot;reason&quot;</highlight><highlight class="normal">]<sp/>=<sp/>json::value::string(L</highlight><highlight class="stringliteral">&quot;This<sp/>token<sp/>is<sp/>not<sp/>registred,<sp/>please<sp/>reset<sp/>your<sp/>position.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jsonToClient[L</highlight><highlight class="stringliteral">&quot;error&quot;</highlight><highlight class="normal">][L</highlight><highlight class="stringliteral">&quot;code&quot;</highlight><highlight class="normal">]<sp/>=<sp/>json::value::number(status_codes::BadRequest);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jsonToClient[L</highlight><highlight class="stringliteral">&quot;error&quot;</highlight><highlight class="normal">][L</highlight><highlight class="stringliteral">&quot;reason&quot;</highlight><highlight class="normal">]<sp/>=<sp/>json::value::string(L</highlight><highlight class="stringliteral">&quot;Incorrect<sp/>JSON<sp/>parameters&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>serverresponse.set_status_code(status_codes::BadRequest);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>http_exception&amp;<sp/>e)</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Print<sp/>error.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/>Error<sp/>parsing<sp/>JSON<sp/>in<sp/>client/shot<sp/>POST<sp/>handler<sp/>:<sp/>%s&quot;</highlight><highlight class="normal">,<sp/>e.what());</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jsonToClient[L</highlight><highlight class="stringliteral">&quot;error&quot;</highlight><highlight class="normal">][L</highlight><highlight class="stringliteral">&quot;code&quot;</highlight><highlight class="normal">]<sp/>=<sp/>json::value::number(status_codes::BadRequest);</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jsonToClient[L</highlight><highlight class="stringliteral">&quot;error&quot;</highlight><highlight class="normal">][L</highlight><highlight class="stringliteral">&quot;reason&quot;</highlight><highlight class="normal">]<sp/>=<sp/>json::value::string(L</highlight><highlight class="stringliteral">&quot;Incorrect<sp/>JSON<sp/>parameters<sp/>(exeption)&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>serverresponse.set_status_code(status_codes::BadRequest);</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>serverresponse.set_body(jsonToClient);</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>message.reply(serverresponse);</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(message.absolute_uri().path()<sp/>==<sp/>U(</highlight><highlight class="stringliteral">&quot;/client/shottest&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>json::value<sp/>jsonToClient;</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jsonToClient[L</highlight><highlight class="stringliteral">&quot;newLocation&quot;</highlight><highlight class="normal">][L</highlight><highlight class="stringliteral">&quot;lat&quot;</highlight><highlight class="normal">]<sp/>=<sp/>json::value::number(43.45674);</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jsonToClient[L</highlight><highlight class="stringliteral">&quot;newLocation&quot;</highlight><highlight class="normal">][L</highlight><highlight class="stringliteral">&quot;lon&quot;</highlight><highlight class="normal">]<sp/>=<sp/>json::value::number(2.01233);</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>http_response<sp/>serverresponse<sp/>=<sp/>http_response();</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>serverresponse.set_status_code(status_codes::OK);</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>serverresponse.headers().add(U(</highlight><highlight class="stringliteral">&quot;Access-Control-Allow-Origin&quot;</highlight><highlight class="normal">),<sp/>U(</highlight><highlight class="stringliteral">&quot;*&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>serverresponse.headers().add(U(</highlight><highlight class="stringliteral">&quot;Content-Type&quot;</highlight><highlight class="normal">),<sp/>U(</highlight><highlight class="stringliteral">&quot;application/json&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>utility::string_t<sp/>contenType<sp/>=<sp/>U(</highlight><highlight class="stringliteral">&quot;application/json&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>serverresponse.set_body(jsonToClient);</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>message.reply(serverresponse);</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/>Unhandled<sp/>path<sp/>for<sp/>the<sp/>POST<sp/>request\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>message.reply(status_codes::BadRequest,<sp/>U(</highlight><highlight class="stringliteral">&quot;Unhandled<sp/>POST<sp/>request,<sp/>please<sp/>refer<sp/>to<sp/>the<sp/>API<sp/>documentation.&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="310"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight><highlight class="comment">//Handle<sp/>all<sp/>the<sp/>OPTIONS<sp/>requests</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Server::handle_options(http_request<sp/>message)</highlight></codeline>
+<codeline lineno="314"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Handling<sp/>OPTIONS<sp/>request...\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/>message.reply(status_codes::BadRequest,<sp/>U(</highlight><highlight class="stringliteral">&quot;Unhandled<sp/>OPTIONS<sp/>request,<sp/>please<sp/>refer<sp/>to<sp/>the<sp/>API<sp/>documentation.&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="317"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight><highlight class="comment">//Handle<sp/>all<sp/>the<sp/>DEL<sp/>requests</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Server::handle_delete(http_request<sp/>message)</highlight></codeline>
+<codeline lineno="321"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Handling<sp/>DEL<sp/>request...\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/>message.reply(status_codes::BadRequest,<sp/>U(</highlight><highlight class="stringliteral">&quot;Unhandled<sp/>DEL<sp/>request,<sp/>please<sp/>refer<sp/>to<sp/>the<sp/>API<sp/>documentation.&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="324"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Server.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="user_8h" kind="file">
+    <compoundname>user.h</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">ctime</includes>
+    <includes refid="_point_8h" local="yes">Point.h</includes>
+    <includes local="no">cpprest/http_client.h</includes>
+    <includedby refid="_users_8h" local="yes">J:/Eevee/application server/ApplicationServer/ApplicationServer/Users.h</includedby>
+    <includedby refid="_user_8cpp" local="yes">J:/Eevee/application server/ApplicationServer/ApplicationServer/User.cpp</includedby>
+    <incdepgraph>
+      <node id="144">
+        <label>string</label>
+      </node>
+      <node id="147">
+        <label>cpprest/http_client.h</label>
+      </node>
+      <node id="145">
+        <label>ctime</label>
+      </node>
+      <node id="143">
+        <label>J:/Eevee/application server/ApplicationServer/ApplicationServer/user.h</label>
+        <link refid="user.h"/>
+        <childnode refid="144" relation="include">
+        </childnode>
+        <childnode refid="145" relation="include">
+        </childnode>
+        <childnode refid="146" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+      </node>
+      <node id="146">
+        <label>Point.h</label>
+        <link refid="_point_8h"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="156">
+        <label>J:/Eevee/application server/ApplicationServer/ApplicationServer/User.cpp</label>
+        <link refid="_user_8cpp"/>
+      </node>
+      <node id="152">
+        <label>J:/Eevee/application server/ApplicationServer/ApplicationServer/Database.cpp</label>
+        <link refid="_database_8cpp"/>
+      </node>
+      <node id="151">
+        <label>J:/Eevee/application server/ApplicationServer/ApplicationServer/ApplicationServer.cpp</label>
+        <link refid="_application_server_8cpp"/>
+      </node>
+      <node id="153">
+        <label>J:/Eevee/application server/ApplicationServer/ApplicationServer/Server.cpp</label>
+        <link refid="_server_8cpp"/>
+      </node>
+      <node id="150">
+        <label>J:/Eevee/application server/ApplicationServer/ApplicationServer/Database.h</label>
+        <link refid="_database_8h"/>
+        <childnode refid="151" relation="include">
+        </childnode>
+        <childnode refid="152" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+      </node>
+      <node id="154">
+        <label>J:/Eevee/application server/ApplicationServer/ApplicationServer/Server.h</label>
+        <link refid="_server_8h"/>
+        <childnode refid="151" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+      </node>
+      <node id="149">
+        <label>J:/Eevee/application server/ApplicationServer/ApplicationServer/Users.h</label>
+        <link refid="_users_8h"/>
+        <childnode refid="150" relation="include">
+        </childnode>
+        <childnode refid="154" relation="include">
+        </childnode>
+        <childnode refid="155" relation="include">
+        </childnode>
+      </node>
+      <node id="148">
+        <label>J:/Eevee/application server/ApplicationServer/ApplicationServer/user.h</label>
+        <link refid="user.h"/>
+        <childnode refid="149" relation="include">
+        </childnode>
+        <childnode refid="156" relation="include">
+        </childnode>
+      </node>
+      <node id="155">
+        <label>J:/Eevee/application server/ApplicationServer/ApplicationServer/Users.cpp</label>
+        <link refid="_users_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_user" prot="public">User</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ctime&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_point_8h" kindref="compound">Point.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cpprest/http_client.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="class_user" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_user" kindref="compound">User</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_user_1a4a0137053e591fbb79d9057dd7d2283d" kindref="member">User</ref>();</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_user_1ac00b72ad64eb4149f7b21b9f5468c2b2" kindref="member">~User</ref>();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_user_1aa91df7f38b7e0481c67c79c4a26eda41" kindref="member">setToken</ref>(utility::string_t);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>utility::string_t<sp/><ref refid="class_user_1adedf47b8676b704356195cf67ed03be4" kindref="member">getToken</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_user_1a3ebf49004b7a0aa9bec881b1470d0b51" kindref="member">setLstConnection</ref>(std::time_t);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>std::time_t<sp/><ref refid="class_user_1aa5285ef5ca526f2e23bcea453c748896" kindref="member">getLstConnection</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_user_1a7d2aee609fe856b9162cf51b54d15561" kindref="member">setStates</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_user_1a65fa6e9c7df52bf25206bef1cb00d8a6" kindref="member">getStates</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_user_1aa28248264f5bff18ca173c5575ecd0eb" kindref="member">setLstPositionKnown</ref>(<ref refid="class_point" kindref="compound">Point</ref>);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_point" kindref="compound">Point</ref><sp/><ref refid="class_user_1ac3f4b47d1262a3bda6ff380dbd10a58d" kindref="member">getLstPositionKnown</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_user_1a3f137c7a04dadc52705992f1c59d2a5c" kindref="member">getDistance</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_user_1a641d8b376db499805341384fce817a4f" kindref="member">setDistance</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>distance;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>utility::string_t<sp/>token;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>std::time_t<sp/>lastConnection;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>state;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_point" kindref="compound">Point</ref><sp/>lastPositionKnown;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>a<sp/>déplacer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/user.h"/>
+  </compounddef>
+</doxygen>

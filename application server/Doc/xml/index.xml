@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.8">
+  <compound refid="class_database" kind="class"><name>Database</name>
+    <member refid="class_database_1a4703c80e6969d33565ea340f768fdadf" kind="function"><name>Database</name></member>
+    <member refid="class_database_1a84d399a2ad58d69daab9b05330e1316d" kind="function"><name>~Database</name></member>
+    <member refid="class_database_1a9d6ec1d2def7e13731eae70d6f497e6f" kind="function"><name>SendPois</name></member>
+  </compound>
+  <compound refid="class_m_d5" kind="class"><name>MD5</name>
+    <member refid="class_m_d5_1a227e6f16f2409956b516b453e6bc7429" kind="enum"><name>@0</name></member>
+    <member refid="class_m_d5_1a227e6f16f2409956b516b453e6bc7429a1cc0a742ca803f75a021aef77b522963" kind="enumvalue"><name>blocksize</name></member>
+    <member refid="class_m_d5_1a3b1c4901139aef256ee49c4ab14d09f9" kind="typedef"><name>uint1</name></member>
+    <member refid="class_m_d5_1a2e5b84a3d7db292f49873061214a0444" kind="typedef"><name>uint4</name></member>
+    <member refid="class_m_d5_1aa836972700679dbcff6ae8337f6db464" kind="typedef"><name>size_type</name></member>
+    <member refid="class_m_d5_1a696e995f7045cf0146a207c720386f9c" kind="variable"><name>finalized</name></member>
+    <member refid="class_m_d5_1a0df603b8332399d5c1daa08ab5a315ea" kind="variable"><name>buffer</name></member>
+    <member refid="class_m_d5_1a52a9ff26a3de9e831b17c1740aa5388a" kind="variable"><name>count</name></member>
+    <member refid="class_m_d5_1aae3f861952f5b129463f550170836db0" kind="variable"><name>state</name></member>
+    <member refid="class_m_d5_1a31058e1dca10bbf29818bb5177ff02ac" kind="variable"><name>digest</name></member>
+    <member refid="class_m_d5_1afa6155ec36de415ab2dcf5e54b670d13" kind="function"><name>MD5</name></member>
+    <member refid="class_m_d5_1a155356ffd713345e69e6dcbd9f8da6ce" kind="function"><name>MD5</name></member>
+    <member refid="class_m_d5_1ac5ddf6cd8f940422396d321ea90ed045" kind="function"><name>update</name></member>
+    <member refid="class_m_d5_1ac5ccba375539b993958fb235f8ac849c" kind="function"><name>update</name></member>
+    <member refid="class_m_d5_1a10f607494a3f2e3e515fc4b99d1a06cc" kind="function"><name>finalize</name></member>
+    <member refid="class_m_d5_1ad36c65acf87e397bf717bc3defbc0c7a" kind="function"><name>hexdigest</name></member>
+    <member refid="class_m_d5_1a0739666fd0f3a7117546f6c50e0783b2" kind="friend"><name>operator&lt;&lt;</name></member>
+    <member refid="class_m_d5_1a65ddaecdd0bd0b09043a2f3b2601bc2e" kind="function"><name>init</name></member>
+    <member refid="class_m_d5_1a9d569ab2a3e564793e116f774a3ad269" kind="function"><name>transform</name></member>
+    <member refid="class_m_d5_1a7eef3463c43a2cdfb56a0261b640f873" kind="function"><name>decode</name></member>
+    <member refid="class_m_d5_1a52603a1b589b2863cad4caae7f259b7e" kind="function"><name>encode</name></member>
+    <member refid="class_m_d5_1a95b7adf4602b92e84ca5f34084859e79" kind="function"><name>F</name></member>
+    <member refid="class_m_d5_1afbc3ab3591fca4e780f647dac3952bc8" kind="function"><name>G</name></member>
+    <member refid="class_m_d5_1a59392e8552045b37628a48497ede9cf0" kind="function"><name>H</name></member>
+    <member refid="class_m_d5_1ad2c1682834e38219894728830e3996c3" kind="function"><name>I</name></member>
+    <member refid="class_m_d5_1a97ece3d8221e3c9c994aa9d13001b1d9" kind="function"><name>rotate_left</name></member>
+    <member refid="class_m_d5_1a31479b157441ace2dbc2ae0edd0d2e38" kind="function"><name>FF</name></member>
+    <member refid="class_m_d5_1a8ebdbe52608e522516d1759a31753212" kind="function"><name>GG</name></member>
+    <member refid="class_m_d5_1aaad039caf0b33abf1bf3f3589166543c" kind="function"><name>HH</name></member>
+    <member refid="class_m_d5_1a7af0184654644964ecdb57b1203e5ec7" kind="function"><name>II</name></member>
+  </compound>
+  <compound refid="class_point" kind="class"><name>Point</name>
+    <member refid="class_point_1a432f8da1e90b56002b36c35564c025b1" kind="variable"><name>a</name></member>
+    <member refid="class_point_1a4927e16e748894280c1df42b8a80e410" kind="variable"><name>b</name></member>
+    <member refid="class_point_1ac33e1e2d0aae2aebf5e265557ac5afdc" kind="variable"><name>c</name></member>
+    <member refid="class_point_1ad92f2337b839a94ce97dcdb439b4325a" kind="function"><name>Point</name></member>
+    <member refid="class_point_1a326edb72707d198c949cde90dcd3557a" kind="function"><name>Point</name></member>
+    <member refid="class_point_1a395fa04b4ec126b66fc053f829a30cc1" kind="function"><name>~Point</name></member>
+    <member refid="class_point_1aa4bd02640706ad6f00d7a1bca9768d4d" kind="function"><name>x</name></member>
+    <member refid="class_point_1aae549f6b778ea2fe166387627fddecec" kind="function"><name>y</name></member>
+    <member refid="class_point_1aebbff516d9b84bccee19f24a8800ee8e" kind="function"><name>z</name></member>
+    <member refid="class_point_1a49b604094f8678d43964a15f12ec6b30" kind="function"><name>x</name></member>
+    <member refid="class_point_1a25ca3c6efec7917e8428da0f9e87b4c4" kind="function"><name>y</name></member>
+    <member refid="class_point_1ae6e07d92f54e52d1e8ee6c9d4fa93fa7" kind="function"><name>z</name></member>
+  </compound>
+  <compound refid="class_server" kind="class"><name>Server</name>
+    <member refid="class_server_1a32c1ea1cec86d09468a9dbcf0329eda9" kind="variable"><name>m_listener</name></member>
+    <member refid="class_server_1a0dec78c0c8d028662e64e5d2cd44e68d" kind="function"><name>Server</name></member>
+    <member refid="class_server_1a85e37a202f56560d13c857ea3d41efc7" kind="function"><name>open</name></member>
+    <member refid="class_server_1ace0945be0e4e76c0cb18138920d830fd" kind="function"><name>close</name></member>
+    <member refid="class_server_1aa4e302a4b00ba288f3cbe94d5a6fbe68" kind="function"><name>handle_options</name></member>
+    <member refid="class_server_1ad116969019aa8cdb7f3b17c3cc2597dc" kind="function"><name>handle_get</name></member>
+    <member refid="class_server_1a79488233ca625207c715364e8b991f08" kind="function"><name>handle_put</name></member>
+    <member refid="class_server_1ad050f269eed6702775de1629435c546c" kind="function"><name>handle_post</name></member>
+    <member refid="class_server_1ad9c57433a1de2f13df17233aa11cdbfd" kind="function"><name>handle_delete</name></member>
+  </compound>
+  <compound refid="class_user" kind="class"><name>User</name>
+    <member refid="class_user_1a5564421b03fbb2c706f9a3a6615afa84" kind="variable"><name>distance</name></member>
+    <member refid="class_user_1a1fbbd29dc87459882677406bb9a81127" kind="variable"><name>token</name></member>
+    <member refid="class_user_1afc89374207bf960d3666ef6326737293" kind="variable"><name>lastConnection</name></member>
+    <member refid="class_user_1ac4b3de13d29aee42b0050776b2826d91" kind="variable"><name>state</name></member>
+    <member refid="class_user_1a0e60ec993f914a4fbc913c2d20fe131d" kind="variable"><name>lastPositionKnown</name></member>
+    <member refid="class_user_1a4a0137053e591fbb79d9057dd7d2283d" kind="function"><name>User</name></member>
+    <member refid="class_user_1ac00b72ad64eb4149f7b21b9f5468c2b2" kind="function"><name>~User</name></member>
+    <member refid="class_user_1aa91df7f38b7e0481c67c79c4a26eda41" kind="function"><name>setToken</name></member>
+    <member refid="class_user_1adedf47b8676b704356195cf67ed03be4" kind="function"><name>getToken</name></member>
+    <member refid="class_user_1a3ebf49004b7a0aa9bec881b1470d0b51" kind="function"><name>setLstConnection</name></member>
+    <member refid="class_user_1aa5285ef5ca526f2e23bcea453c748896" kind="function"><name>getLstConnection</name></member>
+    <member refid="class_user_1a7d2aee609fe856b9162cf51b54d15561" kind="function"><name>setStates</name></member>
+    <member refid="class_user_1a65fa6e9c7df52bf25206bef1cb00d8a6" kind="function"><name>getStates</name></member>
+    <member refid="class_user_1aa28248264f5bff18ca173c5575ecd0eb" kind="function"><name>setLstPositionKnown</name></member>
+    <member refid="class_user_1ac3f4b47d1262a3bda6ff380dbd10a58d" kind="function"><name>getLstPositionKnown</name></member>
+    <member refid="class_user_1a3f137c7a04dadc52705992f1c59d2a5c" kind="function"><name>getDistance</name></member>
+    <member refid="class_user_1a641d8b376db499805341384fce817a4f" kind="function"><name>setDistance</name></member>
+  </compound>
+  <compound refid="class_users" kind="class"><name>Users</name>
+    <member refid="class_users_1ab4fc612fcc5eb355f9848d659b7a7a26" kind="variable"><name>list</name></member>
+    <member refid="class_users_1af1f5c371c3f1e7f9b14210ed0d3718bc" kind="function"><name>Users</name></member>
+    <member refid="class_users_1a33ff9aadcaef989bf3c8570358f791f6" kind="function"><name>~Users</name></member>
+    <member refid="class_users_1aa1d559cc1dec13d004f7e18d1e9a4326" kind="function"><name>createClient</name></member>
+    <member refid="class_users_1a394ba0ff537cbd267106f702d6e17c83" kind="function"><name>getClient</name></member>
+    <member refid="class_users_1a9539a5ad196643c109b808acfadcd44d" kind="function"><name>moveClient</name></member>
+    <member refid="class_users_1a33884f39dc6a767e923410a78815b001" kind="function"><name>clientIsAt</name></member>
+    <member refid="class_users_1a43af31ac034008281aeed0210bf2a0dd" kind="function"><name>clear</name></member>
+    <member refid="class_users_1a1be44c97e71f822f29ca61451c7e472a" kind="function"><name>size</name></member>
+    <member refid="class_users_1a7825d70306c9dc993cee3b46ad8e1d9e" kind="function"><name>getStats</name></member>
+    <member refid="class_users_1a7897b389ce6a97039c19708ec3b970a0" kind="function"><name>distanceBetweenTwoPointsInMeter</name></member>
+    <member refid="class_users_1ad764eeb58c18e9aead5d6964ea050a6a" kind="function"><name>GenerateToken</name></member>
+  </compound>
+  <compound refid="namespaceconcurrency_1_1streams" kind="namespace"><name>concurrency::streams</name>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="namespaceweb" kind="namespace"><name>web</name>
+  </compound>
+  <compound refid="namespaceweb_1_1http" kind="namespace"><name>web::http</name>
+  </compound>
+  <compound refid="namespaceweb_1_1http_1_1client" kind="namespace"><name>web::http::client</name>
+  </compound>
+  <compound refid="namespaceweb_1_1http_1_1experimental_1_1listener" kind="namespace"><name>web::http::experimental::listener</name>
+  </compound>
+  <compound refid="_application_server_8cpp" kind="file"><name>ApplicationServer.cpp</name>
+    <member refid="_application_server_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="_database_8cpp" kind="file"><name>Database.cpp</name>
+    <member refid="_database_8cpp_1a26b757580febf10f00313dd7d81c98f6" kind="variable"><name>converter</name></member>
+  </compound>
+  <compound refid="_database_8h" kind="file"><name>Database.h</name>
+  </compound>
+  <compound refid="md5_8cpp" kind="file"><name>md5.cpp</name>
+    <member refid="md5_8cpp_1a51398c0e5541164ad4d6615880073305" kind="define"><name>S11</name></member>
+    <member refid="md5_8cpp_1a1ec499cd0e54ecc28c2ac2afea5b038e" kind="define"><name>S12</name></member>
+    <member refid="md5_8cpp_1aaeec90429105fb54d853dd4fc7027a54" kind="define"><name>S13</name></member>
+    <member refid="md5_8cpp_1a78342b0ccde2ed12fdf19a113cc266cf" kind="define"><name>S14</name></member>
+    <member refid="md5_8cpp_1ab6d5354f647a0e7592a1f051fc8377b2" kind="define"><name>S21</name></member>
+    <member refid="md5_8cpp_1addad30455da936bc1879ee9c72b46d59" kind="define"><name>S22</name></member>
+    <member refid="md5_8cpp_1a6321a8b29628936f76e9e78cf5bda95f" kind="define"><name>S23</name></member>
+    <member refid="md5_8cpp_1a0c09eb77d30a0d5f9154914147b86c20" kind="define"><name>S24</name></member>
+    <member refid="md5_8cpp_1aef26590f8a880ee6f4a158168defcd89" kind="define"><name>S31</name></member>
+    <member refid="md5_8cpp_1a1d512424dd8a91e0a5bcc98563f33914" kind="define"><name>S32</name></member>
+    <member refid="md5_8cpp_1a1c854214533f6220e859b0063196abb3" kind="define"><name>S33</name></member>
+    <member refid="md5_8cpp_1af6472be1d535970afee8e5266a74aa07" kind="define"><name>S34</name></member>
+    <member refid="md5_8cpp_1ab674ba129e588da55d1d494e1cf3c15e" kind="define"><name>S41</name></member>
+    <member refid="md5_8cpp_1a268ef1a49114a94b931cc6b313e3cd1b" kind="define"><name>S42</name></member>
+    <member refid="md5_8cpp_1a5aaa7121f39650d472746942ca68f959" kind="define"><name>S43</name></member>
+    <member refid="md5_8cpp_1a6a3989af72b55d169bd73a66f8620aae" kind="define"><name>S44</name></member>
+    <member refid="md5_8cpp_1a80cbf042ee22a0e557ac7938a6218e55" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="md5_8cpp_1a92c6eed2e9b51298af559aff6792770b" kind="function"><name>md5</name></member>
+  </compound>
+  <compound refid="md5_8h" kind="file"><name>md5.h</name>
+    <member refid="md5_8h_1a92c6eed2e9b51298af559aff6792770b" kind="function"><name>md5</name></member>
+  </compound>
+  <compound refid="_point_8cpp" kind="file"><name>Point.cpp</name>
+  </compound>
+  <compound refid="_point_8h" kind="file"><name>Point.h</name>
+  </compound>
+  <compound refid="_server_8cpp" kind="file"><name>Server.cpp</name>
+    <member refid="_server_8cpp_1ae10f44192e8c78c15a69d885d0ca699d" kind="variable"><name>POIsDb</name></member>
+    <member refid="_server_8cpp_1a0a401c3c12cccdde12b3ccdaf0781fd4" kind="variable"><name>clientsDb</name></member>
+    <member refid="_server_8cpp_1a0a923163c4d4ac8a2ecbf16f95d21fe2" kind="variable"><name>power</name></member>
+  </compound>
+  <compound refid="_server_8h" kind="file"><name>Server.h</name>
+  </compound>
+  <compound refid="stdafx_8cpp" kind="file"><name>stdafx.cpp</name>
+  </compound>
+  <compound refid="stdafx_8h" kind="file"><name>stdafx.h</name>
+  </compound>
+  <compound refid="targetver_8h" kind="file"><name>targetver.h</name>
+  </compound>
+  <compound refid="_user_8cpp" kind="file"><name>User.cpp</name>
+  </compound>
+  <compound refid="user_8h" kind="file"><name>user.h</name>
+  </compound>
+  <compound refid="_users_8cpp" kind="file"><name>Users.cpp</name>
+    <member refid="_users_8cpp_1afd67a6e5d9cb236897e2381fc4fcf4e7" kind="variable"><name>strconverter</name></member>
+  </compound>
+  <compound refid="_users_8h" kind="file"><name>Users.h</name>
+    <member refid="_users_8h_1a525335710b53cb064ca56b936120431e" kind="define"><name>_USE_MATH_DEFINES</name></member>
+    <member refid="_users_8h_1ac162b24343701ed516790c89796c8996" kind="typedef"><name>ListOfClients</name></member>
+  </compound>
+  <compound refid="dir_c876d59868a3cdabd5abfd82b7594fc4" kind="dir"><name>J:/Eevee/application server</name>
+  </compound>
+  <compound refid="dir_d3f5eb6be5a76c007095a622ca6d21a5" kind="dir"><name>J:/Eevee/application server/ApplicationServer/ApplicationServer</name>
+  </compound>
+  <compound refid="dir_1d4c0fc8a972664f520b5d68b8de02dc" kind="dir"><name>J:/Eevee/application server/ApplicationServer</name>
+  </compound>
+  <compound refid="dir_4c56e0fb4bf5aed693576c48401c2533" kind="dir"><name>J:/Eevee</name>
+  </compound>
+  <compound refid="dir_51d570d92a705b669c29f21bafe6e4a6" kind="dir"><name>J:</name>
+  </compound>
+</doxygenindex>

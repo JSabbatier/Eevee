@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="_users_8h" kind="file">
+    <compoundname>Users.h</compoundname>
+    <includes local="no">map</includes>
+    <includes local="no">string</includes>
+    <includes refid="user_8h" local="yes">User.h</includes>
+    <includes refid="md5_8h" local="yes">md5.h</includes>
+    <includes local="no">math.h</includes>
+    <includedby refid="_database_8h" local="yes">J:/Eevee/application server/ApplicationServer/ApplicationServer/Database.h</includedby>
+    <includedby refid="_server_8h" local="yes">J:/Eevee/application server/ApplicationServer/ApplicationServer/Server.h</includedby>
+    <includedby refid="_users_8cpp" local="yes">J:/Eevee/application server/ApplicationServer/ApplicationServer/Users.cpp</includedby>
+    <incdepgraph>
+      <node id="173">
+        <label>string</label>
+      </node>
+      <node id="172">
+        <label>map</label>
+      </node>
+      <node id="178">
+        <label>md5.h</label>
+        <link refid="md5_8h"/>
+        <childnode refid="179" relation="include">
+        </childnode>
+        <childnode refid="180" relation="include">
+        </childnode>
+      </node>
+      <node id="171">
+        <label>J:/Eevee/application server/ApplicationServer/ApplicationServer/Users.h</label>
+        <link refid="Users.h"/>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+        <childnode refid="174" relation="include">
+        </childnode>
+        <childnode refid="178" relation="include">
+        </childnode>
+        <childnode refid="181" relation="include">
+        </childnode>
+      </node>
+      <node id="177">
+        <label>cpprest/http_client.h</label>
+      </node>
+      <node id="175">
+        <label>ctime</label>
+      </node>
+      <node id="174">
+        <label>User.h</label>
+        <link refid="user_8h"/>
+        <childnode refid="173" relation="include">
+        </childnode>
+        <childnode refid="175" relation="include">
+        </childnode>
+        <childnode refid="176" relation="include">
+        </childnode>
+        <childnode refid="177" relation="include">
+        </childnode>
+      </node>
+      <node id="181">
+        <label>math.h</label>
+      </node>
+      <node id="180">
+        <label>iostream</label>
+      </node>
+      <node id="176">
+        <label>Point.h</label>
+        <link refid="_point_8h"/>
+      </node>
+      <node id="179">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="185">
+        <label>J:/Eevee/application server/ApplicationServer/ApplicationServer/Database.cpp</label>
+        <link refid="_database_8cpp"/>
+      </node>
+      <node id="184">
+        <label>J:/Eevee/application server/ApplicationServer/ApplicationServer/ApplicationServer.cpp</label>
+        <link refid="_application_server_8cpp"/>
+      </node>
+      <node id="186">
+        <label>J:/Eevee/application server/ApplicationServer/ApplicationServer/Server.cpp</label>
+        <link refid="_server_8cpp"/>
+      </node>
+      <node id="183">
+        <label>J:/Eevee/application server/ApplicationServer/ApplicationServer/Database.h</label>
+        <link refid="_database_8h"/>
+        <childnode refid="184" relation="include">
+        </childnode>
+        <childnode refid="185" relation="include">
+        </childnode>
+        <childnode refid="186" relation="include">
+        </childnode>
+      </node>
+      <node id="187">
+        <label>J:/Eevee/application server/ApplicationServer/ApplicationServer/Server.h</label>
+        <link refid="_server_8h"/>
+        <childnode refid="184" relation="include">
+        </childnode>
+        <childnode refid="186" relation="include">
+        </childnode>
+      </node>
+      <node id="182">
+        <label>J:/Eevee/application server/ApplicationServer/ApplicationServer/Users.h</label>
+        <link refid="Users.h"/>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="187" relation="include">
+        </childnode>
+        <childnode refid="188" relation="include">
+        </childnode>
+      </node>
+      <node id="188">
+        <label>J:/Eevee/application server/ApplicationServer/ApplicationServer/Users.cpp</label>
+        <link refid="_users_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_users" prot="public">Users</innerclass>
+    <innernamespace refid="namespacestd">std</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_users_8h_1a525335710b53cb064ca56b936120431e" prot="public" static="no">
+        <name>_USE_MATH_DEFINES</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Users.h" line="5" column="13" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/Users.h" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_users_8h_1ac162b24343701ed516790c89796c8996" prot="public" static="no">
+        <type>map&lt; utility::string_t, <ref refid="class_user" kindref="compound">User</ref> * &gt;</type>
+        <definition>typedef map&lt;utility::string_t, User*&gt; ListOfClients</definition>
+        <argsstring></argsstring>
+        <name>ListOfClients</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Users.h" line="9" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/Users.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="user_8h" kindref="compound">User.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="md5_8h" kindref="compound">md5.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="_users_8h_1a525335710b53cb064ca56b936120431e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_USE_MATH_DEFINES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="_users_8h_1ac162b24343701ed516790c89796c8996" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>map&lt;utility::string_t,<sp/>User*&gt;<sp/><ref refid="_users_8h_1ac162b24343701ed516790c89796c8996" kindref="member">ListOfClients</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="class_users" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_users" kindref="compound">Users</ref></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_users" kindref="compound">Users</ref>();</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="class_users" kindref="compound">Users</ref>();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//user<sp/>*<sp/>createClient();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_user" kindref="compound">User</ref><sp/>*<sp/>createClient(<ref refid="class_point" kindref="compound">Point</ref>);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_user" kindref="compound">User</ref><sp/>*<sp/>getClient(utility::string_t);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>moveClient(utility::string_t,<sp/><ref refid="class_point" kindref="compound">Point</ref>);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>clientIsAt(utility::string_t,<sp/><ref refid="class_point" kindref="compound">Point</ref>);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>clear();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_users_1a1be44c97e71f822f29ca61451c7e472a" kindref="member">Users::size</ref>();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>web::json::value<sp/><sp/>getStats();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>distanceBetweenTwoPointsInMeter(<ref refid="class_point" kindref="compound">Point</ref>,<sp/><ref refid="class_point" kindref="compound">Point</ref>);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_users_8h_1ac162b24343701ed516790c89796c8996" kindref="member">ListOfClients</ref><sp/>list;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>utility::string_t<sp/>GenerateToken(<ref refid="class_point" kindref="compound">Point</ref>);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Users.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="_database_8cpp" kind="file">
+    <compoundname>Database.cpp</compoundname>
+    <includes refid="_database_8h" local="yes">Database.h</includes>
+    <includes refid="md5_8h" local="yes">md5.h</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">cstring</includes>
+    <includes local="no">ctime</includes>
+    <includes local="no">codecvt</includes>
+    <incdepgraph>
+      <node id="17">
+        <label>J:/Eevee/application server/ApplicationServer/ApplicationServer/Database.cpp</label>
+        <link refid="Database.cpp"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>Database.h</label>
+        <link refid="_database_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>string</label>
+      </node>
+      <node id="30">
+        <label>cpprest/filestream.h</label>
+      </node>
+      <node id="22">
+        <label>map</label>
+      </node>
+      <node id="26">
+        <label>md5.h</label>
+        <link refid="md5_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Users.h</label>
+        <link refid="_users_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>cpprest/http_client.h</label>
+      </node>
+      <node id="24">
+        <label>ctime</label>
+      </node>
+      <node id="23">
+        <label>User.h</label>
+        <link refid="user_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>codecvt</label>
+      </node>
+      <node id="29">
+        <label>math.h</label>
+      </node>
+      <node id="28">
+        <label>iostream</label>
+      </node>
+      <node id="20">
+        <label>Point.h</label>
+        <link refid="_point_8h"/>
+      </node>
+      <node id="27">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_database_8cpp_1a26b757580febf10f00313dd7d81c98f6" prot="public" static="no" mutable="no">
+        <type>std::wstring_convert&lt; std::codecvt_utf8_utf16&lt; wchar_t &gt; &gt;</type>
+        <definition>std::wstring_convert&lt;std::codecvt_utf8_utf16&lt;wchar_t&gt; &gt; converter</definition>
+        <argsstring></argsstring>
+        <name>converter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Database.cpp" line="9" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/Database.cpp" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_database_8h" kindref="compound">Database.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="md5_8h" kindref="compound">md5.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstring&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ctime&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;codecvt&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="_database_8cpp_1a26b757580febf10f00313dd7d81c98f6" refkind="member"><highlight class="normal">std::wstring_convert&lt;std::codecvt_utf8_utf16&lt;wchar_t&gt;&gt;<sp/><ref refid="_database_8cpp_1a26b757580febf10f00313dd7d81c98f6" kindref="member">converter</ref>;<sp/></highlight><highlight class="comment">//<sp/>Converter<sp/>std::string<sp/>to<sp/>wchar_t<sp/>(utility::string_t)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="class_database_1a4703c80e6969d33565ea340f768fdadf" refkind="member"><highlight class="normal"><ref refid="class_database_1a4703c80e6969d33565ea340f768fdadf" kindref="member">Database::Database</ref>()</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="class_database_1a9d6ec1d2def7e13731eae70d6f497e6f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_database_1a9d6ec1d2def7e13731eae70d6f497e6f" kindref="member">Database::SendPois</ref>(http_request<sp/>message,<sp/><ref refid="class_point" kindref="compound">Point</ref><sp/>location)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/>-<sp/>Entering<sp/>in<sp/>the<sp/>SendPois<sp/>function\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//auto<sp/>jsondb<sp/>=<sp/>web::json::value::parse(U(&quot;{&apos;test&apos;:&apos;126345&apos;}&quot;));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>json::value<sp/>jsonToDB;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>clientQuery<sp/>=<sp/>web::uri::split_query(message.absolute_uri().query());</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>utility::string_t<sp/>clientToken<sp/>=<sp/>clientQuery.cbegin()-&gt;second;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Point<sp/>location<sp/>=<sp/>Point(clientsDb-&gt;getClient(clientToken)-&gt;getLstPositionKnown());</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>jsonToDB[L</highlight><highlight class="stringliteral">&quot;coordinates&quot;</highlight><highlight class="normal">][L</highlight><highlight class="stringliteral">&quot;lat&quot;</highlight><highlight class="normal">]<sp/>=<sp/>json::value::number(location.<ref refid="class_point_1aa4bd02640706ad6f00d7a1bca9768d4d" kindref="member">x</ref>());</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>jsonToDB[L</highlight><highlight class="stringliteral">&quot;coordinates&quot;</highlight><highlight class="normal">][L</highlight><highlight class="stringliteral">&quot;lon&quot;</highlight><highlight class="normal">]<sp/>=<sp/>json::value::number(location.<ref refid="class_point_1aae549f6b778ea2fe166387627fddecec" kindref="member">y</ref>());</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>jsonToDB[L</highlight><highlight class="stringliteral">&quot;options&quot;</highlight><highlight class="normal">][L</highlight><highlight class="stringliteral">&quot;nb&quot;</highlight><highlight class="normal">]<sp/>=<sp/>json::value::number(1);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a<sp/>=<sp/>10;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Open<sp/>stream<sp/>to<sp/>output<sp/>file.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//pplx::task&lt;http_response&gt;<sp/>resp<sp/>=<sp/>client.request(methods::GET,<sp/>U(&quot;/getstats.php&quot;),<sp/>U(&quot;&quot;))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>http_client<sp/>to<sp/>send<sp/>the<sp/>request.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>http_client<sp/>client(U(</highlight><highlight class="stringliteral">&quot;http://perso.imerir.com/mdacosta/projetEevee/&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>pplx::task&lt;void&gt;<sp/>requestTask<sp/>=<sp/>client.request(methods::POST,<sp/>U(</highlight><highlight class="stringliteral">&quot;getpois.php&quot;</highlight><highlight class="normal">),<sp/>jsonToDB)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Handle<sp/>response<sp/>headers<sp/>arriving.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.then([=](http_response<sp/>response)-&gt;pplx::task&lt;json::value&gt;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/>Status<sp/>code<sp/>:<sp/>%d\n&quot;</highlight><highlight class="normal">,<sp/>response.status_code());</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(response.status_code()<sp/>==<sp/>status_codes::OK)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//printf(&quot;response.extract_string()<sp/>:<sp/>%S\n&quot;,<sp/>response.extract_string().get().c_str());<sp/>//<sp/>Raw<sp/>response<sp/>body<sp/>from<sp/>the<sp/>db<sp/>server</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>response.extract_json();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pplx::task_from_result(json::value());</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>})</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.then([=](pplx::task&lt;json::value&gt;<sp/>previousTask)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/>Parsing<sp/>DB<sp/>JSON<sp/>\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>json::value&amp;<sp/>jsonValue<sp/>=<sp/>previousTask.get();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Perform<sp/>actions<sp/>here<sp/>to<sp/>process<sp/>the<sp/>JSON<sp/>value...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(jsonValue.has_field(U(</highlight><highlight class="stringliteral">&quot;pois&quot;</highlight><highlight class="normal">)))</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>http_response<sp/>serverresponse<sp/>=<sp/>http_response();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>serverresponse.set_status_code(status_codes::OK);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>serverresponse.headers().add(U(</highlight><highlight class="stringliteral">&quot;Access-Control-Allow-Origin&quot;</highlight><highlight class="normal">),<sp/>U(</highlight><highlight class="stringliteral">&quot;*&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>serverresponse.headers().add(U(</highlight><highlight class="stringliteral">&quot;Content-Type&quot;</highlight><highlight class="normal">),<sp/>U(</highlight><highlight class="stringliteral">&quot;application/json&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>utility::string_t<sp/>contenType<sp/>=<sp/>U(</highlight><highlight class="stringliteral">&quot;application/json&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>serverresponse.set_body(jsonValue);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//message.reply(status_codes::OK,<sp/>jsonValue.serialize(),<sp/>U(&quot;application/json&quot;));<sp/>//<sp/>Can&apos;t<sp/>add<sp/>many<sp/>headers<sp/>with<sp/>this<sp/>form</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>message.reply(serverresponse);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>message.reply(status_codes::ExpectationFailed,<sp/>U(</highlight><highlight class="stringliteral">&quot;Incorrect<sp/>JSON<sp/>parameters,<sp/>expected<sp/>a<sp/>\&quot;pois\&quot;<sp/>array.&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>http_exception&amp;<sp/>e)</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Print<sp/>error.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/>Exeption<sp/>getting<sp/>JSON<sp/>:<sp/>%s\n&quot;</highlight><highlight class="normal">,<sp/>e.what());</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="class_database_1a84d399a2ad58d69daab9b05330e1316d" refkind="member"><highlight class="normal"><ref refid="class_database_1a84d399a2ad58d69daab9b05330e1316d" kindref="member">Database::~Database</ref>()</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Database.cpp"/>
+  </compounddef>
+</doxygen>

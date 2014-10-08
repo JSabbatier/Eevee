@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="class_database" kind="class" prot="public">
+    <compoundname>Database</compoundname>
+    <includes refid="_database_8h" local="no">Database.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_database_1a4703c80e6969d33565ea340f768fdadf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Database::Database</definition>
+        <argsstring>()</argsstring>
+        <name>Database</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Database.h" line="17" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/Database.cpp" bodystart="11" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_database_1a84d399a2ad58d69daab9b05330e1316d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Database::~Database</definition>
+        <argsstring>()</argsstring>
+        <name>~Database</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Database.h" line="18" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/Database.cpp" bodystart="78" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_database_1a9d6ec1d2def7e13731eae70d6f497e6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Database::SendPois</definition>
+        <argsstring>(http_request, Point)</argsstring>
+        <name>SendPois</name>
+        <param>
+          <type>http_request</type>
+          <defname>message</defname>
+        </param>
+        <param>
+          <type><ref refid="class_point" kindref="compound">Point</ref></type>
+          <defname>location</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Database.h" line="19" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/Database.cpp" bodystart="15" bodyend="76"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Database.h" line="15" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/Database.h" bodystart="14" bodyend="21"/>
+    <listofallmembers>
+      <member refid="class_database_1a4703c80e6969d33565ea340f768fdadf" prot="public" virt="non-virtual"><scope>Database</scope><name>Database</name></member>
+      <member refid="class_database_1a9d6ec1d2def7e13731eae70d6f497e6f" prot="public" virt="non-virtual"><scope>Database</scope><name>SendPois</name></member>
+      <member refid="class_database_1a84d399a2ad58d69daab9b05330e1316d" prot="public" virt="non-virtual"><scope>Database</scope><name>~Database</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

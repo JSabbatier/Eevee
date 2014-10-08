@@ -1,0 +1,609 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="md5_8cpp" kind="file">
+    <compoundname>md5.cpp</compoundname>
+    <includes refid="md5_8h" local="yes">md5.h</includes>
+    <includes local="no">cstdio</includes>
+    <incdepgraph>
+      <node id="51">
+        <label>md5.h</label>
+        <link refid="md5_8h"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>cstdio</label>
+      </node>
+      <node id="50">
+        <label>J:/Eevee/application server/ApplicationServer/ApplicationServer/md5.cpp</label>
+        <link refid="md5.cpp"/>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>iostream</label>
+      </node>
+      <node id="52">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="md5_8cpp_1a51398c0e5541164ad4d6615880073305" prot="public" static="no">
+        <name>S11</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/md5.cpp" line="41" column="9" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/md5.cpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="md5_8cpp_1a1ec499cd0e54ecc28c2ac2afea5b038e" prot="public" static="no">
+        <name>S12</name>
+        <initializer>12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/md5.cpp" line="42" column="9" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/md5.cpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="md5_8cpp_1aaeec90429105fb54d853dd4fc7027a54" prot="public" static="no">
+        <name>S13</name>
+        <initializer>17</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/md5.cpp" line="43" column="9" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/md5.cpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="md5_8cpp_1a78342b0ccde2ed12fdf19a113cc266cf" prot="public" static="no">
+        <name>S14</name>
+        <initializer>22</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/md5.cpp" line="44" column="9" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/md5.cpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="md5_8cpp_1ab6d5354f647a0e7592a1f051fc8377b2" prot="public" static="no">
+        <name>S21</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/md5.cpp" line="45" column="9" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/md5.cpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="md5_8cpp_1addad30455da936bc1879ee9c72b46d59" prot="public" static="no">
+        <name>S22</name>
+        <initializer>9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/md5.cpp" line="46" column="9" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/md5.cpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="md5_8cpp_1a6321a8b29628936f76e9e78cf5bda95f" prot="public" static="no">
+        <name>S23</name>
+        <initializer>14</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/md5.cpp" line="47" column="9" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/md5.cpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="md5_8cpp_1a0c09eb77d30a0d5f9154914147b86c20" prot="public" static="no">
+        <name>S24</name>
+        <initializer>20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/md5.cpp" line="48" column="9" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/md5.cpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="md5_8cpp_1aef26590f8a880ee6f4a158168defcd89" prot="public" static="no">
+        <name>S31</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/md5.cpp" line="49" column="9" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/md5.cpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="md5_8cpp_1a1d512424dd8a91e0a5bcc98563f33914" prot="public" static="no">
+        <name>S32</name>
+        <initializer>11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/md5.cpp" line="50" column="9" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/md5.cpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="md5_8cpp_1a1c854214533f6220e859b0063196abb3" prot="public" static="no">
+        <name>S33</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/md5.cpp" line="51" column="9" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/md5.cpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="md5_8cpp_1af6472be1d535970afee8e5266a74aa07" prot="public" static="no">
+        <name>S34</name>
+        <initializer>23</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/md5.cpp" line="52" column="9" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/md5.cpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="md5_8cpp_1ab674ba129e588da55d1d494e1cf3c15e" prot="public" static="no">
+        <name>S41</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/md5.cpp" line="53" column="9" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/md5.cpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="md5_8cpp_1a268ef1a49114a94b931cc6b313e3cd1b" prot="public" static="no">
+        <name>S42</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/md5.cpp" line="54" column="9" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/md5.cpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="md5_8cpp_1a5aaa7121f39650d472746942ca68f959" prot="public" static="no">
+        <name>S43</name>
+        <initializer>15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/md5.cpp" line="55" column="9" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/md5.cpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="md5_8cpp_1a6a3989af72b55d169bd73a66f8620aae" prot="public" static="no">
+        <name>S44</name>
+        <initializer>21</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/md5.cpp" line="56" column="9" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/md5.cpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="md5_8cpp_1a80cbf042ee22a0e557ac7938a6218e55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, MD5 md5)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="class_m_d5" kindref="compound">MD5</ref></type>
+          <declname>md5</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/md5.cpp" line="350" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/md5.cpp" bodystart="350" bodyend="353"/>
+      </memberdef>
+      <memberdef kind="function" id="md5_8cpp_1a92c6eed2e9b51298af559aff6792770b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string md5</definition>
+        <argsstring>(const std::string str)</argsstring>
+        <name>md5</name>
+        <param>
+          <type>const std::string</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/md5.cpp" line="357" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/md5.cpp" bodystart="357" bodyend="362"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>MD5</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">converted<sp/>to<sp/>C++<sp/>class<sp/>by<sp/>Frank<sp/>Thilo<sp/>(thilo@unix-ag.org)</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">for<sp/>bzflag<sp/>(http://www.bzflag.org)</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment">based<sp/>on:</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment">md5.h<sp/>and<sp/>md5.c</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">reference<sp/>implemantion<sp/>of<sp/>RFC<sp/>1321</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">Copyright<sp/>(C)<sp/>1991-2,<sp/>RSA<sp/>Data<sp/>Security,<sp/>Inc.<sp/>Created<sp/>1991.<sp/>All</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"></highlight></codeline>
+<codeline lineno="13"><highlight class="comment">License<sp/>to<sp/>copy<sp/>and<sp/>use<sp/>this<sp/>software<sp/>is<sp/>granted<sp/>provided<sp/>that<sp/>it</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">is<sp/>identified<sp/>as<sp/>the<sp/>&quot;RSA<sp/>Data<sp/>Security,<sp/>Inc.<sp/>MD5<sp/>Message-Digest</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">Algorithm&quot;<sp/>in<sp/>all<sp/>material<sp/>mentioning<sp/>or<sp/>referencing<sp/>this<sp/>software</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">or<sp/>this<sp/>function.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment">License<sp/>is<sp/>also<sp/>granted<sp/>to<sp/>make<sp/>and<sp/>use<sp/>derivative<sp/>works<sp/>provided</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">that<sp/>such<sp/>works<sp/>are<sp/>identified<sp/>as<sp/>&quot;derived<sp/>from<sp/>the<sp/>RSA<sp/>Data</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">Security,<sp/>Inc.<sp/>MD5<sp/>Message-Digest<sp/>Algorithm&quot;<sp/>in<sp/>all<sp/>material</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">mentioning<sp/>or<sp/>referencing<sp/>the<sp/>derived<sp/>work.</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"></highlight></codeline>
+<codeline lineno="23"><highlight class="comment">RSA<sp/>Data<sp/>Security,<sp/>Inc.<sp/>makes<sp/>no<sp/>representations<sp/>concerning<sp/>either</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">the<sp/>merchantability<sp/>of<sp/>this<sp/>software<sp/>or<sp/>the<sp/>suitability<sp/>of<sp/>this</highlight></codeline>
+<codeline lineno="25"><highlight class="comment">software<sp/>for<sp/>any<sp/>particular<sp/>purpose.<sp/>It<sp/>is<sp/>provided<sp/>&quot;as<sp/>is&quot;</highlight></codeline>
+<codeline lineno="26"><highlight class="comment">without<sp/>express<sp/>or<sp/>implied<sp/>warranty<sp/>of<sp/>any<sp/>kind.</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"></highlight></codeline>
+<codeline lineno="28"><highlight class="comment">These<sp/>notices<sp/>must<sp/>be<sp/>retained<sp/>in<sp/>any<sp/>copies<sp/>of<sp/>any<sp/>part<sp/>of<sp/>this</highlight></codeline>
+<codeline lineno="29"><highlight class="comment">documentation<sp/>and/or<sp/>software.</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"></highlight></codeline>
+<codeline lineno="31"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>interface<sp/>header<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="md5_8h" kindref="compound">md5.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>system<sp/>implementation<sp/>headers<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdio&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Constants<sp/>for<sp/>MD5Transform<sp/>routine.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="md5_8cpp_1a51398c0e5541164ad4d6615880073305" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>S11<sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="md5_8cpp_1a1ec499cd0e54ecc28c2ac2afea5b038e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>S12<sp/>12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="md5_8cpp_1aaeec90429105fb54d853dd4fc7027a54" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>S13<sp/>17</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="md5_8cpp_1a78342b0ccde2ed12fdf19a113cc266cf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>S14<sp/>22</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="md5_8cpp_1ab6d5354f647a0e7592a1f051fc8377b2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>S21<sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="md5_8cpp_1addad30455da936bc1879ee9c72b46d59" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>S22<sp/>9</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="md5_8cpp_1a6321a8b29628936f76e9e78cf5bda95f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>S23<sp/>14</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="md5_8cpp_1a0c09eb77d30a0d5f9154914147b86c20" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>S24<sp/>20</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="md5_8cpp_1aef26590f8a880ee6f4a158168defcd89" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>S31<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="md5_8cpp_1a1d512424dd8a91e0a5bcc98563f33914" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>S32<sp/>11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="md5_8cpp_1a1c854214533f6220e859b0063196abb3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>S33<sp/>16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="md5_8cpp_1af6472be1d535970afee8e5266a74aa07" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>S34<sp/>23</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="md5_8cpp_1ab674ba129e588da55d1d494e1cf3c15e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>S41<sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="md5_8cpp_1a268ef1a49114a94b931cc6b313e3cd1b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>S42<sp/>10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="md5_8cpp_1a5aaa7121f39650d472746942ca68f959" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>S43<sp/>15</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="md5_8cpp_1a6a3989af72b55d169bd73a66f8620aae" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>S44<sp/>21</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">//<sp/>F,<sp/>G,<sp/>H<sp/>and<sp/>I<sp/>are<sp/>basic<sp/>MD5<sp/>functions.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>MD5::uint4<sp/>MD5::F(uint4<sp/>x,<sp/>uint4<sp/>y,<sp/>uint4<sp/>z)<sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x&amp;y<sp/>|<sp/>~x&amp;z;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>MD5::uint4<sp/>MD5::G(uint4<sp/>x,<sp/>uint4<sp/>y,<sp/>uint4<sp/>z)<sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x&amp;z<sp/>|<sp/>y&amp;~z;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>MD5::uint4<sp/>MD5::H(uint4<sp/>x,<sp/>uint4<sp/>y,<sp/>uint4<sp/>z)<sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x^y^z;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>MD5::uint4<sp/>MD5::I(uint4<sp/>x,<sp/>uint4<sp/>y,<sp/>uint4<sp/>z)<sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>y<sp/>^<sp/>(x<sp/>|<sp/>~z);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">//<sp/>rotate_left<sp/>rotates<sp/>x<sp/>left<sp/>n<sp/>bits.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>MD5::uint4<sp/>MD5::rotate_left(uint4<sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n)<sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(x<sp/>&lt;&lt;<sp/>n)<sp/>|<sp/>(x<sp/>&gt;&gt;<sp/>(32<sp/>-<sp/>n));</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment">//<sp/>FF,<sp/>GG,<sp/>HH,<sp/>and<sp/>II<sp/>transformations<sp/>for<sp/>rounds<sp/>1,<sp/>2,<sp/>3,<sp/>and<sp/>4.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Rotation<sp/>is<sp/>separate<sp/>from<sp/>addition<sp/>to<sp/>prevent<sp/>recomputation.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MD5::FF(uint4<sp/>&amp;a,<sp/>uint4<sp/>b,<sp/>uint4<sp/>c,<sp/>uint4<sp/>d,<sp/>uint4<sp/>x,<sp/>uint4<sp/>s,<sp/>uint4<sp/>ac)<sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>a<sp/>=<sp/>rotate_left(a<sp/>+<sp/>F(b,<sp/>c,<sp/>d)<sp/>+<sp/>x<sp/>+<sp/>ac,<sp/>s)<sp/>+<sp/>b;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MD5::GG(uint4<sp/>&amp;a,<sp/>uint4<sp/>b,<sp/>uint4<sp/>c,<sp/>uint4<sp/>d,<sp/>uint4<sp/>x,<sp/>uint4<sp/>s,<sp/>uint4<sp/>ac)<sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>a<sp/>=<sp/>rotate_left(a<sp/>+<sp/>G(b,<sp/>c,<sp/>d)<sp/>+<sp/>x<sp/>+<sp/>ac,<sp/>s)<sp/>+<sp/>b;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MD5::HH(uint4<sp/>&amp;a,<sp/>uint4<sp/>b,<sp/>uint4<sp/>c,<sp/>uint4<sp/>d,<sp/>uint4<sp/>x,<sp/>uint4<sp/>s,<sp/>uint4<sp/>ac)<sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>a<sp/>=<sp/>rotate_left(a<sp/>+<sp/>H(b,<sp/>c,<sp/>d)<sp/>+<sp/>x<sp/>+<sp/>ac,<sp/>s)<sp/>+<sp/>b;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MD5::II(uint4<sp/>&amp;a,<sp/>uint4<sp/>b,<sp/>uint4<sp/>c,<sp/>uint4<sp/>d,<sp/>uint4<sp/>x,<sp/>uint4<sp/>s,<sp/>uint4<sp/>ac)<sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>a<sp/>=<sp/>rotate_left(a<sp/>+<sp/>I(b,<sp/>c,<sp/>d)<sp/>+<sp/>x<sp/>+<sp/>ac,<sp/>s)<sp/>+<sp/>b;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="comment">//<sp/>default<sp/>ctor,<sp/>just<sp/>initailize</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="class_m_d5_1afa6155ec36de415ab2dcf5e54b670d13" refkind="member"><highlight class="normal"><ref refid="class_m_d5_1afa6155ec36de415ab2dcf5e54b670d13" kindref="member">MD5::MD5</ref>()</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>init();</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="comment">//<sp/>nifty<sp/>shortcut<sp/>ctor,<sp/>compute<sp/>MD5<sp/>for<sp/>string<sp/>and<sp/>finalize<sp/>it<sp/>right<sp/>away</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="class_m_d5_1a155356ffd713345e69e6dcbd9f8da6ce" refkind="member"><highlight class="normal"><ref refid="class_m_d5_1afa6155ec36de415ab2dcf5e54b670d13" kindref="member">MD5::MD5</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;text)</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>init();</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_m_d5_1ac5ddf6cd8f940422396d321ea90ed045" kindref="member">update</ref>(text.c_str(),<sp/>text.length());</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_m_d5_1a10f607494a3f2e3e515fc4b99d1a06cc" kindref="member">finalize</ref>();</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MD5::init()</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>finalized<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>count[0]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>count[1]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>load<sp/>magic<sp/>initialization<sp/>constants.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>state[0]<sp/>=<sp/>0x67452301;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>state[1]<sp/>=<sp/>0xefcdab89;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>state[2]<sp/>=<sp/>0x98badcfe;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>state[3]<sp/>=<sp/>0x10325476;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="comment">//<sp/>decodes<sp/>input<sp/>(unsigned<sp/>char)<sp/>into<sp/>output<sp/>(uint4).<sp/>Assumes<sp/>len<sp/>is<sp/>a<sp/>multiple<sp/>of<sp/>4.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MD5::decode(uint4<sp/>output[],<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint1<sp/>input[],<sp/>size_type<sp/>len)</highlight></codeline>
+<codeline lineno="138"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0,<sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>len;<sp/>i++,<sp/>j<sp/>+=<sp/>4)</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>output[i]<sp/>=<sp/>((uint4)input[j])<sp/>|<sp/>(((uint4)input[j<sp/>+<sp/>1])<sp/>&lt;&lt;<sp/>8)<sp/>|</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(((uint4)input[j<sp/>+<sp/>2])<sp/>&lt;&lt;<sp/>16)<sp/>|<sp/>(((uint4)input[j<sp/>+<sp/>3])<sp/>&lt;&lt;<sp/>24);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="comment">//<sp/>encodes<sp/>input<sp/>(uint4)<sp/>into<sp/>output<sp/>(unsigned<sp/>char).<sp/>Assumes<sp/>len<sp/>is</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="comment">//<sp/>a<sp/>multiple<sp/>of<sp/>4.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MD5::encode(uint1<sp/>output[],<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint4<sp/>input[],<sp/>size_type<sp/>len)</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="class_m_d5_1aa836972700679dbcff6ae8337f6db464" kindref="member">size_type</ref><sp/>i<sp/>=<sp/>0,<sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>len;<sp/>i++,<sp/>j<sp/>+=<sp/>4)<sp/>{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>output[j]<sp/>=<sp/>input[i]<sp/>&amp;<sp/>0xff;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>output[j<sp/>+<sp/>1]<sp/>=<sp/>(input[i]<sp/>&gt;&gt;<sp/>8)<sp/>&amp;<sp/>0xff;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>output[j<sp/>+<sp/>2]<sp/>=<sp/>(input[i]<sp/>&gt;&gt;<sp/>16)<sp/>&amp;<sp/>0xff;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>output[j<sp/>+<sp/>3]<sp/>=<sp/>(input[i]<sp/>&gt;&gt;<sp/>24)<sp/>&amp;<sp/>0xff;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="comment">//<sp/>apply<sp/>MD5<sp/>algo<sp/>on<sp/>a<sp/>block</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MD5::transform(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint1<sp/>block[blocksize])</highlight></codeline>
+<codeline lineno="162"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>uint4<sp/>a<sp/>=<sp/>state[0],<sp/>b<sp/>=<sp/>state[1],<sp/>c<sp/>=<sp/>state[2],<sp/>d<sp/>=<sp/>state[3],<sp/>x[16];</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>decode(x,<sp/>block,<sp/>blocksize);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Round<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>FF(a,<sp/>b,<sp/>c,<sp/>d,<sp/>x[0],<sp/><ref refid="md5_8cpp_1a51398c0e5541164ad4d6615880073305" kindref="member">S11</ref>,<sp/>0xd76aa478);<sp/></highlight><highlight class="comment">/*<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>FF(d,<sp/>a,<sp/>b,<sp/>c,<sp/>x[1],<sp/><ref refid="md5_8cpp_1a1ec499cd0e54ecc28c2ac2afea5b038e" kindref="member">S12</ref>,<sp/>0xe8c7b756);<sp/></highlight><highlight class="comment">/*<sp/>2<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>FF(c,<sp/>d,<sp/>a,<sp/>b,<sp/>x[2],<sp/><ref refid="md5_8cpp_1aaeec90429105fb54d853dd4fc7027a54" kindref="member">S13</ref>,<sp/>0x242070db);<sp/></highlight><highlight class="comment">/*<sp/>3<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>FF(b,<sp/>c,<sp/>d,<sp/>a,<sp/>x[3],<sp/><ref refid="md5_8cpp_1a78342b0ccde2ed12fdf19a113cc266cf" kindref="member">S14</ref>,<sp/>0xc1bdceee);<sp/></highlight><highlight class="comment">/*<sp/>4<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>FF(a,<sp/>b,<sp/>c,<sp/>d,<sp/>x[4],<sp/><ref refid="md5_8cpp_1a51398c0e5541164ad4d6615880073305" kindref="member">S11</ref>,<sp/>0xf57c0faf);<sp/></highlight><highlight class="comment">/*<sp/>5<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>FF(d,<sp/>a,<sp/>b,<sp/>c,<sp/>x[5],<sp/><ref refid="md5_8cpp_1a1ec499cd0e54ecc28c2ac2afea5b038e" kindref="member">S12</ref>,<sp/>0x4787c62a);<sp/></highlight><highlight class="comment">/*<sp/>6<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>FF(c,<sp/>d,<sp/>a,<sp/>b,<sp/>x[6],<sp/><ref refid="md5_8cpp_1aaeec90429105fb54d853dd4fc7027a54" kindref="member">S13</ref>,<sp/>0xa8304613);<sp/></highlight><highlight class="comment">/*<sp/>7<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>FF(b,<sp/>c,<sp/>d,<sp/>a,<sp/>x[7],<sp/><ref refid="md5_8cpp_1a78342b0ccde2ed12fdf19a113cc266cf" kindref="member">S14</ref>,<sp/>0xfd469501);<sp/></highlight><highlight class="comment">/*<sp/>8<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>FF(a,<sp/>b,<sp/>c,<sp/>d,<sp/>x[8],<sp/><ref refid="md5_8cpp_1a51398c0e5541164ad4d6615880073305" kindref="member">S11</ref>,<sp/>0x698098d8);<sp/></highlight><highlight class="comment">/*<sp/>9<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>FF(d,<sp/>a,<sp/>b,<sp/>c,<sp/>x[9],<sp/><ref refid="md5_8cpp_1a1ec499cd0e54ecc28c2ac2afea5b038e" kindref="member">S12</ref>,<sp/>0x8b44f7af);<sp/></highlight><highlight class="comment">/*<sp/>10<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>FF(c,<sp/>d,<sp/>a,<sp/>b,<sp/>x[10],<sp/><ref refid="md5_8cpp_1aaeec90429105fb54d853dd4fc7027a54" kindref="member">S13</ref>,<sp/>0xffff5bb1);<sp/></highlight><highlight class="comment">/*<sp/>11<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>FF(b,<sp/>c,<sp/>d,<sp/>a,<sp/>x[11],<sp/><ref refid="md5_8cpp_1a78342b0ccde2ed12fdf19a113cc266cf" kindref="member">S14</ref>,<sp/>0x895cd7be);<sp/></highlight><highlight class="comment">/*<sp/>12<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>FF(a,<sp/>b,<sp/>c,<sp/>d,<sp/>x[12],<sp/><ref refid="md5_8cpp_1a51398c0e5541164ad4d6615880073305" kindref="member">S11</ref>,<sp/>0x6b901122);<sp/></highlight><highlight class="comment">/*<sp/>13<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>FF(d,<sp/>a,<sp/>b,<sp/>c,<sp/>x[13],<sp/><ref refid="md5_8cpp_1a1ec499cd0e54ecc28c2ac2afea5b038e" kindref="member">S12</ref>,<sp/>0xfd987193);<sp/></highlight><highlight class="comment">/*<sp/>14<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>FF(c,<sp/>d,<sp/>a,<sp/>b,<sp/>x[14],<sp/><ref refid="md5_8cpp_1aaeec90429105fb54d853dd4fc7027a54" kindref="member">S13</ref>,<sp/>0xa679438e);<sp/></highlight><highlight class="comment">/*<sp/>15<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>FF(b,<sp/>c,<sp/>d,<sp/>a,<sp/>x[15],<sp/><ref refid="md5_8cpp_1a78342b0ccde2ed12fdf19a113cc266cf" kindref="member">S14</ref>,<sp/>0x49b40821);<sp/></highlight><highlight class="comment">/*<sp/>16<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Round<sp/>2<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>GG(a,<sp/>b,<sp/>c,<sp/>d,<sp/>x[1],<sp/><ref refid="md5_8cpp_1ab6d5354f647a0e7592a1f051fc8377b2" kindref="member">S21</ref>,<sp/>0xf61e2562);<sp/></highlight><highlight class="comment">/*<sp/>17<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>GG(d,<sp/>a,<sp/>b,<sp/>c,<sp/>x[6],<sp/><ref refid="md5_8cpp_1addad30455da936bc1879ee9c72b46d59" kindref="member">S22</ref>,<sp/>0xc040b340);<sp/></highlight><highlight class="comment">/*<sp/>18<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>GG(c,<sp/>d,<sp/>a,<sp/>b,<sp/>x[11],<sp/><ref refid="md5_8cpp_1a6321a8b29628936f76e9e78cf5bda95f" kindref="member">S23</ref>,<sp/>0x265e5a51);<sp/></highlight><highlight class="comment">/*<sp/>19<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>GG(b,<sp/>c,<sp/>d,<sp/>a,<sp/>x[0],<sp/><ref refid="md5_8cpp_1a0c09eb77d30a0d5f9154914147b86c20" kindref="member">S24</ref>,<sp/>0xe9b6c7aa);<sp/></highlight><highlight class="comment">/*<sp/>20<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>GG(a,<sp/>b,<sp/>c,<sp/>d,<sp/>x[5],<sp/><ref refid="md5_8cpp_1ab6d5354f647a0e7592a1f051fc8377b2" kindref="member">S21</ref>,<sp/>0xd62f105d);<sp/></highlight><highlight class="comment">/*<sp/>21<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>GG(d,<sp/>a,<sp/>b,<sp/>c,<sp/>x[10],<sp/><ref refid="md5_8cpp_1addad30455da936bc1879ee9c72b46d59" kindref="member">S22</ref>,<sp/>0x2441453);<sp/></highlight><highlight class="comment">/*<sp/>22<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>GG(c,<sp/>d,<sp/>a,<sp/>b,<sp/>x[15],<sp/><ref refid="md5_8cpp_1a6321a8b29628936f76e9e78cf5bda95f" kindref="member">S23</ref>,<sp/>0xd8a1e681);<sp/></highlight><highlight class="comment">/*<sp/>23<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>GG(b,<sp/>c,<sp/>d,<sp/>a,<sp/>x[4],<sp/><ref refid="md5_8cpp_1a0c09eb77d30a0d5f9154914147b86c20" kindref="member">S24</ref>,<sp/>0xe7d3fbc8);<sp/></highlight><highlight class="comment">/*<sp/>24<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>GG(a,<sp/>b,<sp/>c,<sp/>d,<sp/>x[9],<sp/><ref refid="md5_8cpp_1ab6d5354f647a0e7592a1f051fc8377b2" kindref="member">S21</ref>,<sp/>0x21e1cde6);<sp/></highlight><highlight class="comment">/*<sp/>25<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>GG(d,<sp/>a,<sp/>b,<sp/>c,<sp/>x[14],<sp/><ref refid="md5_8cpp_1addad30455da936bc1879ee9c72b46d59" kindref="member">S22</ref>,<sp/>0xc33707d6);<sp/></highlight><highlight class="comment">/*<sp/>26<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>GG(c,<sp/>d,<sp/>a,<sp/>b,<sp/>x[3],<sp/><ref refid="md5_8cpp_1a6321a8b29628936f76e9e78cf5bda95f" kindref="member">S23</ref>,<sp/>0xf4d50d87);<sp/></highlight><highlight class="comment">/*<sp/>27<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>GG(b,<sp/>c,<sp/>d,<sp/>a,<sp/>x[8],<sp/><ref refid="md5_8cpp_1a0c09eb77d30a0d5f9154914147b86c20" kindref="member">S24</ref>,<sp/>0x455a14ed);<sp/></highlight><highlight class="comment">/*<sp/>28<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>GG(a,<sp/>b,<sp/>c,<sp/>d,<sp/>x[13],<sp/><ref refid="md5_8cpp_1ab6d5354f647a0e7592a1f051fc8377b2" kindref="member">S21</ref>,<sp/>0xa9e3e905);<sp/></highlight><highlight class="comment">/*<sp/>29<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>GG(d,<sp/>a,<sp/>b,<sp/>c,<sp/>x[2],<sp/><ref refid="md5_8cpp_1addad30455da936bc1879ee9c72b46d59" kindref="member">S22</ref>,<sp/>0xfcefa3f8);<sp/></highlight><highlight class="comment">/*<sp/>30<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>GG(c,<sp/>d,<sp/>a,<sp/>b,<sp/>x[7],<sp/><ref refid="md5_8cpp_1a6321a8b29628936f76e9e78cf5bda95f" kindref="member">S23</ref>,<sp/>0x676f02d9);<sp/></highlight><highlight class="comment">/*<sp/>31<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>GG(b,<sp/>c,<sp/>d,<sp/>a,<sp/>x[12],<sp/><ref refid="md5_8cpp_1a0c09eb77d30a0d5f9154914147b86c20" kindref="member">S24</ref>,<sp/>0x8d2a4c8a);<sp/></highlight><highlight class="comment">/*<sp/>32<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Round<sp/>3<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>HH(a,<sp/>b,<sp/>c,<sp/>d,<sp/>x[5],<sp/><ref refid="md5_8cpp_1aef26590f8a880ee6f4a158168defcd89" kindref="member">S31</ref>,<sp/>0xfffa3942);<sp/></highlight><highlight class="comment">/*<sp/>33<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>HH(d,<sp/>a,<sp/>b,<sp/>c,<sp/>x[8],<sp/><ref refid="md5_8cpp_1a1d512424dd8a91e0a5bcc98563f33914" kindref="member">S32</ref>,<sp/>0x8771f681);<sp/></highlight><highlight class="comment">/*<sp/>34<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>HH(c,<sp/>d,<sp/>a,<sp/>b,<sp/>x[11],<sp/><ref refid="md5_8cpp_1a1c854214533f6220e859b0063196abb3" kindref="member">S33</ref>,<sp/>0x6d9d6122);<sp/></highlight><highlight class="comment">/*<sp/>35<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>HH(b,<sp/>c,<sp/>d,<sp/>a,<sp/>x[14],<sp/><ref refid="md5_8cpp_1af6472be1d535970afee8e5266a74aa07" kindref="member">S34</ref>,<sp/>0xfde5380c);<sp/></highlight><highlight class="comment">/*<sp/>36<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>HH(a,<sp/>b,<sp/>c,<sp/>d,<sp/>x[1],<sp/><ref refid="md5_8cpp_1aef26590f8a880ee6f4a158168defcd89" kindref="member">S31</ref>,<sp/>0xa4beea44);<sp/></highlight><highlight class="comment">/*<sp/>37<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>HH(d,<sp/>a,<sp/>b,<sp/>c,<sp/>x[4],<sp/><ref refid="md5_8cpp_1a1d512424dd8a91e0a5bcc98563f33914" kindref="member">S32</ref>,<sp/>0x4bdecfa9);<sp/></highlight><highlight class="comment">/*<sp/>38<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>HH(c,<sp/>d,<sp/>a,<sp/>b,<sp/>x[7],<sp/><ref refid="md5_8cpp_1a1c854214533f6220e859b0063196abb3" kindref="member">S33</ref>,<sp/>0xf6bb4b60);<sp/></highlight><highlight class="comment">/*<sp/>39<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>HH(b,<sp/>c,<sp/>d,<sp/>a,<sp/>x[10],<sp/><ref refid="md5_8cpp_1af6472be1d535970afee8e5266a74aa07" kindref="member">S34</ref>,<sp/>0xbebfbc70);<sp/></highlight><highlight class="comment">/*<sp/>40<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>HH(a,<sp/>b,<sp/>c,<sp/>d,<sp/>x[13],<sp/><ref refid="md5_8cpp_1aef26590f8a880ee6f4a158168defcd89" kindref="member">S31</ref>,<sp/>0x289b7ec6);<sp/></highlight><highlight class="comment">/*<sp/>41<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>HH(d,<sp/>a,<sp/>b,<sp/>c,<sp/>x[0],<sp/><ref refid="md5_8cpp_1a1d512424dd8a91e0a5bcc98563f33914" kindref="member">S32</ref>,<sp/>0xeaa127fa);<sp/></highlight><highlight class="comment">/*<sp/>42<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>HH(c,<sp/>d,<sp/>a,<sp/>b,<sp/>x[3],<sp/><ref refid="md5_8cpp_1a1c854214533f6220e859b0063196abb3" kindref="member">S33</ref>,<sp/>0xd4ef3085);<sp/></highlight><highlight class="comment">/*<sp/>43<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>HH(b,<sp/>c,<sp/>d,<sp/>a,<sp/>x[6],<sp/><ref refid="md5_8cpp_1af6472be1d535970afee8e5266a74aa07" kindref="member">S34</ref>,<sp/>0x4881d05);<sp/></highlight><highlight class="comment">/*<sp/>44<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>HH(a,<sp/>b,<sp/>c,<sp/>d,<sp/>x[9],<sp/><ref refid="md5_8cpp_1aef26590f8a880ee6f4a158168defcd89" kindref="member">S31</ref>,<sp/>0xd9d4d039);<sp/></highlight><highlight class="comment">/*<sp/>45<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>HH(d,<sp/>a,<sp/>b,<sp/>c,<sp/>x[12],<sp/><ref refid="md5_8cpp_1a1d512424dd8a91e0a5bcc98563f33914" kindref="member">S32</ref>,<sp/>0xe6db99e5);<sp/></highlight><highlight class="comment">/*<sp/>46<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>HH(c,<sp/>d,<sp/>a,<sp/>b,<sp/>x[15],<sp/><ref refid="md5_8cpp_1a1c854214533f6220e859b0063196abb3" kindref="member">S33</ref>,<sp/>0x1fa27cf8);<sp/></highlight><highlight class="comment">/*<sp/>47<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/>HH(b,<sp/>c,<sp/>d,<sp/>a,<sp/>x[2],<sp/><ref refid="md5_8cpp_1af6472be1d535970afee8e5266a74aa07" kindref="member">S34</ref>,<sp/>0xc4ac5665);<sp/></highlight><highlight class="comment">/*<sp/>48<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Round<sp/>4<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>II(a,<sp/>b,<sp/>c,<sp/>d,<sp/>x[0],<sp/><ref refid="md5_8cpp_1ab674ba129e588da55d1d494e1cf3c15e" kindref="member">S41</ref>,<sp/>0xf4292244);<sp/></highlight><highlight class="comment">/*<sp/>49<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>II(d,<sp/>a,<sp/>b,<sp/>c,<sp/>x[7],<sp/><ref refid="md5_8cpp_1a268ef1a49114a94b931cc6b313e3cd1b" kindref="member">S42</ref>,<sp/>0x432aff97);<sp/></highlight><highlight class="comment">/*<sp/>50<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>II(c,<sp/>d,<sp/>a,<sp/>b,<sp/>x[14],<sp/><ref refid="md5_8cpp_1a5aaa7121f39650d472746942ca68f959" kindref="member">S43</ref>,<sp/>0xab9423a7);<sp/></highlight><highlight class="comment">/*<sp/>51<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>II(b,<sp/>c,<sp/>d,<sp/>a,<sp/>x[5],<sp/><ref refid="md5_8cpp_1a6a3989af72b55d169bd73a66f8620aae" kindref="member">S44</ref>,<sp/>0xfc93a039);<sp/></highlight><highlight class="comment">/*<sp/>52<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>II(a,<sp/>b,<sp/>c,<sp/>d,<sp/>x[12],<sp/><ref refid="md5_8cpp_1ab674ba129e588da55d1d494e1cf3c15e" kindref="member">S41</ref>,<sp/>0x655b59c3);<sp/></highlight><highlight class="comment">/*<sp/>53<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>II(d,<sp/>a,<sp/>b,<sp/>c,<sp/>x[3],<sp/><ref refid="md5_8cpp_1a268ef1a49114a94b931cc6b313e3cd1b" kindref="member">S42</ref>,<sp/>0x8f0ccc92);<sp/></highlight><highlight class="comment">/*<sp/>54<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>II(c,<sp/>d,<sp/>a,<sp/>b,<sp/>x[10],<sp/><ref refid="md5_8cpp_1a5aaa7121f39650d472746942ca68f959" kindref="member">S43</ref>,<sp/>0xffeff47d);<sp/></highlight><highlight class="comment">/*<sp/>55<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>II(b,<sp/>c,<sp/>d,<sp/>a,<sp/>x[1],<sp/><ref refid="md5_8cpp_1a6a3989af72b55d169bd73a66f8620aae" kindref="member">S44</ref>,<sp/>0x85845dd1);<sp/></highlight><highlight class="comment">/*<sp/>56<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>II(a,<sp/>b,<sp/>c,<sp/>d,<sp/>x[8],<sp/><ref refid="md5_8cpp_1ab674ba129e588da55d1d494e1cf3c15e" kindref="member">S41</ref>,<sp/>0x6fa87e4f);<sp/></highlight><highlight class="comment">/*<sp/>57<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>II(d,<sp/>a,<sp/>b,<sp/>c,<sp/>x[15],<sp/><ref refid="md5_8cpp_1a268ef1a49114a94b931cc6b313e3cd1b" kindref="member">S42</ref>,<sp/>0xfe2ce6e0);<sp/></highlight><highlight class="comment">/*<sp/>58<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/>II(c,<sp/>d,<sp/>a,<sp/>b,<sp/>x[6],<sp/><ref refid="md5_8cpp_1a5aaa7121f39650d472746942ca68f959" kindref="member">S43</ref>,<sp/>0xa3014314);<sp/></highlight><highlight class="comment">/*<sp/>59<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>II(b,<sp/>c,<sp/>d,<sp/>a,<sp/>x[13],<sp/><ref refid="md5_8cpp_1a6a3989af72b55d169bd73a66f8620aae" kindref="member">S44</ref>,<sp/>0x4e0811a1);<sp/></highlight><highlight class="comment">/*<sp/>60<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>II(a,<sp/>b,<sp/>c,<sp/>d,<sp/>x[4],<sp/><ref refid="md5_8cpp_1ab674ba129e588da55d1d494e1cf3c15e" kindref="member">S41</ref>,<sp/>0xf7537e82);<sp/></highlight><highlight class="comment">/*<sp/>61<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>II(d,<sp/>a,<sp/>b,<sp/>c,<sp/>x[11],<sp/><ref refid="md5_8cpp_1a268ef1a49114a94b931cc6b313e3cd1b" kindref="member">S42</ref>,<sp/>0xbd3af235);<sp/></highlight><highlight class="comment">/*<sp/>62<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>II(c,<sp/>d,<sp/>a,<sp/>b,<sp/>x[2],<sp/><ref refid="md5_8cpp_1a5aaa7121f39650d472746942ca68f959" kindref="member">S43</ref>,<sp/>0x2ad7d2bb);<sp/></highlight><highlight class="comment">/*<sp/>63<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/>II(b,<sp/>c,<sp/>d,<sp/>a,<sp/>x[9],<sp/><ref refid="md5_8cpp_1a6a3989af72b55d169bd73a66f8620aae" kindref="member">S44</ref>,<sp/>0xeb86d391);<sp/></highlight><highlight class="comment">/*<sp/>64<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>state[0]<sp/>+=<sp/>a;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/>state[1]<sp/>+=<sp/>b;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/>state[2]<sp/>+=<sp/>c;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/>state[3]<sp/>+=<sp/>d;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Zeroize<sp/>sensitive<sp/>information.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/>memset(x,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal"><sp/>x);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MD5<sp/>block<sp/>update<sp/>operation.<sp/>Continues<sp/>an<sp/>MD5<sp/>message-digest</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight><highlight class="comment">//<sp/>operation,<sp/>processing<sp/>another<sp/>message<sp/>block</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_m_d5_1ac5ddf6cd8f940422396d321ea90ed045" kindref="member">MD5::update</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>input[],<sp/>size_type<sp/>length)</highlight></codeline>
+<codeline lineno="252"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>compute<sp/>number<sp/>of<sp/>bytes<sp/>mod<sp/>64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_m_d5_1aa836972700679dbcff6ae8337f6db464" kindref="member">size_type</ref><sp/>index<sp/>=<sp/>count[0]<sp/>/<sp/>8<sp/>%<sp/>blocksize;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Update<sp/>number<sp/>of<sp/>bits</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((count[0]<sp/>+=<sp/>(length<sp/>&lt;&lt;<sp/>3))<sp/>&lt;<sp/>(length<sp/>&lt;&lt;<sp/>3))</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>count[1]++;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/>count[1]<sp/>+=<sp/>(length<sp/>&gt;&gt;<sp/>29);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>number<sp/>of<sp/>bytes<sp/>we<sp/>need<sp/>to<sp/>fill<sp/>in<sp/>buffer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_m_d5_1aa836972700679dbcff6ae8337f6db464" kindref="member">size_type</ref><sp/>firstpart<sp/>=<sp/>64<sp/>-<sp/>index;</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_m_d5_1aa836972700679dbcff6ae8337f6db464" kindref="member">size_type</ref><sp/>i;</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>transform<sp/>as<sp/>many<sp/>times<sp/>as<sp/>possible.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(length<sp/>&gt;=<sp/>firstpart)</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>fill<sp/>buffer<sp/>first,<sp/>transform</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>memcpy(&amp;buffer[index],<sp/>input,<sp/>firstpart);</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>transform(buffer);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>transform<sp/>chunks<sp/>of<sp/>blocksize<sp/>(64<sp/>bytes)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>firstpart;<sp/>i<sp/>+<sp/>blocksize<sp/>&lt;=<sp/>length;<sp/>i<sp/>+=<sp/>blocksize)</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>transform(&amp;input[i]);</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>index<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>buffer<sp/>remaining<sp/>input</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/>memcpy(&amp;buffer[index],<sp/>&amp;input[i],<sp/>length<sp/>-<sp/>i);</highlight></codeline>
+<codeline lineno="284"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight><highlight class="comment">//<sp/>for<sp/>convenience<sp/>provide<sp/>a<sp/>verson<sp/>with<sp/>signed<sp/>char</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_m_d5_1ac5ddf6cd8f940422396d321ea90ed045" kindref="member">MD5::update</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>input[],<sp/>size_type<sp/>length)</highlight></codeline>
+<codeline lineno="290"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_m_d5_1ac5ddf6cd8f940422396d321ea90ed045" kindref="member">update</ref>((</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)input,<sp/>length);</highlight></codeline>
+<codeline lineno="292"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MD5<sp/>finalization.<sp/>Ends<sp/>an<sp/>MD5<sp/>message-digest<sp/>operation,<sp/>writing<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>message<sp/>digest<sp/>and<sp/>zeroizing<sp/>the<sp/>context.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="298" refid="class_m_d5_1a10f607494a3f2e3e515fc4b99d1a06cc" refkind="member"><highlight class="normal"><ref refid="class_m_d5" kindref="compound">MD5</ref>&amp;<sp/><ref refid="class_m_d5_1a10f607494a3f2e3e515fc4b99d1a06cc" kindref="member">MD5::finalize</ref>()</highlight></codeline>
+<codeline lineno="299"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>padding[64]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x80,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!finalized)<sp/>{</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Save<sp/>number<sp/>of<sp/>bits</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>bits[8];</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>encode(bits,<sp/>count,<sp/>8);</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>pad<sp/>out<sp/>to<sp/>56<sp/>mod<sp/>64.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_m_d5_1aa836972700679dbcff6ae8337f6db464" kindref="member">size_type</ref><sp/>index<sp/>=<sp/>count[0]<sp/>/<sp/>8<sp/>%<sp/>64;</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_m_d5_1aa836972700679dbcff6ae8337f6db464" kindref="member">size_type</ref><sp/>padLen<sp/>=<sp/>(index<sp/>&lt;<sp/>56)<sp/>?<sp/>(56<sp/>-<sp/>index)<sp/>:<sp/>(120<sp/>-<sp/>index);</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_m_d5_1ac5ddf6cd8f940422396d321ea90ed045" kindref="member">update</ref>(padding,<sp/>padLen);</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Append<sp/>length<sp/>(before<sp/>padding)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_m_d5_1ac5ddf6cd8f940422396d321ea90ed045" kindref="member">update</ref>(bits,<sp/>8);</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Store<sp/>state<sp/>in<sp/>digest</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>encode(digest,<sp/>state,<sp/>16);</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Zeroize<sp/>sensitive<sp/>information.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>memset(buffer,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal"><sp/>buffer);</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>memset(count,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal"><sp/>count);</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>finalized<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="330"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight></codeline>
+<codeline lineno="334"><highlight class="normal"></highlight><highlight class="comment">//<sp/>return<sp/>hex<sp/>representation<sp/>of<sp/>digest<sp/>as<sp/>string</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="335" refid="class_m_d5_1ad36c65acf87e397bf717bc3defbc0c7a" refkind="member"><highlight class="normal">std::string<sp/><ref refid="class_m_d5_1ad36c65acf87e397bf717bc3defbc0c7a" kindref="member">MD5::hexdigest</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="336"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!finalized)</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>buf[33];</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i&lt;16;<sp/>i++)</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sprintf(buf<sp/>+<sp/>i<sp/>*<sp/>2,<sp/></highlight><highlight class="stringliteral">&quot;%02x&quot;</highlight><highlight class="normal">,<sp/>digest[i]);</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/>buf[32]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::string(buf);</highlight></codeline>
+<codeline lineno="346"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"></highlight></codeline>
+<codeline lineno="349"><highlight class="normal"></highlight></codeline>
+<codeline lineno="350" refid="md5_8cpp_1a80cbf042ee22a0e557ac7938a6218e55" refkind="member"><highlight class="normal">std::ostream&amp;<sp/><ref refid="md5_8cpp_1a80cbf042ee22a0e557ac7938a6218e55" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;<sp/>out,<sp/><ref refid="class_m_d5" kindref="compound">MD5</ref><sp/><ref refid="md5_8cpp_1a92c6eed2e9b51298af559aff6792770b" kindref="member">md5</ref>)</highlight></codeline>
+<codeline lineno="351"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out<sp/>&lt;&lt;<sp/>md5.<ref refid="class_m_d5_1ad36c65acf87e397bf717bc3defbc0c7a" kindref="member">hexdigest</ref>();</highlight></codeline>
+<codeline lineno="353"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight></codeline>
+<codeline lineno="357" refid="md5_8h_1a92c6eed2e9b51298af559aff6792770b" refkind="member"><highlight class="normal">std::string<sp/><ref refid="md5_8cpp_1a92c6eed2e9b51298af559aff6792770b" kindref="member">md5</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>str)</highlight></codeline>
+<codeline lineno="358"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_m_d5" kindref="compound">MD5</ref><sp/><ref refid="md5_8cpp_1a92c6eed2e9b51298af559aff6792770b" kindref="member">md5</ref><sp/>=<sp/><ref refid="class_m_d5" kindref="compound">MD5</ref>(str);</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>md5.<ref refid="class_m_d5_1ad36c65acf87e397bf717bc3defbc0c7a" kindref="member">hexdigest</ref>();</highlight></codeline>
+<codeline lineno="362"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/md5.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,109 @@
+.TH "User" 3 "Wed Oct 8 2014" "Application Server" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+User \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <user\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBUser\fP ()"
+.br
+.ti -1c
+.RI "\fB~User\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetToken\fP (utility::string_t)"
+.br
+.ti -1c
+.RI "utility::string_t \fBgetToken\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetLstConnection\fP (std::time_t)"
+.br
+.ti -1c
+.RI "std::time_t \fBgetLstConnection\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetStates\fP (int)"
+.br
+.ti -1c
+.RI "int \fBgetStates\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetLstPositionKnown\fP (\fBPoint\fP)"
+.br
+.ti -1c
+.RI "\fBPoint\fP \fBgetLstPositionKnown\fP () const "
+.br
+.ti -1c
+.RI "int \fBgetDistance\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetDistance\fP (int)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 6 of file user\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "User::User ()"
+
+.PP
+Definition at line 4 of file User\&.cpp\&.
+.SS "User::~User ()"
+
+.PP
+Definition at line 53 of file User\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "int User::getDistance () const"
+
+.PP
+Definition at line 18 of file User\&.cpp\&.
+.SS "std::time_t User::getLstConnection () const"
+
+.PP
+Definition at line 31 of file User\&.cpp\&.
+.SS "\fBPoint\fP User::getLstPositionKnown () const"
+
+.PP
+Definition at line 47 of file User\&.cpp\&.
+.SS "int User::getStates () const"
+
+.PP
+Definition at line 39 of file User\&.cpp\&.
+.SS "utility::string_t User::getToken () const"
+
+.PP
+Definition at line 23 of file User\&.cpp\&.
+.SS "void User::setDistance (intdist)"
+
+.PP
+Definition at line 13 of file User\&.cpp\&.
+.SS "void User::setLstConnection (std::time_ttm)"
+
+.PP
+Definition at line 27 of file User\&.cpp\&.
+.SS "void User::setLstPositionKnown (\fBPoint\fPcoordinates)"
+
+.PP
+Definition at line 43 of file User\&.cpp\&.
+.SS "void User::setStates (intstate)"
+
+.PP
+Definition at line 35 of file User\&.cpp\&.
+.SS "void User::setToken (utility::string_ttok)"
+
+.PP
+Definition at line 8 of file User\&.cpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Application Server from the source code\&.

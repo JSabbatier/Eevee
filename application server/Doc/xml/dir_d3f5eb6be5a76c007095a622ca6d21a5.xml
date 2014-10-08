@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="dir_d3f5eb6be5a76c007095a622ca6d21a5" kind="dir">
+    <compoundname>J:/Eevee/application server/ApplicationServer/ApplicationServer</compoundname>
+    <innerfile refid="_application_server_8cpp">ApplicationServer.cpp</innerfile>
+    <innerfile refid="_database_8cpp">Database.cpp</innerfile>
+    <innerfile refid="_database_8h">Database.h</innerfile>
+    <innerfile refid="md5_8cpp">md5.cpp</innerfile>
+    <innerfile refid="md5_8h">md5.h</innerfile>
+    <innerfile refid="_point_8cpp">Point.cpp</innerfile>
+    <innerfile refid="_point_8h">Point.h</innerfile>
+    <innerfile refid="_server_8cpp">Server.cpp</innerfile>
+    <innerfile refid="_server_8h">Server.h</innerfile>
+    <innerfile refid="stdafx_8cpp">stdafx.cpp</innerfile>
+    <innerfile refid="stdafx_8h">stdafx.h</innerfile>
+    <innerfile refid="targetver_8h">targetver.h</innerfile>
+    <innerfile refid="_user_8cpp">User.cpp</innerfile>
+    <innerfile refid="user_8h">user.h</innerfile>
+    <innerfile refid="_users_8cpp">Users.cpp</innerfile>
+    <innerfile refid="_users_8h">Users.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/"/>
+  </compounddef>
+</doxygen>

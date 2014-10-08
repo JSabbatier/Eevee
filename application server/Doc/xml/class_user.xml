@@ -1,0 +1,276 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="class_user" kind="class" prot="public">
+    <compoundname>User</compoundname>
+    <includes refid="user_8h" local="no">user.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_user_1a5564421b03fbb2c706f9a3a6615afa84" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int User::distance</definition>
+        <argsstring></argsstring>
+        <name>distance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/user.h" line="24" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/user.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_user_1a1fbbd29dc87459882677406bb9a81127" prot="private" static="no" mutable="no">
+        <type>utility::string_t</type>
+        <definition>utility::string_t User::token</definition>
+        <argsstring></argsstring>
+        <name>token</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/user.h" line="25" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/user.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_user_1afc89374207bf960d3666ef6326737293" prot="private" static="no" mutable="no">
+        <type>std::time_t</type>
+        <definition>std::time_t User::lastConnection</definition>
+        <argsstring></argsstring>
+        <name>lastConnection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/user.h" line="26" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/user.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_user_1ac4b3de13d29aee42b0050776b2826d91" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int User::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/user.h" line="27" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/user.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_user_1a0e60ec993f914a4fbc913c2d20fe131d" prot="private" static="no" mutable="no">
+        <type><ref refid="class_point" kindref="compound">Point</ref></type>
+        <definition>Point User::lastPositionKnown</definition>
+        <argsstring></argsstring>
+        <name>lastPositionKnown</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/user.h" line="28" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/user.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_user_1a4a0137053e591fbb79d9057dd7d2283d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>User::User</definition>
+        <argsstring>()</argsstring>
+        <name>User</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/user.h" line="9" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/User.cpp" bodystart="4" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_user_1ac00b72ad64eb4149f7b21b9f5468c2b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>User::~User</definition>
+        <argsstring>()</argsstring>
+        <name>~User</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/user.h" line="10" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/User.cpp" bodystart="53" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_user_1aa91df7f38b7e0481c67c79c4a26eda41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void User::setToken</definition>
+        <argsstring>(utility::string_t)</argsstring>
+        <name>setToken</name>
+        <param>
+          <type>utility::string_t</type>
+          <defname>tok</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/user.h" line="11" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/User.cpp" bodystart="8" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_user_1adedf47b8676b704356195cf67ed03be4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>utility::string_t</type>
+        <definition>utility::string_t User::getToken</definition>
+        <argsstring>() const </argsstring>
+        <name>getToken</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/user.h" line="12" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/User.cpp" bodystart="23" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_user_1a3ebf49004b7a0aa9bec881b1470d0b51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void User::setLstConnection</definition>
+        <argsstring>(std::time_t)</argsstring>
+        <name>setLstConnection</name>
+        <param>
+          <type>std::time_t</type>
+          <defname>tm</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/user.h" line="13" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/User.cpp" bodystart="27" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_user_1aa5285ef5ca526f2e23bcea453c748896" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::time_t</type>
+        <definition>std::time_t User::getLstConnection</definition>
+        <argsstring>() const </argsstring>
+        <name>getLstConnection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/user.h" line="14" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/User.cpp" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_user_1a7d2aee609fe856b9162cf51b54d15561" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void User::setStates</definition>
+        <argsstring>(int)</argsstring>
+        <name>setStates</name>
+        <param>
+          <type>int</type>
+          <defname>state</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/user.h" line="15" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/User.cpp" bodystart="35" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_user_1a65fa6e9c7df52bf25206bef1cb00d8a6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int User::getStates</definition>
+        <argsstring>() const </argsstring>
+        <name>getStates</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/user.h" line="16" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/User.cpp" bodystart="39" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_user_1aa28248264f5bff18ca173c5575ecd0eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void User::setLstPositionKnown</definition>
+        <argsstring>(Point)</argsstring>
+        <name>setLstPositionKnown</name>
+        <param>
+          <type><ref refid="class_point" kindref="compound">Point</ref></type>
+          <defname>coordinates</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/user.h" line="17" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/User.cpp" bodystart="43" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_user_1ac3f4b47d1262a3bda6ff380dbd10a58d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_point" kindref="compound">Point</ref></type>
+        <definition>Point User::getLstPositionKnown</definition>
+        <argsstring>() const </argsstring>
+        <name>getLstPositionKnown</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/user.h" line="18" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/User.cpp" bodystart="47" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_user_1a3f137c7a04dadc52705992f1c59d2a5c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int User::getDistance</definition>
+        <argsstring>() const </argsstring>
+        <name>getDistance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/user.h" line="19" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/User.cpp" bodystart="18" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_user_1a641d8b376db499805341384fce817a4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void User::setDistance</definition>
+        <argsstring>(int)</argsstring>
+        <name>setDistance</name>
+        <param>
+          <type>int</type>
+          <defname>dist</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/user.h" line="20" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/User.cpp" bodystart="13" bodyend="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/user.h" line="7" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/user.h" bodystart="6" bodyend="34"/>
+    <listofallmembers>
+      <member refid="class_user_1a5564421b03fbb2c706f9a3a6615afa84" prot="private" virt="non-virtual"><scope>User</scope><name>distance</name></member>
+      <member refid="class_user_1a3f137c7a04dadc52705992f1c59d2a5c" prot="public" virt="non-virtual"><scope>User</scope><name>getDistance</name></member>
+      <member refid="class_user_1aa5285ef5ca526f2e23bcea453c748896" prot="public" virt="non-virtual"><scope>User</scope><name>getLstConnection</name></member>
+      <member refid="class_user_1ac3f4b47d1262a3bda6ff380dbd10a58d" prot="public" virt="non-virtual"><scope>User</scope><name>getLstPositionKnown</name></member>
+      <member refid="class_user_1a65fa6e9c7df52bf25206bef1cb00d8a6" prot="public" virt="non-virtual"><scope>User</scope><name>getStates</name></member>
+      <member refid="class_user_1adedf47b8676b704356195cf67ed03be4" prot="public" virt="non-virtual"><scope>User</scope><name>getToken</name></member>
+      <member refid="class_user_1afc89374207bf960d3666ef6326737293" prot="private" virt="non-virtual"><scope>User</scope><name>lastConnection</name></member>
+      <member refid="class_user_1a0e60ec993f914a4fbc913c2d20fe131d" prot="private" virt="non-virtual"><scope>User</scope><name>lastPositionKnown</name></member>
+      <member refid="class_user_1a641d8b376db499805341384fce817a4f" prot="public" virt="non-virtual"><scope>User</scope><name>setDistance</name></member>
+      <member refid="class_user_1a3ebf49004b7a0aa9bec881b1470d0b51" prot="public" virt="non-virtual"><scope>User</scope><name>setLstConnection</name></member>
+      <member refid="class_user_1aa28248264f5bff18ca173c5575ecd0eb" prot="public" virt="non-virtual"><scope>User</scope><name>setLstPositionKnown</name></member>
+      <member refid="class_user_1a7d2aee609fe856b9162cf51b54d15561" prot="public" virt="non-virtual"><scope>User</scope><name>setStates</name></member>
+      <member refid="class_user_1aa91df7f38b7e0481c67c79c4a26eda41" prot="public" virt="non-virtual"><scope>User</scope><name>setToken</name></member>
+      <member refid="class_user_1ac4b3de13d29aee42b0050776b2826d91" prot="private" virt="non-virtual"><scope>User</scope><name>state</name></member>
+      <member refid="class_user_1a1fbbd29dc87459882677406bb9a81127" prot="private" virt="non-virtual"><scope>User</scope><name>token</name></member>
+      <member refid="class_user_1a4a0137053e591fbb79d9057dd7d2283d" prot="public" virt="non-virtual"><scope>User</scope><name>User</name></member>
+      <member refid="class_user_1ac00b72ad64eb4149f7b21b9f5468c2b2" prot="public" virt="non-virtual"><scope>User</scope><name>~User</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

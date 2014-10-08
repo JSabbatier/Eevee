@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="md5_8h" kind="file">
+    <compoundname>md5.h</compoundname>
+    <includes local="no">cstring</includes>
+    <includes local="no">iostream</includes>
+    <includedby refid="_users_8h" local="yes">J:/Eevee/application server/ApplicationServer/ApplicationServer/Users.h</includedby>
+    <includedby refid="_database_8cpp" local="yes">J:/Eevee/application server/ApplicationServer/ApplicationServer/Database.cpp</includedby>
+    <includedby refid="md5_8cpp" local="yes">J:/Eevee/application server/ApplicationServer/ApplicationServer/md5.cpp</includedby>
+    <incdepgraph>
+      <node id="56">
+        <label>J:/Eevee/application server/ApplicationServer/ApplicationServer/md5.h</label>
+        <link refid="md5.h"/>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>iostream</label>
+      </node>
+      <node id="57">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="63">
+        <label>J:/Eevee/application server/ApplicationServer/ApplicationServer/Database.cpp</label>
+        <link refid="_database_8cpp"/>
+      </node>
+      <node id="62">
+        <label>J:/Eevee/application server/ApplicationServer/ApplicationServer/ApplicationServer.cpp</label>
+        <link refid="_application_server_8cpp"/>
+      </node>
+      <node id="64">
+        <label>J:/Eevee/application server/ApplicationServer/ApplicationServer/Server.cpp</label>
+        <link refid="_server_8cpp"/>
+      </node>
+      <node id="61">
+        <label>J:/Eevee/application server/ApplicationServer/ApplicationServer/Database.h</label>
+        <link refid="_database_8h"/>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>J:/Eevee/application server/ApplicationServer/ApplicationServer/md5.h</label>
+        <link refid="md5.h"/>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>J:/Eevee/application server/ApplicationServer/ApplicationServer/Server.h</label>
+        <link refid="_server_8h"/>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>J:/Eevee/application server/ApplicationServer/ApplicationServer/Users.h</label>
+        <link refid="_users_8h"/>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>J:/Eevee/application server/ApplicationServer/ApplicationServer/md5.cpp</label>
+        <link refid="md5_8cpp"/>
+      </node>
+      <node id="66">
+        <label>J:/Eevee/application server/ApplicationServer/ApplicationServer/Users.cpp</label>
+        <link refid="_users_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_m_d5" prot="public">MD5</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="md5_8h_1a92c6eed2e9b51298af559aff6792770b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string md5</definition>
+        <argsstring>(const std::string str)</argsstring>
+        <name>md5</name>
+        <param>
+          <type>const std::string</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/md5.h" line="91" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/md5.cpp" bodystart="357" bodyend="362"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>MD5</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">converted<sp/>to<sp/>C++<sp/>class<sp/>by<sp/>Frank<sp/>Thilo<sp/>(thilo@unix-ag.org)</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">for<sp/>bzflag<sp/>(http://www.bzflag.org)</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment">based<sp/>on:</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment">md5.h<sp/>and<sp/>md5.c</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">reference<sp/>implementation<sp/>of<sp/>RFC<sp/>1321</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">Copyright<sp/>(C)<sp/>1991-2,<sp/>RSA<sp/>Data<sp/>Security,<sp/>Inc.<sp/>Created<sp/>1991.<sp/>All</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"></highlight></codeline>
+<codeline lineno="13"><highlight class="comment">License<sp/>to<sp/>copy<sp/>and<sp/>use<sp/>this<sp/>software<sp/>is<sp/>granted<sp/>provided<sp/>that<sp/>it</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">is<sp/>identified<sp/>as<sp/>the<sp/>&quot;RSA<sp/>Data<sp/>Security,<sp/>Inc.<sp/>MD5<sp/>Message-Digest</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">Algorithm&quot;<sp/>in<sp/>all<sp/>material<sp/>mentioning<sp/>or<sp/>referencing<sp/>this<sp/>software</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">or<sp/>this<sp/>function.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment">License<sp/>is<sp/>also<sp/>granted<sp/>to<sp/>make<sp/>and<sp/>use<sp/>derivative<sp/>works<sp/>provided</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">that<sp/>such<sp/>works<sp/>are<sp/>identified<sp/>as<sp/>&quot;derived<sp/>from<sp/>the<sp/>RSA<sp/>Data</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">Security,<sp/>Inc.<sp/>MD5<sp/>Message-Digest<sp/>Algorithm&quot;<sp/>in<sp/>all<sp/>material</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">mentioning<sp/>or<sp/>referencing<sp/>the<sp/>derived<sp/>work.</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"></highlight></codeline>
+<codeline lineno="23"><highlight class="comment">RSA<sp/>Data<sp/>Security,<sp/>Inc.<sp/>makes<sp/>no<sp/>representations<sp/>concerning<sp/>either</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">the<sp/>merchantability<sp/>of<sp/>this<sp/>software<sp/>or<sp/>the<sp/>suitability<sp/>of<sp/>this</highlight></codeline>
+<codeline lineno="25"><highlight class="comment">software<sp/>for<sp/>any<sp/>particular<sp/>purpose.<sp/>It<sp/>is<sp/>provided<sp/>&quot;as<sp/>is&quot;</highlight></codeline>
+<codeline lineno="26"><highlight class="comment">without<sp/>express<sp/>or<sp/>implied<sp/>warranty<sp/>of<sp/>any<sp/>kind.</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"></highlight></codeline>
+<codeline lineno="28"><highlight class="comment">These<sp/>notices<sp/>must<sp/>be<sp/>retained<sp/>in<sp/>any<sp/>copies<sp/>of<sp/>any<sp/>part<sp/>of<sp/>this</highlight></codeline>
+<codeline lineno="29"><highlight class="comment">documentation<sp/>and/or<sp/>software.</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"></highlight></codeline>
+<codeline lineno="31"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>BZF_MD5_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BZF_MD5_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstring&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/>a<sp/>small<sp/>class<sp/>for<sp/>calculating<sp/>MD5<sp/>hashes<sp/>of<sp/>strings<sp/>or<sp/>byte<sp/>arrays</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//<sp/>it<sp/>is<sp/>not<sp/>meant<sp/>to<sp/>be<sp/>fast<sp/>or<sp/>secure</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">//<sp/>usage:<sp/>1)<sp/>feed<sp/>it<sp/>blocks<sp/>of<sp/>uchars<sp/>with<sp/>update()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>2)<sp/>finalize()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>3)<sp/>get<sp/>hexdigest()<sp/>string</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>or</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>MD5(std::string).hexdigest()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">//<sp/>assumes<sp/>that<sp/>char<sp/>is<sp/>8<sp/>bit<sp/>and<sp/>int<sp/>is<sp/>32<sp/>bit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="class_m_d5" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_m_d5" kindref="compound">MD5</ref></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="53" refid="class_m_d5_1aa836972700679dbcff6ae8337f6db464" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_m_d5_1aa836972700679dbcff6ae8337f6db464" kindref="member">size_type</ref>;<sp/></highlight><highlight class="comment">//<sp/>must<sp/>be<sp/>32bit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_m_d5_1afa6155ec36de415ab2dcf5e54b670d13" kindref="member">MD5</ref>();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_m_d5_1afa6155ec36de415ab2dcf5e54b670d13" kindref="member">MD5</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>text);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_m_d5_1ac5ddf6cd8f940422396d321ea90ed045" kindref="member">update</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buf,<sp/>size_type<sp/>length);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_m_d5_1ac5ddf6cd8f940422396d321ea90ed045" kindref="member">update</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buf,<sp/>size_type<sp/>length);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_m_d5" kindref="compound">MD5</ref>&amp;<sp/><ref refid="class_m_d5_1a10f607494a3f2e3e515fc4b99d1a06cc" kindref="member">finalize</ref>();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="class_m_d5_1ad36c65acf87e397bf717bc3defbc0c7a" kindref="member">hexdigest</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>std::ostream&amp;<sp/><ref refid="class_m_d5_1a0739666fd0f3a7117546f6c50e0783b2" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;,<sp/><ref refid="class_m_d5" kindref="compound">MD5</ref><sp/><ref refid="md5_8h_1a92c6eed2e9b51298af559aff6792770b" kindref="member">md5</ref>);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>init();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>uint1;<sp/></highlight><highlight class="comment">//<sp/><sp/>8bit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>uint4;<sp/><sp/></highlight><highlight class="comment">//<sp/>32bit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{<sp/>blocksize<sp/>=<sp/>64<sp/>};<sp/></highlight><highlight class="comment">//<sp/>VC6<sp/>won&apos;t<sp/>eat<sp/>a<sp/>const<sp/>static<sp/>int<sp/>here</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>transform(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint1<sp/>block[blocksize]);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>decode(uint4<sp/>output[],<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint1<sp/>input[],<sp/>size_type<sp/>len);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>encode(uint1<sp/>output[],<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint4<sp/>input[],<sp/>size_type<sp/>len);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>finalized;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>uint1<sp/>buffer[blocksize];<sp/></highlight><highlight class="comment">//<sp/>bytes<sp/>that<sp/>didn&apos;t<sp/>fit<sp/>in<sp/>last<sp/>64<sp/>byte<sp/>chunk</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>uint4<sp/>count[2];<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>64bit<sp/>counter<sp/>for<sp/>number<sp/>of<sp/>bits<sp/>(lo,<sp/>hi)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>uint4<sp/>state[4];<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>digest<sp/>so<sp/>far</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>uint1<sp/>digest[16];<sp/></highlight><highlight class="comment">//<sp/>the<sp/>result</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>low<sp/>level<sp/>logic<sp/>operations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint4<sp/>F(uint4<sp/>x,<sp/>uint4<sp/>y,<sp/>uint4<sp/>z);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint4<sp/>G(uint4<sp/>x,<sp/>uint4<sp/>y,<sp/>uint4<sp/>z);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint4<sp/>H(uint4<sp/>x,<sp/>uint4<sp/>y,<sp/>uint4<sp/>z);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint4<sp/>I(uint4<sp/>x,<sp/>uint4<sp/>y,<sp/>uint4<sp/>z);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint4<sp/>rotate_left(uint4<sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FF(uint4<sp/>&amp;a,<sp/>uint4<sp/>b,<sp/>uint4<sp/>c,<sp/>uint4<sp/>d,<sp/>uint4<sp/>x,<sp/>uint4<sp/>s,<sp/>uint4<sp/>ac);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GG(uint4<sp/>&amp;a,<sp/>uint4<sp/>b,<sp/>uint4<sp/>c,<sp/>uint4<sp/>d,<sp/>uint4<sp/>x,<sp/>uint4<sp/>s,<sp/>uint4<sp/>ac);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>HH(uint4<sp/>&amp;a,<sp/>uint4<sp/>b,<sp/>uint4<sp/>c,<sp/>uint4<sp/>d,<sp/>uint4<sp/>x,<sp/>uint4<sp/>s,<sp/>uint4<sp/>ac);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>II(uint4<sp/>&amp;a,<sp/>uint4<sp/>b,<sp/>uint4<sp/>c,<sp/>uint4<sp/>d,<sp/>uint4<sp/>x,<sp/>uint4<sp/>s,<sp/>uint4<sp/>ac);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal">std::string<sp/><ref refid="md5_8h_1a92c6eed2e9b51298af559aff6792770b" kindref="member">md5</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>str);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/md5.h"/>
+  </compounddef>
+</doxygen>

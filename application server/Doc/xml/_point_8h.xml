@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="_point_8h" kind="file">
+    <compoundname>Point.h</compoundname>
+    <includedby refid="_database_8h" local="yes">J:/Eevee/application server/ApplicationServer/ApplicationServer/Database.h</includedby>
+    <includedby refid="user_8h" local="yes">J:/Eevee/application server/ApplicationServer/ApplicationServer/user.h</includedby>
+    <includedby refid="_point_8cpp" local="yes">J:/Eevee/application server/ApplicationServer/ApplicationServer/Point.cpp</includedby>
+    <invincdepgraph>
+      <node id="81">
+        <label>J:/Eevee/application server/ApplicationServer/ApplicationServer/User.cpp</label>
+        <link refid="_user_8cpp"/>
+      </node>
+      <node id="75">
+        <label>J:/Eevee/application server/ApplicationServer/ApplicationServer/Database.cpp</label>
+        <link refid="_database_8cpp"/>
+      </node>
+      <node id="74">
+        <label>J:/Eevee/application server/ApplicationServer/ApplicationServer/ApplicationServer.cpp</label>
+        <link refid="_application_server_8cpp"/>
+      </node>
+      <node id="76">
+        <label>J:/Eevee/application server/ApplicationServer/ApplicationServer/Server.cpp</label>
+        <link refid="_server_8cpp"/>
+      </node>
+      <node id="73">
+        <label>J:/Eevee/application server/ApplicationServer/ApplicationServer/Database.h</label>
+        <link refid="_database_8h"/>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>J:/Eevee/application server/ApplicationServer/ApplicationServer/Server.h</label>
+        <link refid="_server_8h"/>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>J:/Eevee/application server/ApplicationServer/ApplicationServer/Users.h</label>
+        <link refid="_users_8h"/>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>J:/Eevee/application server/ApplicationServer/ApplicationServer/user.h</label>
+        <link refid="user_8h"/>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>J:/Eevee/application server/ApplicationServer/ApplicationServer/Point.h</label>
+        <link refid="Point.h"/>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>J:/Eevee/application server/ApplicationServer/ApplicationServer/Users.cpp</label>
+        <link refid="_users_8cpp"/>
+      </node>
+      <node id="82">
+        <label>J:/Eevee/application server/ApplicationServer/ApplicationServer/Point.cpp</label>
+        <link refid="_point_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_point" prot="public">Point</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2" refid="class_point" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_point" kindref="compound">Point</ref></highlight></codeline>
+<codeline lineno="3"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>a,<sp/>b,<sp/>c;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_point_1ad92f2337b839a94ce97dcdb439b4325a" kindref="member">Point</ref>();</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_point_1ad92f2337b839a94ce97dcdb439b4325a" kindref="member">Point</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_point_1a395fa04b4ec126b66fc053f829a30cc1" kindref="member">~Point</ref>();</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_point_1aa4bd02640706ad6f00d7a1bca9768d4d" kindref="member">x</ref>();</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_point_1aae549f6b778ea2fe166387627fddecec" kindref="member">y</ref>();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_point_1aebbff516d9b84bccee19f24a8800ee8e" kindref="member">z</ref>();</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_point_1aa4bd02640706ad6f00d7a1bca9768d4d" kindref="member">x</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_point_1aae549f6b778ea2fe166387627fddecec" kindref="member">y</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_point_1aebbff516d9b84bccee19f24a8800ee8e" kindref="member">z</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//bool<sp/>Point::operator==(const<sp/>Point&amp;,<sp/>const<sp/>Point&amp;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Point.h"/>
+  </compounddef>
+</doxygen>

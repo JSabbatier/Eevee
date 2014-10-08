@@ -1,0 +1,88 @@
+.TH "Users" 3 "Wed Oct 8 2014" "Application Server" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Users \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Users\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBUsers\fP ()"
+.br
+.ti -1c
+.RI "\fB~Users\fP ()"
+.br
+.ti -1c
+.RI "\fBUser\fP * \fBcreateClient\fP (\fBPoint\fP)"
+.br
+.ti -1c
+.RI "\fBUser\fP * \fBgetClient\fP (utility::string_t)"
+.br
+.ti -1c
+.RI "void \fBmoveClient\fP (utility::string_t, \fBPoint\fP)"
+.br
+.ti -1c
+.RI "bool \fBclientIsAt\fP (utility::string_t, \fBPoint\fP)"
+.br
+.ti -1c
+.RI "void \fBclear\fP ()"
+.br
+.ti -1c
+.RI "int \fBsize\fP ()"
+.br
+.ti -1c
+.RI "web::json::value \fBgetStats\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 11 of file Users\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Users::Users ()"
+
+.PP
+Definition at line 9 of file Users\&.cpp\&.
+.SS "Users::~Users ()"
+
+.PP
+Definition at line 25 of file Users\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void Users::clear ()"
+
+.PP
+Definition at line 14 of file Users\&.cpp\&.
+.SS "bool Users::clientIsAt (utility::string_ttoken, \fBPoint\fPcoordonates)"
+
+.PP
+Definition at line 60 of file Users\&.cpp\&.
+.SS "\fBUser\fP * Users::createClient (\fBPoint\fPcoordinates)"
+
+.PP
+Definition at line 29 of file Users\&.cpp\&.
+.SS "\fBUser\fP * Users::getClient (utility::string_ttoken)"
+
+.PP
+Definition at line 49 of file Users\&.cpp\&.
+.SS "json::value Users::getStats ()"
+
+.PP
+Definition at line 82 of file Users\&.cpp\&.
+.SS "void Users::moveClient (utility::string_ttoken, \fBPoint\fPcoordinates)"
+
+.PP
+Definition at line 53 of file Users\&.cpp\&.
+.SS "int Users::size ()"
+
+.PP
+Definition at line 19 of file Users\&.cpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Application Server from the source code\&.

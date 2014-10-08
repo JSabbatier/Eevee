@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="class_server" kind="class" prot="public">
+    <compoundname>Server</compoundname>
+    <includes refid="_server_8h" local="no">Server.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_server_1a32c1ea1cec86d09468a9dbcf0329eda9" prot="private" static="no" mutable="no">
+        <type>http_listener</type>
+        <definition>http_listener Server::m_listener</definition>
+        <argsstring></argsstring>
+        <name>m_listener</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Server.h" line="23" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/Server.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_server_1a0dec78c0c8d028662e64e5d2cd44e68d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Server::Server</definition>
+        <argsstring>(const http::uri &amp;url)</argsstring>
+        <name>Server</name>
+        <param>
+          <type>const http::uri &amp;</type>
+          <declname>url</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Server.h" line="12" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/Server.cpp" bodystart="10" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_server_1a85e37a202f56560d13c857ea3d41efc7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>pplx::task&lt; void &gt;</type>
+        <definition>pplx::task&lt;void&gt; Server::open</definition>
+        <argsstring>()</argsstring>
+        <name>open</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Server.h" line="13" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/Server.h" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_server_1ace0945be0e4e76c0cb18138920d830fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>pplx::task&lt; void &gt;</type>
+        <definition>pplx::task&lt;void&gt; Server::close</definition>
+        <argsstring>()</argsstring>
+        <name>close</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Server.h" line="14" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/Server.h" bodystart="14" bodyend="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_server_1aa4e302a4b00ba288f3cbe94d5a6fbe68" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Server::handle_options</definition>
+        <argsstring>(http_request request)</argsstring>
+        <name>handle_options</name>
+        <param>
+          <type>http_request</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Server.h" line="17" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/Server.cpp" bodystart="313" bodyend="317"/>
+      </memberdef>
+      <memberdef kind="function" id="class_server_1ad116969019aa8cdb7f3b17c3cc2597dc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Server::handle_get</definition>
+        <argsstring>(http_request request)</argsstring>
+        <name>handle_get</name>
+        <param>
+          <type>http_request</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Server.h" line="18" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/Server.cpp" bodystart="41" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="class_server_1a79488233ca625207c715364e8b991f08" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Server::handle_put</definition>
+        <argsstring>(http_request request)</argsstring>
+        <name>handle_put</name>
+        <param>
+          <type>http_request</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Server.h" line="19" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_server_1ad050f269eed6702775de1629435c546c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Server::handle_post</definition>
+        <argsstring>(http_request request)</argsstring>
+        <name>handle_post</name>
+        <param>
+          <type>http_request</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Server.h" line="20" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/Server.cpp" bodystart="151" bodyend="310"/>
+      </memberdef>
+      <memberdef kind="function" id="class_server_1ad9c57433a1de2f13df17233aa11cdbfd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Server::handle_delete</definition>
+        <argsstring>(http_request request)</argsstring>
+        <name>handle_delete</name>
+        <param>
+          <type>http_request</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Server.h" line="21" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/Server.cpp" bodystart="320" bodyend="324"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Server.h" line="10" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/Server.h" bodystart="9" bodyend="24"/>
+    <listofallmembers>
+      <member refid="class_server_1ace0945be0e4e76c0cb18138920d830fd" prot="public" virt="non-virtual"><scope>Server</scope><name>close</name></member>
+      <member refid="class_server_1ad9c57433a1de2f13df17233aa11cdbfd" prot="private" virt="non-virtual"><scope>Server</scope><name>handle_delete</name></member>
+      <member refid="class_server_1ad116969019aa8cdb7f3b17c3cc2597dc" prot="private" virt="non-virtual"><scope>Server</scope><name>handle_get</name></member>
+      <member refid="class_server_1aa4e302a4b00ba288f3cbe94d5a6fbe68" prot="private" virt="non-virtual"><scope>Server</scope><name>handle_options</name></member>
+      <member refid="class_server_1ad050f269eed6702775de1629435c546c" prot="private" virt="non-virtual"><scope>Server</scope><name>handle_post</name></member>
+      <member refid="class_server_1a79488233ca625207c715364e8b991f08" prot="private" virt="non-virtual"><scope>Server</scope><name>handle_put</name></member>
+      <member refid="class_server_1a32c1ea1cec86d09468a9dbcf0329eda9" prot="private" virt="non-virtual"><scope>Server</scope><name>m_listener</name></member>
+      <member refid="class_server_1a85e37a202f56560d13c857ea3d41efc7" prot="public" virt="non-virtual"><scope>Server</scope><name>open</name></member>
+      <member refid="class_server_1a0dec78c0c8d028662e64e5d2cd44e68d" prot="public" virt="non-virtual"><scope>Server</scope><name>Server</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

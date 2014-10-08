@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="class_point" kind="class" prot="public">
+    <compoundname>Point</compoundname>
+    <includes refid="_point_8h" local="no">Point.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_point_1a432f8da1e90b56002b36c35564c025b1" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Point::a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Point.h" line="4" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/Point.h" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_point_1a4927e16e748894280c1df42b8a80e410" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Point::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Point.h" line="4" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/Point.h" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_point_1ac33e1e2d0aae2aebf5e265557ac5afdc" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Point::c</definition>
+        <argsstring></argsstring>
+        <name>c</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Point.h" line="4" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/Point.h" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_point_1ad92f2337b839a94ce97dcdb439b4325a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Point::Point</definition>
+        <argsstring>()</argsstring>
+        <name>Point</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Point.h" line="6" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/Point.cpp" bodystart="3" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a326edb72707d198c949cde90dcd3557a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Point::Point</definition>
+        <argsstring>(float, float, float)</argsstring>
+        <name>Point</name>
+        <param>
+          <type>float</type>
+          <defname>x</defname>
+        </param>
+        <param>
+          <type>float</type>
+          <defname>y</defname>
+        </param>
+        <param>
+          <type>float</type>
+          <defname>z</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Point.h" line="7" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/Point.cpp" bodystart="12" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a395fa04b4ec126b66fc053f829a30cc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Point::~Point</definition>
+        <argsstring>()</argsstring>
+        <name>~Point</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Point.h" line="8" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/Point.cpp" bodystart="19" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1aa4bd02640706ad6f00d7a1bca9768d4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Point::x</definition>
+        <argsstring>()</argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Point.h" line="9" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/Point.cpp" bodystart="23" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1aae549f6b778ea2fe166387627fddecec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Point::y</definition>
+        <argsstring>()</argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Point.h" line="10" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/Point.cpp" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1aebbff516d9b84bccee19f24a8800ee8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Point::z</definition>
+        <argsstring>()</argsstring>
+        <name>z</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Point.h" line="11" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/Point.cpp" bodystart="34" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a49b604094f8678d43964a15f12ec6b30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Point::x</definition>
+        <argsstring>(float)</argsstring>
+        <name>x</name>
+        <param>
+          <type>float</type>
+          <defname>x</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Point.h" line="12" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/Point.cpp" bodystart="39" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a25ca3c6efec7917e8428da0f9e87b4c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Point::y</definition>
+        <argsstring>(float)</argsstring>
+        <name>y</name>
+        <param>
+          <type>float</type>
+          <defname>y</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Point.h" line="13" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/Point.cpp" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1ae6e07d92f54e52d1e8ee6c9d4fa93fa7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Point::z</definition>
+        <argsstring>(float)</argsstring>
+        <name>z</name>
+        <param>
+          <type>float</type>
+          <defname>z</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Point.h" line="14" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/Point.cpp" bodystart="49" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="J:/Eevee/application server/ApplicationServer/ApplicationServer/Point.h" line="3" column="1" bodyfile="J:/Eevee/application server/ApplicationServer/ApplicationServer/Point.h" bodystart="2" bodyend="16"/>
+    <listofallmembers>
+      <member refid="class_point_1a432f8da1e90b56002b36c35564c025b1" prot="private" virt="non-virtual"><scope>Point</scope><name>a</name></member>
+      <member refid="class_point_1a4927e16e748894280c1df42b8a80e410" prot="private" virt="non-virtual"><scope>Point</scope><name>b</name></member>
+      <member refid="class_point_1ac33e1e2d0aae2aebf5e265557ac5afdc" prot="private" virt="non-virtual"><scope>Point</scope><name>c</name></member>
+      <member refid="class_point_1ad92f2337b839a94ce97dcdb439b4325a" prot="public" virt="non-virtual"><scope>Point</scope><name>Point</name></member>
+      <member refid="class_point_1a326edb72707d198c949cde90dcd3557a" prot="public" virt="non-virtual"><scope>Point</scope><name>Point</name></member>
+      <member refid="class_point_1aa4bd02640706ad6f00d7a1bca9768d4d" prot="public" virt="non-virtual"><scope>Point</scope><name>x</name></member>
+      <member refid="class_point_1a49b604094f8678d43964a15f12ec6b30" prot="public" virt="non-virtual"><scope>Point</scope><name>x</name></member>
+      <member refid="class_point_1aae549f6b778ea2fe166387627fddecec" prot="public" virt="non-virtual"><scope>Point</scope><name>y</name></member>
+      <member refid="class_point_1a25ca3c6efec7917e8428da0f9e87b4c4" prot="public" virt="non-virtual"><scope>Point</scope><name>y</name></member>
+      <member refid="class_point_1aebbff516d9b84bccee19f24a8800ee8e" prot="public" virt="non-virtual"><scope>Point</scope><name>z</name></member>
+      <member refid="class_point_1ae6e07d92f54e52d1e8ee6c9d4fa93fa7" prot="public" virt="non-virtual"><scope>Point</scope><name>z</name></member>
+      <member refid="class_point_1a395fa04b4ec126b66fc053f829a30cc1" prot="public" virt="non-virtual"><scope>Point</scope><name>~Point</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
