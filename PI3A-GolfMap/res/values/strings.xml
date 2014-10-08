@@ -8,7 +8,9 @@
     <string name="button_login">Login</string>
     <string name="send_button">Send pos</string>
     <string name="title_activity_map_game">MapGame</string>
-    <string name="play_button">play</string>
+    <string name="zoom1">1</string>
+    <string name="zoom2">2</string>
+    <string name="zoom3">3</string>
     <string name="posX">Pos X</string>
     <string name="posY">Pos Y</string>
     <string name="posZ">Poz Z</string>

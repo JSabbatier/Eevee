@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    tools:context="com.example.pi3a_golfmap.MainActivity" >
+    android:background="@drawable/tw"
+    tools:context="com.example.pi3a_golfmap.MainActivity">
 
          <EditText android:id="@+id/enter_username"
 	        android:layout_width="wrap_content"

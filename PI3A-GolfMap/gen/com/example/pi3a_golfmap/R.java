@@ -407,10 +407,11 @@ containing a value of this type.
         public static final int ic_plusone_tall_off_client=0x7f02001e;
         public static final int powered_by_google_dark=0x7f02001f;
         public static final int powered_by_google_light=0x7f020020;
-        public static final int unnamed=0x7f020021;
+        public static final int tw=0x7f020021;
+        public static final int unnamed=0x7f020022;
     }
     public static final class id {
-        public static final int action_settings=0x7f07001b;
+        public static final int action_settings=0x7f07001d;
         public static final int book_now=0x7f070010;
         public static final int button_sendPosition=0x7f070018;
         public static final int buyButton=0x7f07000a;
@@ -427,7 +428,6 @@ containing a value of this type.
         public static final int monochrome=0x7f070013;
         public static final int none=0x7f070000;
         public static final int normal=0x7f070001;
-        public static final int play_button=0x7f07001a;
         public static final int posX=0x7f070015;
         public static final int posY=0x7f070016;
         public static final int posZ=0x7f070017;
@@ -438,6 +438,9 @@ containing a value of this type.
         public static final int strict_sandbox=0x7f070009;
         public static final int terrain=0x7f070003;
         public static final int wrap_content=0x7f07000d;
+        public static final int zoom1=0x7f07001a;
+        public static final int zoom2=0x7f07001b;
+        public static final int zoom3=0x7f07001c;
     }
     public static final class integer {
         public static final int google_play_services_version=0x7f080000;
@@ -545,16 +548,18 @@ containing a value of this type.
         public static final int common_signin_button_text_long=0x7f060018;
         public static final int enter_username=0x7f06001d;
         public static final int hello_world=0x7f06001b;
-        public static final int play_button=0x7f060021;
-        public static final int posX=0x7f060022;
-        public static final int posY=0x7f060023;
-        public static final int posZ=0x7f060024;
+        public static final int posX=0x7f060024;
+        public static final int posY=0x7f060025;
+        public static final int posZ=0x7f060026;
         public static final int send_button=0x7f06001f;
         public static final int title_activity_map_game=0x7f060020;
         /**  Text on a placeholder buy button when Google Play services is not
          available or up-to-date 
          */
         public static final int wallet_buy_button_place_holder=0x7f060019;
+        public static final int zoom1=0x7f060021;
+        public static final int zoom2=0x7f060022;
+        public static final int zoom3=0x7f060023;
     }
     public static final class style {
         /** 
