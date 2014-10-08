@@ -1,6 +1,7 @@
 #include "Users.h"
 
-typedef map<string, User*> ListOfClients;
+using namespace web;
+typedef map<utility::string_t, User*> ListOfClients;
 
 Users::Users()
 {
@@ -14,12 +15,12 @@ Users::~Users()
 
 User * Users::createClient(Point coordinates)
 {
-	/*user * cl = new user;
+	User * cl = new User;
 
 	cl->setToken(GenerateToken(coordinates));
 	//List
-	return cl;*/
-	return nullptr;
+	return cl;
+	//return nullptr;
 }
 User * Users::getClient(utility::string_t)
 {
@@ -34,7 +35,7 @@ bool Users::clientIsAt(Point)
 {
 	return true;
 }
-string Users::GenerateToken(Point coordinates)
+utility::string_t Users::GenerateToken(Point coordinates)
 {
 	char buffer[50];
 	std::time_t t = std::time(0);
@@ -43,8 +44,20 @@ string Users::GenerateToken(Point coordinates)
 	return(retour.hexdigest());
 }
 
-string Users::getStats()
+json::value Users::getStats()
 {
-	return "{ \"users\": { \"u1\": {  \"token\": \"0001\",\"statistics\": {\"lastKnownLocation\": {   \"latitude\": 42.25351,\"longitude\": -12.55567  },\"travelledDistance\": \"0250\",\"rank\": 5  }},  \"u2\": {   \"token\": \"0002\",  \"statistics\": {\"lastKnownLocation\": {\"latitude\": 2.25351,  \"longitude\": 39.55567 },\"travelledDistance\": \"0000\",   \"rank\": 6}}}}";
+	json::value jsonResult;
+	jsonResult[U("connected_users")] = json::value::number((int)list.size()); // Casting int because the return of size() match 2 overloaded instances of number()
+	int cpt = 0;
+	for (auto iter = list.cbegin(); iter != list.cend(); ++iter)
+	{		
+		jsonResult[U("users")][wprintf(L"u%d", iter)][U("token")] = json::value::string(iter->first); // First is the token
+		jsonResult[U("users")][wprintf(L"u%d", iter)][U("statistics")][U("lastKnownLocation")][U("latitude")] = json::value::number(iter->second->getLstPositionKnown().x()); // Second is the user ptr
+		jsonResult[U("users")][wprintf(L"u%d", iter)][U("statistics")][U("lastKnownLocation")][U("longitude")] = json::value::number(iter->second->getLstPositionKnown().y());
+		jsonResult[U("users")][wprintf(L"u%d", iter)][U("statistics")][U("travelledDistance")] = json::value::number(iter->second->getDistance());
+		jsonResult[U("users")][wprintf(L"u%d", iter)][U("statistics")][U("rank")] = json::value::number(0);
+		cpt++;
+	}
+	return jsonResult;
 }
 

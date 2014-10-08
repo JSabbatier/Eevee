@@ -3,6 +3,7 @@
 #include "User.h"
 #include "md5.h"
 using namespace std;
+typedef map<utility::string_t, User*> ListOfClients;
 
 #pragma once
 class Users
@@ -18,10 +19,10 @@ public:
 
 	bool clientIsAt(Point);
 
-	string getStats();
+	web::json::value getStats();
 
 private:
-	
+	ListOfClients list;
 	string GenerateToken(Point);
 };
 

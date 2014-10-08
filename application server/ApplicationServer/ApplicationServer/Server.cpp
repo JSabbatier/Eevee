@@ -35,6 +35,7 @@ Server::Server(const http::uri& url) : m_listener(http_listener(url))
 		std::tr1::placeholders::_1));*/
 }
 
+// Handle all the GET requests
 void Server::handle_get(http_request message)
 {
 	printf("Handling GET request... ");
@@ -106,6 +107,7 @@ void Server::handle_get(http_request message)
 	}
 };
 
+// Handle all the POST requests
 void Server::handle_post(http_request message)
 {
 	printf("Handling POST request... ");
@@ -132,7 +134,9 @@ void Server::handle_post(http_request message)
 					printf("Received JSON from the client BallLat : %f, BallLng : %f\n", jsonValue.at(U("BallLat")).as_double(), jsonValue.at(U("BallLng")).as_double());
 					Point clientBallPosition = Point::Point(jsonValue.at(U("BallLat")).as_double(), jsonValue.at(U("BallLng")).as_double(), 0);
 					mobClient = clientsDb.createClient(clientBallPosition);
-					jsonToClient[L"token"] = json::value::string(mobClient->getToken());
+					//jsonToClient[L"token"] = json::value::string(mobClient->getToken());
+					jsonToClient[L"token"] = json::value::string(L"thomas_sait_pas_faire_des_requetes"); // For test purpose only
+					printf(" * New token created\n");
 					serverresponse.set_status_code(status_codes::Created);
 				}
 				else
