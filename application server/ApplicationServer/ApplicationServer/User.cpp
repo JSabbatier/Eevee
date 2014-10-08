@@ -9,6 +9,17 @@ void User::setToken(utility::string_t tok)
 {
 	this->token = tok;
 }
+
+void User::setDistance(int dist)
+{
+	this->distance = dist;
+}
+
+int User::getDistance() const
+{
+	return (this->distance);
+}
+
 utility::string_t User::getToken() const
 {
 	return this->token;

@@ -16,10 +16,8 @@ public:
 	int getStates() const;
 	void setLstPositionKnown(Point);
 	Point getLstPositionKnown() const;
-	int getDistance() const { return 12; };
+	int getDistance() const;
 	void setDistance(int);
-	bool isAt(Point){ return true; };
-
 
 
 private:

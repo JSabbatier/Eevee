@@ -1,5 +1,7 @@
 #include "Server.h"
 #include "Database.h"
+#include <random>
+
 // protocol : // server [: port] / path ? query # fragment 
 Database POIsDb;
 Users clientsDb;
@@ -25,12 +27,12 @@ Server::Server(const http::uri& url) : m_listener(http_listener(url))
 		std::tr1::bind(&Server::handle_post,
 		this,
 		std::tr1::placeholders::_1));
-/*	m_listener.support(methods::PUT,
-		std::tr1::bind(&Server::handle_put,
-		this,
-		std::tr1::placeholders::_1));
 	m_listener.support(methods::DEL,
 		std::tr1::bind(&Server::handle_delete,
+		this,
+		std::tr1::placeholders::_1));
+/*	m_listener.support(methods::PUT,
+		std::tr1::bind(&Server::handle_put,
 		this,
 		std::tr1::placeholders::_1));*/
 }
@@ -42,7 +44,7 @@ void Server::handle_get(http_request message)
 	printf("PATH : %S \n", message.absolute_uri().path().c_str());
 	if (message.absolute_uri().path() == U("/supervisor/getstats"))
 	{
-		printf("Handling supervisor request\n");
+		printf("	Handling supervisor request\n");
 		//message.reply(status_codes::OK, U("Hello, Supervisor ! - From the AppServer "));
 
 		http_response serverresponse = http_response();
@@ -55,12 +57,12 @@ void Server::handle_get(http_request message)
 	}
 	else if (message.absolute_uri().path() == U("/client/getpois"))
 	{
+		bool error = true;
 		// Return the POIs near the client
-		printf("Handling client/getpois request\n");
+		printf("	Handling client/getpois request\n");
 
 		http_response serverresponse = http_response();
 		json::value jsonToClient;
-		User* mobClient;
 		serverresponse.headers().add(U("Access-Control-Allow-Origin"), U("*")); // Necessary for cross-domain requests
 		serverresponse.headers().add(U("Content-Type"), U("application/json"));
 
@@ -71,7 +73,22 @@ void Server::handle_get(http_request message)
 			if (clientQuery.cbegin()->first == L"token")
 			{
 				utility::string_t clientToken = clientQuery.cbegin()->second;
-
+				User* mobClient;
+				mobClient = clientsDb.getClient(clientToken);
+				if (mobClient != nullptr)
+				{
+					error = false;
+					float x = mobClient->getLstPositionKnown().x();
+					Point location = (mobClient->getLstPositionKnown());
+					//Point location = Point::Point(42.32568, 2.46598, 0); // Test
+					POIsDb.SendPois(message, location);
+				}
+				else
+				{
+					jsonToClient[L"error"][L"code"] = json::value::number(status_codes::BadRequest);
+					jsonToClient[L"error"][L"reason"] = json::value::string(L"The token does not exist.");
+					serverresponse.set_status_code(status_codes::BadRequest);
+				}
 			}
 			else
 			{
@@ -86,23 +103,46 @@ void Server::handle_get(http_request message)
 			jsonToClient[L"error"][L"reason"] = json::value::string(L"No query parameter. Please refer to the API documentation.");
 			serverresponse.set_status_code(status_codes::BadRequest);
 		}
-		serverresponse.set_body(jsonToClient);
-		message.reply(serverresponse);
+		if (error)
+		{
+			serverresponse.set_body(jsonToClient);
+			message.reply(serverresponse);
+		}
 		
+	}
+	// Debuging and demo GET requests
+	else if (message.absolute_uri().path() == U("/debug/newrandomuser"))
+	{
+		// Create a new user with random location
+		printf("	Handling /debug/newrandomuser request\n");
+		std::random_device rd;
+		std::mt19937 e2(rd());
+		std::uniform_real_distribution<> dist(-80, 80);
+		User* mobClient = clientsDb.createClient(Point::Point(std::floor(dist(e2)), std::floor(dist(e2)), 0));
+		printf("	Random user created : %S (%f/%f)\n ", mobClient->getToken().c_str(), mobClient->getLstPositionKnown().x(), mobClient->getLstPositionKnown().y());
+		message.reply(status_codes::Created , U("Random user created"));
+	}
+	else if (message.absolute_uri().path() == U("/debug/flushusers"))
+	{
+		// Delete all users from the users map
+		printf("	Handling /debug/flushusers request\n");
+		clientsDb.clear();
+		printf("	Users map flushed : %d users.\n ", clientsDb.size());
+		message.reply(status_codes::OK, U("Users map flushed"));
 	}
 	else if (message.absolute_uri().path() == U("/client"))
 	{
-		printf("Handling default client request\n");
+		printf("	Handling default client request\n");
 		message.reply(status_codes::OK, U("Hello, Client ! - From the AppServer "));
 	}
 	else if (message.absolute_uri().path() == U("/favicon.ico"))
 	{
-		printf("Handling favicon request\n");
+		printf("	Handling favicon request\n");
 		message.reply(status_codes::NotFound, U("No favicon, please refer to the API documentation."));
 	}
 	else
 	{
-		printf("Unhandled path for the GET request\n");
+		printf("	Unhandled path for the GET request\n");
 		message.reply(status_codes::BadRequest, U("Unhandled GET request, please refer to the API documentation."));
 	}
 };
@@ -116,7 +156,7 @@ void Server::handle_post(http_request message)
 	if (message.absolute_uri().path() == U("/client/init"))
 	{
 		// Create a new client un the clients map by generating a new token with the GPS coordinates sent by the client, sending the new token to the client.
-		printf("Handling client/init request\n");
+		printf("	Handling client/init request\n");
 		message.extract_json().then([=](pplx::task<json::value> jsonFromClient)
 		{
 
@@ -131,12 +171,11 @@ void Server::handle_post(http_request message)
 				// Perform actions here to process the JSON value...
 				if (jsonValue.has_field(L"BallLat") && jsonValue.has_field(L"BallLng"))
 				{
-					printf("Received JSON from the client BallLat : %f, BallLng : %f\n", jsonValue.at(U("BallLat")).as_double(), jsonValue.at(U("BallLng")).as_double());
+					printf("	Received JSON from the clientto init - BallLat : %f, BallLng : %f\n", jsonValue.at(U("BallLat")).as_double(), jsonValue.at(U("BallLng")).as_double());
 					Point clientBallPosition = Point::Point(jsonValue.at(U("BallLat")).as_double(), jsonValue.at(U("BallLng")).as_double(), 0);
 					mobClient = clientsDb.createClient(clientBallPosition);
-					//jsonToClient[L"token"] = json::value::string(mobClient->getToken());
-					jsonToClient[L"token"] = json::value::string(L"thomas_sait_pas_faire_des_requetes"); // For test purpose only
-					printf(" * New token created\n");
+					jsonToClient[L"token"] = json::value::string(mobClient->getToken());
+					printf(" * New token created : %S\n", mobClient->getToken().c_str());
 					serverresponse.set_status_code(status_codes::Created);
 				}
 				else
@@ -150,7 +189,7 @@ void Server::handle_post(http_request message)
 			catch (const http_exception& e)
 			{
 				// Print error.
-				printf("Error parsing JSON in client/shot POST handler : %s", e.what());
+				printf("	Error parsing JSON in client/shot POST handler : %s", e.what());
 				jsonToClient[L"error"][L"code"] = json::value::number(status_codes::BadRequest);
 				jsonToClient[L"error"][L"reason"] = json::value::string(L"Incorrect JSON parameters (exeption)");
 				serverresponse.set_status_code(status_codes::BadRequest);
@@ -162,7 +201,7 @@ void Server::handle_post(http_request message)
 	else if (message.absolute_uri().path() == U("/client/shot"))
 	{
 		// Moving the client ball depending on the "shot" he did on the map + verification of the initial ball coordinates (anti-cheat)
-		printf("Handling client/shot request\n");
+		printf("	Handling client/shot request\n");
 		//message.reply(status_codes::OK, U("Hello, Supervisor ! - From the AppServer "));
 		message.extract_json().then([=](pplx::task<json::value> jsonFromClient)
 		{	
@@ -181,28 +220,43 @@ void Server::handle_post(http_request message)
 				if (jsonValue.has_field(L"BallLat") && jsonValue.has_field(L"BallLng") && jsonValue.has_field(L"ClubLat") && jsonValue.has_field(L"ClubLng") && jsonValue.has_field(L"Token"))
 				{
 					// Perform actions here to process the JSON value...
-					printf("Received JSON from the client ClubLat : %f, ClubLon : %f\n", jsonValue.at(U("ClubLat")).as_double(), jsonValue.at(U("ClubLng")).as_double());
+					printf("	Received JSON from ClubLat : %f, ClubLon : %f\n", jsonValue.at(U("ClubLat")).as_double(), jsonValue.at(U("ClubLng")).as_double());
 					Point clientShotPosition = Point::Point(jsonValue.at(U("ClubLat")).as_double(), jsonValue.at(U("ClubLng")).as_double(), 0);
 					Point clientBallPosition = Point::Point(jsonValue.at(U("BallLat")).as_double(), jsonValue.at(U("BallLng")).as_double(), 0);
 					mobClient = clientsDb.getClient(jsonValue.at(U("Token")).as_string());
 					if (mobClient != nullptr)
 					{
 						// Checking if the ball position sent by the client is the same as the token position in the server DB
-						if (!mobClient->isAt(clientBallPosition))
+						if (!clientsDb.clientIsAt(mobClient->getToken(), clientBallPosition))
 						{
 							jsonToClient[L"error"][L"code"] = json::value::number(status_codes::Conflict);
 							jsonToClient[L"error"][L"reason"] = json::value::string(L"Incorrect ball position, please reset your position. (Don't cheat please)");
+							printf("	/!\ Incorrect ball position, please reset your position. (Don't cheat please)\n");
 							serverresponse.set_status_code(status_codes::Conflict);
 						}
 						else
 						{
 							Point tokenPosition = mobClient->getLstPositionKnown();
 							// Calculating the new position of the ball
-							Point newPosition = Point::Point(power * (tokenPosition.x() + (tokenPosition.x() - clientShotPosition.x())), power * (tokenPosition.y() + (tokenPosition.x() - clientShotPosition.x())), 0);
-
+							float newlat, newlon;
+							newlat = power * (tokenPosition.x() - clientShotPosition.x()) + tokenPosition.x();
+							newlon = power * (tokenPosition.y() - clientShotPosition.y()) + tokenPosition.y();
+							if (newlat > 85 || newlat < -85)
+							{
+								newlat = newlat*M_PI / 180;
+								newlat = sin(newlat);
+								newlat = newlat*85.0;
+								if (newlat > 85 || newlat < -270)
+									newlon -= 180;
+								if (newlat > 270 || newlat < -85)
+									newlon += 360;
+							}
+							Point newPosition = Point::Point(newlat, newlon, 0);
+							clientsDb.moveClient(mobClient->getToken(), newPosition);
 							jsonToClient[L"coordinates"][L"lat"] = json::value::number(newPosition.x());
 							jsonToClient[L"coordinates"][L"lon"] = json::value::number(newPosition.y());
 							jsonToClient[L"distance"] = json::value::number(mobClient->getDistance());
+							printf("	Client shot from %f/%f to %f/%f, traveled %d m\n", tokenPosition.x(), tokenPosition.y(), newPosition.x(), newPosition.y(), mobClient->getDistance());
 							serverresponse.set_status_code(status_codes::OK);
 						}
 					}
@@ -223,7 +277,7 @@ void Server::handle_post(http_request message)
 			catch (const http_exception& e)
 			{
 				// Print error.
-				printf("Error parsing JSON in client/shot POST handler : %s", e.what());
+				printf("	Error parsing JSON in client/shot POST handler : %s", e.what());
 				jsonToClient[L"error"][L"code"] = json::value::number(status_codes::BadRequest);
 				jsonToClient[L"error"][L"reason"] = json::value::string(L"Incorrect JSON parameters (exeption)");
 				serverresponse.set_status_code(status_codes::BadRequest);
@@ -250,13 +304,21 @@ void Server::handle_post(http_request message)
 	}
 	else
 	{
-		printf("Unhandled path for the POST request\n");
+		printf("	Unhandled path for the POST request\n");
 		message.reply(status_codes::BadRequest, U("Unhandled POST request, please refer to the API documentation."));
 	}
 };
 
+//Handle all the OPTIONS requests
 void Server::handle_options(http_request message)
 {
 	printf("Handling OPTIONS request...\n");
 	message.reply(status_codes::BadRequest, U("Unhandled OPTIONS request, please refer to the API documentation."));
+};
+
+//Handle all the DEL requests
+void Server::handle_delete(http_request message)
+{
+	printf("Handling DEL request...\n");
+	message.reply(status_codes::BadRequest, U("Unhandled DEL request, please refer to the API documentation."));
 };

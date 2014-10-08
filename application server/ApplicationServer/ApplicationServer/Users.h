@@ -19,9 +19,11 @@ public:
 	User * getClient(utility::string_t);
 	void moveClient(utility::string_t, Point);
 
-	bool clientIsAt(utility::string_t,Point);
+	bool clientIsAt(utility::string_t, Point);
+	void clear();
+	int Users::size();
 
-	json::value  getStats();
+	web::json::value  getStats();
 
 private:
 	int distanceBetweenTwoPointsInMeter(Point, Point);
