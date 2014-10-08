@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<!--
+Name       : Justine sabbatier
+Description: Client Web
+Version    : 2.0
+Released   : 21/06/2013
+
+-->
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>pi1a_4 Client</title>
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Abel|Satisfy' rel='stylesheet' type='text/css'>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<script  src="jstable_json.js" language="javascript"></script>
+</head>
+<body onload="change_page('prev')">
+   <script>
+   page = 1;
+   function change_page(sens)
+   {
+	var debut;
+	var nombre;
+	var url;			
+	nombre = 10;	
+	if (sens == 'next')
+	{
+		page ++;
+		debut = 10*(page-1);	
+		url = "../script.php?orderby=rank&order=asc&format=json&rof="+debut+"&rln="+nombre;
+		requete('GET','null',url);
+	}
+	else if (sens == 'prev')
+	{
+		if (page > 1)
+		{
+			page --;
+			debut = 10*(page-1);		
+			url = "../script.php?orderby=rank&order=asc&format=json&rof="+debut+"&rln="+nombre;
+			requete('GET','null',url);
+		}
+		else
+		{		
+			debut = page;	
+			url = "../script.php?orderby=rank&order=asc&format=json&rof=1&rln=10";
+			requete('GET','null',url);
+		}
+	}
+	else if (sens == 'refresh')
+	{
+		if (page > 1)
+		{
+			debut = 10*(page-1);		
+			url = "../script.php?orderby=rank&order=asc&format=json&rof="+debut+"&rln="+nombre;
+			requete('GET','null',url);
+		}
+		else
+		{		
+			debut = page;	
+			url = "../script.php?orderby=rank&order=asc&format=json&rof=1&rln=10";
+			requete('GET','null',url);
+		}
+	}
+	return url;
+   }
+   
+   function getCheckedRadioValue(radioGroupName)
+   {
+	   var rads = document.getElementsByName(radioGroupName),
+		   i;
+	   for (i=0; i < rads.length; i++)
+		  if (rads[i].checked)
+			  return rads[i].value;
+	   return null; // or undefined, or your preferred default for none checked
+	}
+
+   	function requete(type, posturl, geturl) 
+	{   
+		var mydiv = document.getElementById('result');
+		var params;
+		var req_format;
+		var res_format;
+		var xhr_object = null;
+		var name = document.forms["formPost"].elements["name"].value;
+		var guess = document.forms["formPost"].elements["guess"].value;
+	 
+		if(window.XMLHttpRequest) xhr_object = new XMLHttpRequest();
+		else if(window.ActiveXObject) xhr_object = new ActiveXObject("Microsoft.XMLHTTP");
+		else {
+	 
+			alert("Ton navigateur ne supporte pas les objets XMLHTTPRequest...");
+			return;
+	 
+		}
+		if (type == "POST")
+		{
+			
+			mydiv.innerHTML = "<img src='./images/wait.gif'>";
+			req_format = getCheckedRadioValue("req_format");
+			res_format = getCheckedRadioValue("res_format");
+			params = getParametersPost();
+			xhr_object.open("POST", posturl, true);
+			xhr_object.onreadystatechange = function() {
+				if(xhr_object.readyState == 4) { 
+					//mydiv.innerHTML = "<h3> Data POST: </h3>";
+					//mydiv.innerHTML += xhr_object.responseText;
+					loadingBody("{'user':["+xhr_object.responseText+"]}", "result");
+				}
+			}
+			/** Formatage du header selon le type de requête envoyée */
+			if (req_format == "x-www-form-urlencode")
+			{
+				xhr_object.setRequestHeader("Content-type", "application/x-www-form-urlencoded;charset=UTF-8");
+			}
+			else if (req_format == "xml")
+			{
+				params = "<?xml version=\"1.0\" encoding=\"utf-8\" ?> <submit> <name>"+name+"</name> <guess><![CDATA["+guess+"]]></guess> </submit>"
+				xhr_object.setRequestHeader("Content-type", "application/xml;charset=UTF-8");
+			}
+			else if (req_format == "json")
+			{
+				params = "{\"name\": \""+name+"\",\"guess\": \""+guess+"\"}";
+				xhr_object.setRequestHeader("Content-type", "application/json;charset=UTF-8");
+			}
+			
+			/** Formatage du header selon le type de réponse souhaitée */			
+			if (res_format == "xml")
+				xhr_object.setRequestHeader("Accept", "application/xml");
+			else if (res_format == "json")
+				xhr_object.setRequestHeader("Accept", "application/json");
+			xhr_object.send(params);
+		}
+		else if (type == "GET")
+		{
+			mydiv = document.getElementById('mytable');			
+			mydiv.innerHTML = "<img src='./images/wait.gif'>";
+			res_format = getCheckedRadioValue("format");
+			
+			//params = getParametersGet();
+			xhr_object.open("GET", geturl, true);
+			xhr_object.onreadystatechange = function() {
+				if(xhr_object.readyState == 4) { 
+					//mydiv.innerHTML = "<h3> Data GET: </h3>";
+					//mydiv.innerHTML += xhr_object.responseText;
+					loadingBody("{'user':"+xhr_object.responseText+"}", "mytable");
+				}
+			}
+			xhr_object.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+			
+			/** Formatage du header selon le type de réponse souhaitée */			
+			if (res_format == "xml")
+				xhr_object.setRequestHeader("Accept", "application/xml");
+			else if (res_format == "json")
+				xhr_object.setRequestHeader("Accept", "application/json");
+				
+			xhr_object.send(params);
+		}
+		else
+			mydiv.innerHTML = "Type requête inconnu";
+	}
+ 
+	function getParametersGet()
+	{
+		var params = "";
+		var elements = document.forms["formGet"].elements;
+		for(var i=0; i<elements.length; i++)
+		{
+		if(elements[i].type != "radio" || elements[i].checked)
+			{
+				if(i>0){
+					params += "&";
+				}
+				params+= elements[i].name+"="+elements[i].value;
+			}
+		}
+		return params;
+	}
+ 
+	function getParametersPost()
+	{
+		var params = "";
+		var elements = document.forms["formPost"].elements;
+		for(var i=0; i<elements.length; i++)
+		{
+			if(i>0)
+			{
+				params += "&";
+			}
+			params+= elements[i].name+"="+elements[i].value;
+		}
+		return params;
+	}
+	</script>
+	
+<div id="conteneur">
+	<div id="header-conteneur">
+		<div id="header" class="container">
+			<div id="logo">
+				<h1>EQUIPE 4 CLIENT</h1>
+			</div>
+            <!-- Début du menu
+            Navigation sur une meme page grace aux balises <a href  -->
+			<div id="menu">
+				<ul>
+					<li class="current_page_item"><a href="#client">Client</a></li>
+					<li><a href= "index.html" target="_blank">Retour à la page de Présentation</a></li>	
+                </ul>
+			</div>
+            <!--Fin menu-->
+		</div>
+        <!--Banner-->
+		<div id="banner">
+			<div class="content">
+				<div> <img src="images/img02.jpg" width="1000" height="400" alt="" /></div>
+			</div>
+		</div>
+	</div>
+	<!-- Fin #Banner -->
+	<div id="page">
+		<div class="post">
+                <!-- Fin entry -->
+            <div id="featured-content"> 
+   			<h2 class="title" id="production"><a href="#production">Concours Hachage</a></h2> 
+				<div id="colonne1">
+					<h3>Classement</h3>
+							<!-- <p>JSON string <div id="myjson"></div></p> -->
+							<p>Table<div id="mytable"></div></p>
+							<input type="button" class="boutTable" onclick="change_page('prev')" value="<< Precedent" />
+							<input type="button" class="boutTable" onclick="change_page('next')" value="Suivant >>" /> 
+							<br> <br>                      
+							<input type="button" class="envoyer" onclick="change_page('refresh')" value="Rafraichir" />        
+					
+				</div>
+				<div id="colonne2">
+					<h3>Tentative</h3>
+					<br>
+					<form name="formPost" class="navbar-form pull-left" method="post" action="script.php">
+						<p><label>Name :</label>
+						<input type="text" class="input_court" name="name" required></p>
+						<p><label>Guess :</label>
+						<input type="text" class="input_court" name="guess" required></p>
+						<INPUT type=hidden name="req_format" value="x-www-form-urlencode" checked="checked">
+						<INPUT type=hidden name="req_format" value="xml">
+						<INPUT type=hidden name="req_format" value="json">
+						<INPUT type=hidden name="res_format" value="xml">
+						<INPUT type=hidden name="res_format" value="json" checked="checked">
+						<!-- <input type="submit" class="btn" name="valider" value="Créer"/> -->
+						<br><input type="button" onclick="requete('POST','../script.php')" value="Envoyer" />
+				   </form> 
+				   <br>
+				   <div id="result"></div>
+				</div>
+			</div>
+		</div> 
+	</div>
+</div>
+        
+<div id="footer">
+	<p>Copyright (c) 2013 Exercice réalisé en projet d'intégration à l'<a href="http://www.imerir.com/">IMERIR</a>.</p>
+</div>
+<!-- end #footer -->
+
+</body>
+</html>

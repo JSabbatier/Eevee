@@ -1,0 +1,27 @@
+MPX;Microsoft Project for Windows;4.0;ANSI
+10;;1;2;.;,
+11;2;0;1;8,00;40,00;10,00/h;15,00/h;1;0
+12;1;1;480;/;:;;;20;20
+20;Standard;0;1;1;1;1;1;0
+25;1
+25;2;08:00;12:00;13:00;17:00
+25;3;08:00;12:00;13:00;17:00
+25;4;08:00;12:00;13:00;17:00
+25;5;08:00;12:00;13:00;17:00
+25;6;08:00;12:00;13:00;17:00
+25;7
+30;Project1;;;Standard;29/09/2014;08/10/2014;0;07/10/2014;;0,00;0,00;0,00;0h;0h;0h;0%;0j;0j;0j;0%;;;;;0j;0j
+60;Nom;WBS;Nível Externo;Durée;Durée Réelle;Durée Restante;% Achevé;Début;Fin;Prédécesseurs;Fixe;Jalon;ID;Type de Contrainte;Priorité;ID Unique;Numéro Externe
+61;1;2;3;40;42;43;44;50;51;70;80;81;90;91;95;98;99
+70;;0;0;10j;;;;29/09/2014;08/10/2014;;Non;;0;Dès Que Possible;;0;0
+70;création de l'équipe et attribution des roles;1;1;1j;0j;1j;0%;29/09/2014;29/09/2014;;Non;Non;1;Dès Que Possible;Moyen;7;1
+70;modelisation de la bdd;2;1;2j;0j;2j;0%;29/09/2014;30/09/2014;;Non;Non;2;Dès Que Possible;Moyen;15;2
+70;serveur de requetage de bdd;3;1;2j;0j;2j;0%;01/10/2014;02/10/2014;2;Non;Non;3;Dès Que Possible;Moyen;6;3
+70;modelisation du format de communication;4;1;1j;0j;1j;0%;30/09/2014;30/09/2014;;Non;Non;4;Dès Que Possible;Moyen;1;4
+70;conception du serveur;5;1;2j;0j;2j;0%;29/09/2014;30/09/2014;;Non;Non;5;Dès Que Possible;Moyen;2;5
+70;maquette du client mobile;6;1;3j;0j;3j;0%;29/09/2014;01/10/2014;;Non;Non;6;Dès Que Possible;Moyen;4;6
+70;prototype android;7;1;1j;0j;1j;0%;02/10/2014;02/10/2014;6;Non;Non;7;Dès Que Possible;Moyen;8;7
+70;maquette monitoring;8;1;3j;0j;3j;0%;29/09/2014;01/10/2014;;Non;Non;8;Dès Que Possible;Moyen;5;8
+70;prototype moniteur;9;1;1j;0j;1j;0%;02/10/2014;02/10/2014;8;Non;Non;9;Dès Que Possible;Moyen;9;9
+70;intégration;10;1;3j;0j;3j;0%;06/10/2014;08/10/2014;;Non;Non;10;Dès Que Possible;Moyen;13;10
+70;préparation pour l'oral;11;1;1j;0j;1j;0%;08/10/2014;08/10/2014;;Non;Non;11;Dès Que Possible;Moyen;14;11

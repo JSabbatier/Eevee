@@ -4,15 +4,27 @@
 int main(int argc, char* argv[])
 {
 	utility::string_t port = U("34568");
-	utility::string_t address = U("http://172.31.1.150:");
-	address.append(port);
+	utility::string_t address = U("http://*:"); // Listening on all URIs (localhost, 127.0.0.1, externa IP...)
+	address.append(port); // Adding the port to the URI
 	Server playerAppListener = Server::Server(address);
 
-	playerAppListener.open().wait();
+	try
+	{
+		playerAppListener
+			.open()
+			.then([&playerAppListener](){printf("\nstarting to listen\n"); })
+			.wait();
 
-	Database db = Database::Database();
+		while (true);
+	}
+	catch (const std::exception &e)
+	{
+		printf ("Exception while opening the listener : %s", e.what());
+	}
+
+/*	Database db = Database::Database();
 	Point test = Point::Point(1.46877f, (float)42.32894, (float)0);
-	db.RegisterToken(test);
+	db.RegisterToken(test);*/
 
 
 	char temp = 'r';
