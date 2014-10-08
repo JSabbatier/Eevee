@@ -1,41 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MapGame" >
-     
-	<fragment
-	        android:id="@+id/map"     
-	        android:layout_width="match_parent"        
-	        android:layout_height="match_parent"        
-	class="com.google.android.gms.maps.MapFragment"/>
+    android:orientation="horizontal" >
 
-	<Button
-	    android:id="@+id/zoom1"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:layout_alignParentBottom="true"
-	    android:layout_alignParentLeft="true"
-	    android:onClick="zoom1"
-	    android:text="@string/zoom1" />
+   
 
-	<Button
-	    android:id="@+id/zoom2"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:layout_alignParentBottom="true"
-	    android:layout_toRightOf="@+id/zoom1"
-	    android:onClick="zoom2"
-	    android:text="@string/zoom2" />
+		<fragment
+	        android:id="@+id/map"
+	        android:name="com.google.android.gms.maps.MapFragment"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"/>
 
-	<Button
-	    android:id="@+id/zoom3"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:layout_alignParentBottom="true"
-	    android:layout_toRightOf="@+id/zoom2"
-	    android:onClick="zoom3"
-	    android:text="@string/zoom3" />
+    	<Button
+    	    android:id="@+id/zoom1"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignParentBottom="true"
+    	    android:layout_alignParentLeft="true"
+    	    android:onClick="zoom1"
+    	    android:text="@string/zoom1" />
 
-</RelativeLayout>
+    	<Button
+    	    android:id="@+id/zoom2"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignParentBottom="true"
+    	    android:layout_toRightOf="@+id/zoom1"
+    	    android:onClick="zoom2"
+    	    android:text="@string/zoom2" />
+
+    	<Button
+    	    android:id="@+id/zoom3"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignParentBottom="true"
+    	    android:layout_toRightOf="@+id/zoom2"
+    	    android:onClick="zoom3"
+    	    android:text="@string/zoom3" />
+    	
+</RelativeLayout> 

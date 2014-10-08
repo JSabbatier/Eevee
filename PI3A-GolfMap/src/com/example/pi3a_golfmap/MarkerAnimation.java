@@ -34,7 +34,7 @@ public class MarkerAnimation {
             @Override
             public void run() {
             	float durationInMs;
-            	 if( marker.getId().equals("m1") ){
+            	 if( marker.getId().equals("m0") ){
                  	durationInMs = 1000;
                  }
                  else{
@@ -55,7 +55,7 @@ public class MarkerAnimation {
             }
         });
         	
-        if(marker.getId().equals("m1")){
+        if(marker.getId().equals("m0")){
 			try {Thread.sleep(200);} 
 			catch (InterruptedException e) {e.printStackTrace();}
 		}

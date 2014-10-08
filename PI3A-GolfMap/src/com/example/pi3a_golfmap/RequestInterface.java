@@ -1,7 +1,9 @@
 package com.example.pi3a_golfmap;
 
+import org.json.JSONObject;
+
 public interface RequestInterface {
 
-	void process(String rawJson);
+	JSONObject processJSON(JSONObject rawJson);
 
 }
