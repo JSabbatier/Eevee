@@ -3,6 +3,11 @@
 Point::Point()
 {
 }
+/*
+bool Point::operator==(const Point& left, const Point& right)
+{
+	return ((right.x() == left.x()) && (right.y() == left.y()) && (right.z() == left.z()));
+}*/
 
 Point::Point(float x = 0, float y = 0, float z = 0)
 {
